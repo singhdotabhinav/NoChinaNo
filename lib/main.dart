@@ -5,7 +5,6 @@ import 'package:flutterapp/pages/myapps.dart';
 import 'package:flutterapp/pages/videos.dart';
 import 'widgets/navbar.dart';
 import 'utils/responsiveLayout.dart';
-import 'widgets/search.dart';
 
 
 void main() => runApp(MaterialApp(
