@@ -11,7 +11,7 @@ void main() => runApp(MaterialApp(
       title: 'Anioncode by Lukieoo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: HomePage(),
     ));
