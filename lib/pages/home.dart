@@ -12,8 +12,8 @@ class LargeChild extends StatelessWidget {
         children: <Widget>[
           FractionallySizedBox(
             alignment: Alignment.centerRight,
-            widthFactor: .6,
-            child: Image.asset("assets/image.png", scale: .85),
+            widthFactor: .5,
+            child: Image.network('https://i.imgur.com/PtlvTHf.png',height: 100,width: 100,),
           ),
 
           FractionallySizedBox(
@@ -237,16 +237,13 @@ class SmallChild extends StatelessWidget {
 
             ),
             SizedBox(
-              height: 30,
+              height: 50,
             ),
             Center(
-              child: Image.asset(
-                "assets/image.png",
-                scale: 1,
-              ),
+              child: Image.network('https://i.imgur.com/CeEB8po.png'),
             ),
             SizedBox(
-              height: 32,
+              height: 42,
             ),
             //   Search(),
             Wrap(
