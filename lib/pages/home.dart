@@ -25,20 +25,20 @@ class LargeChild extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text("Hello!",
+                  Text("Let's",
                       style: TextStyle(
                           fontSize: 60,
                           fontWeight: FontWeight.bold,
                           fontFamily: "Montserrat-Regular",
-                          color: Color(0xFF8591B0))),
+                          color: Colors.red)),
                   RichText(
                     text: TextSpan(
-                        text: "Wellcome to ",
+                        text: "#",
                         style:
-                        TextStyle(fontSize: 60, color: Color(0xFF8591B0)),
+                        TextStyle(fontSize: 60, color: Colors.red),
                         children: [
                           TextSpan(
-                              text: "Anion Code",
+                              text: "BoycottMadeInChina",
                               style: TextStyle(
                                   fontSize: 60,
                                   fontWeight: FontWeight.bold,
@@ -49,10 +49,11 @@ class LargeChild extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 12.0, top: 20),
                     child: SelectableText.rich(
                       TextSpan(
-                        text:"I am Android Developer / Flutter Developer who create beautiful apps for your IOS/Android device.",
+                        text:"NoChinaNo is a Platform Desined for the Wallet Armny.\n""Unbaised Listing and Rating of Non-chinese Brand Etectronc items.",
                         style: TextStyle(
                           color: Colors.black87,
                           fontWeight: FontWeight.bold,
+                          fontSize: 20,
                           fontFamily: "Montserrat-Regular",
                         ),
 //                        children: [
@@ -67,8 +68,7 @@ class LargeChild extends StatelessWidget {
                     ),
                   ),
                   SelectableText(
-
-                      "\n  Contact:  pawkrzysciak@gmail.com",
+                      "\n|| Shift To Non-Chinese Brand Hardware In A Year ||",
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -87,10 +87,7 @@ class LargeChild extends StatelessWidget {
                           SizedBox(
                               child: FloatingActionButton(
                                 backgroundColor: Colors.white10,
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/github.png"),
-                                )),
+                                child: Center(child: Image.network("https://i.imgur.com/QWQpPUG.png")),
                                 onPressed: () {
 
                                   js.context.callMethod("open", ["https://github.com/Lukieoo"]);
@@ -102,10 +99,7 @@ class LargeChild extends StatelessWidget {
                           SizedBox(
                               child: FloatingActionButton(
                                 backgroundColor: Colors.white10,
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/youtube.png"),
-                                )),
+                                child: Center(child: Image.network("https://i.imgur.com/OhckF3X.png")),
                                 onPressed: () {
                                   js.context.callMethod("open", ["https://www.youtube.com/channel/UCseP9k1DwSAqzZ-iyeAlTvg"]);
                                 },
@@ -116,10 +110,7 @@ class LargeChild extends StatelessWidget {
                               child: FloatingActionButton(
                                 backgroundColor: Colors.white10,
 
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/fb.png"),
-                                )),
+                                child: Center(child: Image.network("https://i.imgur.com/Y6JN5hg.png")),
                                 onPressed: () {
                                   js.context.callMethod("open", ["https://www.facebook.com/Anion-Code-115934359788737"]);
 
@@ -131,10 +122,7 @@ class LargeChild extends StatelessWidget {
                               child: FloatingActionButton(
                                 backgroundColor: Colors.white10,
 
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/google.png"),
-                                )),
+                                child: Center(child: Image.network("https://i.imgur.com/qZYgJH8.png")),
                                 onPressed: () {
                                   js.context.callMethod("open", ["https://play.google.com/store/apps/dev?id=5300491392807005874"]);
 
@@ -146,10 +134,7 @@ class LargeChild extends StatelessWidget {
                               child: FloatingActionButton(
                                 backgroundColor: Colors.white10,
 
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/linkedin.png"),
-                                )),
+                                child: Center(child: Image.network("https://i.imgur.com/Sc4D6B0.png")),
                                 onPressed: () {
                                   js.context.callMethod("open", ["https://www.linkedin.com/in/pawe%C5%82-krzy%C5%9Bciak-2691a8186/"]);
 
@@ -157,6 +142,17 @@ class LargeChild extends StatelessWidget {
                               ))
                           ,
                           SizedBox(width: 20,),
+                          SizedBox(
+                              child: FloatingActionButton(
+                                backgroundColor: Colors.white10,
+
+                                child: Center(child: Image.network("https://i.imgur.com/lAwJW9n.png")),
+                                onPressed: () {
+                                  js.context.callMethod("open", ["https://www.linkedin.com/in/pawe%C5%82-krzy%C5%9Bciak-2691a8186/"]);
+
+                                },
+                              ))
+                          ,
                         ],
                       )
                     ],
@@ -185,20 +181,20 @@ class SmallChild extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Hello!",
+              "Let's",
               style: TextStyle(
                   fontSize: 40,
-                  color: Color(0xFF8591B0),
+                  color: Colors.red,
                   fontWeight: FontWeight.bold,
                   fontFamily: "Montserrat-Regular"),
             ),
             RichText(
               text: TextSpan(
-                text: 'Wellcome to ',
-                style: TextStyle(fontSize: 40, color: Color(0xFF8591B0)),
+                text: '#',
+                style: TextStyle(fontSize: 40, color: Colors.red),
                 children: <TextSpan>[
                   TextSpan(
-                      text: "\nAnion Code",
+                      text: "BoycottMadeInChina",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 40,
@@ -210,9 +206,10 @@ class SmallChild extends StatelessWidget {
               padding: const EdgeInsets.only(left: 12.0, top: 20),
               child: SelectableText.rich(
                 TextSpan(
-                  text:"I am Android Developer / Flutter Developer who create beautiful apps for your IOS/Android device.",
+                        text:"NoChinaNo is a Platform Desined for the Wallet Armny.\n""Unbaised Listing and Rating of Non-chinese Brand Etectronc items.",
                   style: TextStyle(
                     color: Colors.black87,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                     fontFamily: "Montserrat-Regular",
                   ),
@@ -229,9 +226,9 @@ class SmallChild extends StatelessWidget {
             ),
             SelectableText(
 
-                "\n Contact:  pawkrzysciak@gmail.com",
+                "\n|| Shift To Non-Chinese Brand Hardware In A Year ||",
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                     color: Colors.black87)
 
