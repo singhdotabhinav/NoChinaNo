@@ -8,11 +8,16 @@ import 'package:flutter/rendering.dart';
 import 'package:flutterapp/Models/DesciptionApp.dart';
 
 class LargeApps extends StatefulWidget {
+
+  
   @override
   _LargeAppsState createState() => _LargeAppsState();
 }
 
 class _LargeAppsState extends State<LargeApps> {
+  double elevation =10.0;
+  double x=0;
+  double y=0;
   @override
   Widget build(BuildContext context) {
     List<ModelDescription> productList = [
@@ -33,10 +38,11 @@ class _LargeAppsState extends State<LargeApps> {
           "  An application that will help us remember places important to us may be a place on vacation, friends' addresses and the marking of these places on the map. And we can share this data with friends"),
     ];
 
-    initState() {
-      super.initState();
-    }
+    // initState() {
+    //   super.initState();
+    // }
 
+    
     return SizedBox(
       height: 900,
       child: Stack(
@@ -46,95 +52,75 @@ class _LargeAppsState extends State<LargeApps> {
             Container(
               padding: EdgeInsets.only(left: 48),
               child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("My apps",
-                        style: TextStyle(
-                            fontSize: 35,
-                            fontWeight: FontWeight.normal,
-                            color: Colors.black87)),
+                    Container(
+                      alignment: Alignment(0,0),
+                      child: Text("My apps",
+                          style: TextStyle(
+                              fontSize: 35,
+                              fontWeight: FontWeight.normal,
+                              color: Colors.black87)
+                         ),
+                    ),
                     SizedBox(
                       height: 30,
                     ),
-                    Wrap(
-                      runSpacing: 10,
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                         child: Wrap(
+                        runSpacing: 10,
+                        spacing: 10,
+                        crossAxisAlignment: WrapCrossAlignment.start,
+                        children: [
+                          InkWell(
+                            
+                             onTap: () {
+                               setState(() {
+                               // elevation+=10;
+                               });
+                               // js.context.callMethod(
+                               //     "open", ["https://play.google.com/store/apps/details?id=com.anioncode.smogu"]);
+//                            _launchURL("https://github.com/Lukieoo");
+                             },
+                             child: MenuCard(
+                             title: "Smoguś",
+                             html: "assets/myapp/unnamed2.png",
+                               ),
+                           ),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              js.context.callMethod(
+                                  "open", ["https://play.google.com/store/apps/details?id=com.anioncode.witcher"]);
+//                            _launchURL("https://github.com/Lukieoo");
+                            },
+                            child: MenuCard(
+                              title: "Witcher \"Toss a coin to your Witcher \"",
+                              html: "assets/myapp/unnamed3.png",
+                            ),
+                          ),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              js.context.callMethod(
+                                  "open", ["https://play.google.com/store/apps/details?id=com.anioncode.memory"]);
+//                            _launchURL("https://github.com/Lukieoo");
+                            },
+                            child: MenuCard(
+                              title: "Zaznacz to",
+                              html: "assets/myapp/unnamed4.png",
+                            ),
+                          ),
 
-                      spacing: 10,
-                      crossAxisAlignment: WrapCrossAlignment.start,
-
-                      children: [
-                        InkWell(
-                          onTap: () {
-                            js.context.callMethod("open", [
-                              "https://play.google.com/store/apps/details?id=com.anioncode.drzewostan"
-                            ]);
-//                            _launchURL("https://github.com/Lukieoo");
-                          },
-                          child: MenuCard(
-                            title: "Drzewostan",
-                            html: "assets/myapp/unnamed0.png",
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        InkWell(
-                          onTap: () {
-                            js.context.callMethod(
-                                "open", ["https://play.google.com/store/apps/details?id=com.anioncode.spojrzyj"]);
-//                            _launchURL("https://github.com/Lukieoo");
-                          },
-                          child: MenuCard(
-                            title: "Spojrzyj -Soczewki kontaktowe",
-                            html: "assets/myapp/unnamed1.png",
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        InkWell(
-                          onTap: () {
-                            js.context.callMethod(
-                                "open", ["https://play.google.com/store/apps/details?id=com.anioncode.smogu"]);
-//                            _launchURL("https://github.com/Lukieoo");
-                          },
-                          child: MenuCard(
-                            title: "Smoguś",
-                            html: "assets/myapp/unnamed2.png",
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        InkWell(
-                          onTap: () {
-                            js.context.callMethod(
-                                "open", ["https://play.google.com/store/apps/details?id=com.anioncode.witcher"]);
-//                            _launchURL("https://github.com/Lukieoo");
-                          },
-                          child: MenuCard(
-                            title: "Witcher \"Toss a coin to your Witcher \"",
-                            html: "assets/myapp/unnamed3.png",
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        InkWell(
-                          onTap: () {
-                            js.context.callMethod(
-                                "open", ["https://play.google.com/store/apps/details?id=com.anioncode.memory"]);
-//                            _launchURL("https://github.com/Lukieoo");
-                          },
-                          child: MenuCard(
-                            title: "Zaznacz to",
-                            html: "assets/myapp/unnamed4.png",
-                          ),
-                        ),
-
-                        //  Image.network("assets/myapp/unnamed.png"),
-                      ],
+                          //  Image.network("assets/myapp/unnamed.png"),
+                        ],
+                      ),
                     ),
                     SizedBox(
                       height: 30,
@@ -229,19 +215,19 @@ class _LargeAppsState extends State<LargeApps> {
                     return Card(
                       elevation: 4,
                       child: Container(
-//                            decoration: BoxDecoration(
-//                              gradient: LinearGradient(
-//                                  colors: [Color(0xFF3a1c71 ), Color(0xFFd76d77), Color(0xFFffaf7b)],
-//
-//                                  begin: Alignment.bottomRight,
-//                                  end: Alignment.topLeft),
-//                              boxShadow: [
-//                                BoxShadow(
-//                                    color: Color(0xFF6578ea).withOpacity(.3),
-//                                    offset: Offset(0, 8),
-//                                    blurRadius: 8)
-//                              ],
-//                            ),
+                          //  decoration: BoxDecoration(
+                          //    gradient: LinearGradient(
+                          //        colors: [Color(0xFF3a1c71 ), Color(0xFFd76d77), Color(0xFFffaf7b)],
+
+                          //        begin: Alignment.bottomRight,
+                          //        end: Alignment.topLeft),
+                          //    boxShadow: [
+                          //      BoxShadow(
+                          //          color: Color(0xFF6578ea).withOpacity(.3),
+                          //          offset: Offset(0, 8),
+                          //          blurRadius: 8)
+                          //    ],
+                          //  ),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -368,23 +354,11 @@ class SmallApps extends StatelessWidget {
                       spacing: 10,
                       crossAxisAlignment: WrapCrossAlignment.start,
                       children: [
-                        MenuCard(
-                          title: "Drzewostan",
-                          html: "assets/myapp/unnamed0.png",
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        MenuCard(
-                          title: "Spojrzyj -Soczewki kontaktowe",
-                          html: "assets/myapp/unnamed1.png",
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
+                        
                         MenuCard(
                           title: "Smoguś",
                           html: "assets/myapp/unnamed2.png",
+                          
                         ),
                         SizedBox(
                           width: 20,
@@ -392,6 +366,7 @@ class SmallApps extends StatelessWidget {
                         MenuCard(
                           title: "Witcher \"Toss a coin to your Witcher \"",
                           html: "assets/myapp/unnamed3.png",
+                          
                         ),
                         SizedBox(
                           width: 20,
@@ -399,6 +374,7 @@ class SmallApps extends StatelessWidget {
                         MenuCard(
                           title: "Zaznacz to",
                           html: "assets/myapp/unnamed4.png",
+                         
                         ),
                       ],
                     ),
@@ -608,12 +584,6 @@ class SmallApps extends StatelessWidget {
   }
 }
 
-//class MenuCard extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    return Card(child: ,);
-//  }
-//}
 
 class MenuCard extends StatelessWidget {
   final String html;
@@ -628,47 +598,48 @@ class MenuCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: (MediaQuery.of(context).size.width > 1510 ||
+        width: (MediaQuery.of(context).size.width > 1510 ||
+          MediaQuery.of(context).size.width < 760)
+      ? 110
+      : 80,
+        padding: EdgeInsets.all(5),
+        decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(0),
+    color: Colors.white,
+    boxShadow: [
+      BoxShadow(
+        offset: Offset(1, 1),
+        blurRadius: 4,
+        color: Colors.black12,
+      ),
+    ],
+        ),
+        child: Column(
+    children: <Widget>[
+      // Image.asset(image, height: 40),
+      Image.asset(
+        html,
+        height: 80,
+      ),
+      (MediaQuery.of(context).size.width > 1510 ||
               MediaQuery.of(context).size.width < 760)
-          ? 110
-          : 80,
-      padding: EdgeInsets.all(5),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(0),
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            offset: Offset(1, 1),
-            blurRadius: 4,
-            color: Colors.black12,
-          ),
-        ],
-      ),
-      child: Column(
-        children: <Widget>[
-          // Image.asset(image, height: 40),
-          Image.asset(
-            html,
-            height: 80,
-          ),
-          (MediaQuery.of(context).size.width > 1510 ||
-                  MediaQuery.of(context).size.width < 760)
-              ? Container(
-                  height: 80,
-                  alignment: Alignment.center,
-                  child: Text(
-                    title,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "Montserrat-Regular",
-                        color: Colors.black87),
-                  ),
-                )
-              : Container(),
-        ],
-      ),
-    );
+          ? Container(
+              height: 80,
+              alignment: Alignment.center,
+              child: Text(
+                title,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "Montserrat-Regular",
+                    color: Colors.black87),
+              ),
+            )
+          : Container(),
+          
+    ],
+        ),
+      );
   }
 }
