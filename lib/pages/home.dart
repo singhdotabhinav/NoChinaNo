@@ -49,21 +49,13 @@ class LargeChild extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 12.0, top: 20),
                     child: SelectableText.rich(
                       TextSpan(
-                        text:"NoChinaNo is a Platform Desined for the Wallet Armny.\n""Unbaised Listing and Rating of Non-chinese Brand Etectronc items.",
+                        text:"NoChinaNo is a Platform Desined for the Wallet Army.\n""Unbaised Listing and Rating of Non-chinese Brand Etectronc items.",
                         style: TextStyle(
                           color: Colors.black87,
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                           fontFamily: "Montserrat-Regular",
                         ),
-//                        children: [
-//                          TextSpan(
-//                              text: "\n\n Contact:  pawkrzysciak@gmail.com",
-//                              style: TextStyle(
-//                                  fontSize: 20,
-//                                  fontWeight: FontWeight.bold,
-//                                  color: Colors.black87))
-//                        ]
                       ),
                     ),
                   ),
@@ -82,19 +74,29 @@ class LargeChild extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-
                           SizedBox(width: 20,),
                           SizedBox(
-                              child: FloatingActionButton(
-                                backgroundColor: Colors.white10,
-                                child: Center(child: Image.network("https://i.imgur.com/QWQpPUG.png")),
-                                onPressed: () {
+                              child: Column(
+                                children: [
+                                  FloatingActionButton(
+                                    backgroundColor: Colors.white10,
+                                    child: Center(child: Image.network("https://i.imgur.com/QWQpPUG.png")),
+                                    onPressed: () {
 
-                                  js.context.callMethod("open", ["https://github.com/Lukieoo"]);
+                                      js.context.callMethod("open", ["https://github.com/Lukieoo"]);
 //                            _launchURL("https://github.com/Lukieoo");
-                                },
-                              ))
-                          ,
+                                    },
+                                  ),
+                                  SizedBox(height:10),
+                                  Column(
+                          mainAxisSize: MainAxisSize.min,
+                            children: <Widget>[
+                              Text("Mobile"),
+                           ],
+                          ),
+                                ],
+                              )
+                              ),
                           SizedBox(width: 20,),
                           SizedBox(
                               child: FloatingActionButton(
@@ -165,6 +167,7 @@ class LargeChild extends StatelessWidget {
               ),
             ),
           )
+        
         ],
       ),
     );
