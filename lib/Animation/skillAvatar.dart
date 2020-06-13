@@ -36,31 +36,28 @@ Widget skillAvatar(String imgUrl, Color glow) {
 }
 
 
-@override
-Widget roundIcon(String imglink, Color backglow, String category) {
-  return FlatButton(
-    shape: new RoundedRectangleBorder(
-      borderRadius: new BorderRadius.circular(30.0),
-    ),
-    child: SizedBox(
-        child: Column(
-      children: [
-        Container(
-          child: skillAvatar(imglink, backglow),
-        ),
-        Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            SelectableText(category,
-                style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black87)),
-          ],
-        ),
-      ],
-    )),
-    onPressed: () {},
-  );
-}
+//Widget roundIcon(String imglink, Color backglow, String category) {
+//  return FlatButton(
+//
+//    onPressed: (){},
+//    child: SizedBox(
+//        child: Column(
+//      children: [
+//        Container(
+//          child: skillAvatar(imglink, backglow),
+//        ),
+//        Column(
+//          mainAxisSize: MainAxisSize.min,
+//          children: <Widget>[
+//            SelectableText(category,
+//                style: TextStyle(
+//                    fontSize: 15,
+//                    fontWeight: FontWeight.bold,
+//                    color: Colors.black87)),
+//          ],
+//        ),
+//      ],
+//    )),
+//  );
+//}
 
