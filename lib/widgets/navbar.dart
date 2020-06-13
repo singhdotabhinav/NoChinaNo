@@ -63,7 +63,7 @@ class _NavBarState extends State<NavBar> {
                         height: 40,
                         decoration: BoxDecoration(
                             gradient: LinearGradient(
-                                colors: [Color(0xFFC86DD7), Color(0xFF3023AE)],
+                                colors: [Colors.black.withOpacity(.8), Colors.red],
                                 begin: Alignment.bottomRight,
                                 end: Alignment.topLeft),
                             borderRadius: BorderRadius.circular(20),
@@ -107,7 +107,7 @@ class _NavBarState extends State<NavBar> {
                   height: 40,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
-                          colors: [Color(0xFFC86DD7), Color(0xFF3023AE)],
+                          colors: [Colors.red, Colors.black],
                           begin: Alignment.bottomRight,
                           end: Alignment.topLeft),
                       borderRadius: BorderRadius.circular(20),

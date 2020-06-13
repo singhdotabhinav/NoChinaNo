@@ -1,6 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'dart:js' as js;
+
+import 'package:flutterapp/Animation/skillAvatar.dart';
 
 class LargeChild extends StatelessWidget {
   @override
@@ -12,10 +13,13 @@ class LargeChild extends StatelessWidget {
         children: <Widget>[
           FractionallySizedBox(
             alignment: Alignment.centerRight,
-            widthFactor: .6,
-            child: Image.asset("assets/image.png", scale: .85),
+            widthFactor: .5,
+            child: Image.network(
+              'https://i.imgur.com/PtlvTHf.png',
+              height: 100,
+              width: 100,
+            ),
           ),
-
           FractionallySizedBox(
             alignment: Alignment.centerLeft,
             widthFactor: .6,
@@ -25,20 +29,19 @@ class LargeChild extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text("Hello!",
+                  Text("Let's",
                       style: TextStyle(
                           fontSize: 60,
                           fontWeight: FontWeight.bold,
                           fontFamily: "Montserrat-Regular",
-                          color: Color(0xFF8591B0))),
+                          color: Colors.red)),
                   RichText(
                     text: TextSpan(
-                        text: "Wellcome to ",
-                        style:
-                        TextStyle(fontSize: 60, color: Color(0xFF8591B0)),
+                        text: "#",
+                        style: TextStyle(fontSize: 60, color: Colors.red),
                         children: [
                           TextSpan(
-                              text: "Anion Code",
+                              text: "BoycottMadeInChina",
                               style: TextStyle(
                                   fontSize: 60,
                                   fontWeight: FontWeight.bold,
@@ -49,122 +52,56 @@ class LargeChild extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 12.0, top: 20),
                     child: SelectableText.rich(
                       TextSpan(
-                        text:"I am Android Developer / Flutter Developer who create beautiful apps for your IOS/Android device.",
+                        text:
+                            "NoChinaNo is a Platform Desined for the Wallet Army.\n"
+                            "Unbaised Listing and Rating of Non-chinese Brand Etectronc items.",
                         style: TextStyle(
                           color: Colors.black87,
                           fontWeight: FontWeight.bold,
+                          fontSize: 20,
                           fontFamily: "Montserrat-Regular",
                         ),
-//                        children: [
-//                          TextSpan(
-//                              text: "\n\n Contact:  pawkrzysciak@gmail.com",
-//                              style: TextStyle(
-//                                  fontSize: 20,
-//                                  fontWeight: FontWeight.bold,
-//                                  color: Colors.black87))
-//                        ]
                       ),
                     ),
                   ),
                   SelectableText(
-
-                      "\n  Contact:  pawkrzysciak@gmail.com",
+                      "\n|| Shift To Non-Chinese Brand Hardware In A Year ||",
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black87)
-
-                  ),
-                  SizedBox(
-                    height: 40,
-                  ),
+                          color: Colors.black87)),
                   Wrap(
                     children: [
                       Row(
                         children: [
-
-                          SizedBox(width: 20,),
-                          SizedBox(
-                              child: FloatingActionButton(
-                                backgroundColor: Colors.white10,
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/github.png"),
-                                )),
-                                onPressed: () {
-
-                                  js.context.callMethod("open", ["https://github.com/Lukieoo"]);
-//                            _launchURL("https://github.com/Lukieoo");
-                                },
-                              ))
-                          ,
-                          SizedBox(width: 20,),
-                          SizedBox(
-                              child: FloatingActionButton(
-                                backgroundColor: Colors.white10,
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/youtube.png"),
-                                )),
-                                onPressed: () {
-                                  js.context.callMethod("open", ["https://www.youtube.com/channel/UCseP9k1DwSAqzZ-iyeAlTvg"]);
-                                },
-                              ))
-                          ,
-                          SizedBox(width: 20,),
-                          SizedBox(
-                              child: FloatingActionButton(
-                                backgroundColor: Colors.white10,
-
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/fb.png"),
-                                )),
-                                onPressed: () {
-                                  js.context.callMethod("open", ["https://www.facebook.com/Anion-Code-115934359788737"]);
-
-                                },
-                              ))
-                          ,
-                          SizedBox(width: 20,),
-                          SizedBox(
-                              child: FloatingActionButton(
-                                backgroundColor: Colors.white10,
-
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/google.png"),
-                                )),
-                                onPressed: () {
-                                  js.context.callMethod("open", ["https://play.google.com/store/apps/dev?id=5300491392807005874"]);
-
-                                },
-                              ))
-                          ,
-                          SizedBox(width: 20,),
-                          SizedBox(
-                              child: FloatingActionButton(
-                                backgroundColor: Colors.white10,
-
-                                child: Center(child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Image.asset("assets/linkedin.png"),
-                                )),
-                                onPressed: () {
-                                  js.context.callMethod("open", ["https://www.linkedin.com/in/pawe%C5%82-krzy%C5%9Bciak-2691a8186/"]);
-
-                                },
-                              ))
-                          ,
-                          SizedBox(width: 20,),
+                          roundIcon('https://i.imgur.com/QWQpPUG.png',
+                              Colors.green, 'Mobile Phone'),
+                          roundIcon('https://i.imgur.com/OhckF3X.png',
+                              Colors.yellow, 'Laptop'),
+                          roundIcon('https://i.imgur.com/Y6JN5hg.png',
+                              Colors.red, 'Television'),
+                          roundIcon('https://i.imgur.com/8uqzLuO.png',
+                              Colors.purple, 'Audio'),
+                          roundIcon('https://i.imgur.com/qZYgJH8.png',
+                              Colors.blue, 'Camera'),
                         ],
-                      )
+                      ),
+                      Row(
+                        children: [
+                          roundIcon('https://i.imgur.com/lAwJW9n.png',
+                              Colors.blue, 'Tablets'),
+                          roundIcon('https://i.imgur.com/CY7brg5.png',
+                              Colors.purple, 'power bank'),
+                          roundIcon('https://i.imgur.com/ZzFxF4W.png',
+                              Colors.green, 'Air Conditioner'),
+                          roundIcon('https://i.imgur.com/yHTYOrX.png',
+                              Colors.yellow, 'Refrigerators'),
+                          roundIcon('https://i.imgur.com/GhqdEPD.png',
+                              Colors.red, 'washing machine'),
+                        ],
+                      ),
                     ],
                   ),
-                  SizedBox(
-                    height: 40,
-                  ),
-                  //Search()
                 ],
               ),
             ),
@@ -185,20 +122,20 @@ class SmallChild extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Hello!",
+              "Let's",
               style: TextStyle(
                   fontSize: 40,
-                  color: Color(0xFF8591B0),
+                  color: Colors.red,
                   fontWeight: FontWeight.bold,
                   fontFamily: "Montserrat-Regular"),
             ),
             RichText(
               text: TextSpan(
-                text: 'Wellcome to ',
-                style: TextStyle(fontSize: 40, color: Color(0xFF8591B0)),
+                text: '#',
+                style: TextStyle(fontSize: 40, color: Colors.red),
                 children: <TextSpan>[
                   TextSpan(
-                      text: "\nAnion Code",
+                      text: "BoycottMadeInChina",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 40,
@@ -210,128 +147,82 @@ class SmallChild extends StatelessWidget {
               padding: const EdgeInsets.only(left: 12.0, top: 20),
               child: SelectableText.rich(
                 TextSpan(
-                  text:"I am Android Developer / Flutter Developer who create beautiful apps for your IOS/Android device.",
+                  text:
+                      "NoChinaNo is a Platform Desined for the Wallet Armny.\n"
+                      "Unbaised Listing and Rating of Non-chinese Brand Etectronc items.",
                   style: TextStyle(
                     color: Colors.black87,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                     fontFamily: "Montserrat-Regular",
                   ),
-//                    children: [
-//                      TextSpan(
-//                          text: "\n\n Contact:  pawkrzysciak@gmail.com",
-//                          style: TextStyle(
-//                              fontSize: 20,
-//                              fontWeight: FontWeight.bold,
-//                              color: Colors.black87))
-//                    ]
                 ),
               ),
             ),
             SelectableText(
-
-                "\n Contact:  pawkrzysciak@gmail.com",
+                "\n|| Shift To Non-Chinese Brand Hardware In A Year ||",
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black87)
-
-            ),
+                    color: Colors.black87)),
             SizedBox(
-              height: 30,
+              height: 50,
             ),
             Center(
-              child: Image.asset(
-                "assets/image.png",
-                scale: 1,
-              ),
+              child: Image.network('https://i.imgur.com/CeEB8po.png'),
             ),
             SizedBox(
-              height: 32,
+              height: 42,
             ),
-            //   Search(),
             Wrap(
               children: [
-
-                SizedBox(width: 20,),
-                SizedBox(
-                    child: FloatingActionButton(
-                      backgroundColor: Colors.white10,
-                      child: Center(child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset("assets/github.png"),
-                      )),
-                      onPressed: () {
-
-                        js.context.callMethod("open", ["https://github.com/Lukieoo"]);
-//                            _launchURL("https://github.com/Lukieoo");
-                      },
-                    ))
-                ,
-                SizedBox(width: 20,),
-                SizedBox(
-                    child: FloatingActionButton(
-                      backgroundColor: Colors.white10,
-                      child: Center(child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child:Image.asset("assets/youtube.png"),
-                      )),
-                      onPressed: () {
-                        js.context.callMethod("open", ["https://www.youtube.com/channel/UCseP9k1DwSAqzZ-iyeAlTvg"]);
-                      },
-                    ))
-                ,
-                SizedBox(width: 20,),
-                SizedBox(
-                    child: FloatingActionButton(
-                      backgroundColor: Colors.white10,
-
-                      child: Center(child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset("assets/fb.png"),
-                      )),
-                      onPressed: () {
-                        js.context.callMethod("open", ["https://www.facebook.com/Anion-Code-115934359788737"]);
-
-                      },
-                    ))
-                ,
-                SizedBox(width: 20,),
-                SizedBox(
-                    child: FloatingActionButton(
-                      backgroundColor: Colors.white10,
-
-                      child: Center(child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset("assets/google.png"),
-                      )),
-                      onPressed: () {
-                        js.context.callMethod("open", ["https://play.google.com/store/apps/dev?id=5300491392807005874"]);
-
-                      },
-                    ))
-                ,
-                SizedBox(width: 20,),
-                SizedBox(
-                    child: FloatingActionButton(
-                      backgroundColor: Colors.white10,
-
-                      child: Center(child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset("assets/linkedin.png"),
-                      )),
-                      onPressed: () {
-                        js.context.callMethod("open", ["https://www.linkedin.com/in/pawe%C5%82-krzy%C5%9Bciak-2691a8186/"]);
-
-                      },
-                    ))
-                ,
-                SizedBox(width: 20,),
-
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/QWQpPUG.png', Colors.green,
+                        'Mobile Phone'),
+                    roundIcon('https://i.imgur.com/OhckF3X.png', Colors.yellow,
+                        'Laptop'),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/Y6JN5hg.png', Colors.red,
+                        'Television'),
+                    roundIcon('https://i.imgur.com/8uqzLuO.png', Colors.purple,
+                        'Audio'),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/qZYgJH8.png', Colors.blue,
+                        'Camera'),
+                    roundIcon('https://i.imgur.com/lAwJW9n.png', Colors.blue,
+                        'Tablets'),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/CY7brg5.png', Colors.purple,
+                        'power bank'),
+                    roundIcon('https://i.imgur.com/ZzFxF4W.png', Colors.green,
+                        'Air Conditioner'),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/yHTYOrX.png', Colors.yellow,
+                        'Refrigerators'),
+                    roundIcon('https://i.imgur.com/GhqdEPD.png', Colors.red,
+                        'washing machine'),
+                  ],
+                ),
               ],
             ),
-            SizedBox(
-              height: 30,
-            )
           ],
         ),
       ),

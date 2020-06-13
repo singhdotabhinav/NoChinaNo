@@ -346,6 +346,7 @@ class _LargeAppsState extends State<LargeApps> {
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
+
           Column(children: [
             Container(
               padding: EdgeInsets.only(left: 48),
@@ -356,6 +357,7 @@ class _LargeAppsState extends State<LargeApps> {
                     Container(
                       alignment: Alignment(0,0),
                       child: Text("My apps",
+
                           style: TextStyle(
                               fontSize: 35,
                               fontWeight: FontWeight.normal,
@@ -394,6 +396,7 @@ class _LargeAppsState extends State<LargeApps> {
                                 productListX=1; 
                                  categoryListIndex=1;   
                               });   
+
                             },
                             child: MenuCard(
                               title: "Witcher \"Toss a coin to your Witcher \"",
@@ -405,6 +408,7 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
+
                               setState(() {
                                 productListX=2;
                                  categoryListIndex=2;                
@@ -420,6 +424,7 @@ class _LargeAppsState extends State<LargeApps> {
                           //  Image.network("assets/myapp/unnamed.png"),
                         ],
                       ),
+
                     ),
                     // SizedBox(
                     //   height: 10,
@@ -529,6 +534,7 @@ class _LargeAppsState extends State<LargeApps> {
 
           ],),
         
+
         ],
       ),
     );
@@ -626,7 +632,6 @@ class _SmallAppsState extends State<SmallApps> {
                     ),
                     Wrap(
                       runSpacing: 15,
-
                       spacing: 10,
                       crossAxisAlignment: WrapCrossAlignment.start,
                       children: [
