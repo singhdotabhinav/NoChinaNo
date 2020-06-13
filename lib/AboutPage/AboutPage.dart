@@ -10,7 +10,7 @@ class _AboutPageState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('abhinav'),
+        title: Text('Abhinav'),
       ),
     );
   }
