@@ -8,7 +8,7 @@ import 'utils/responsiveLayout.dart';
 
 
 void main() => runApp(MaterialApp(
-      title: 'Anioncode by Lukieoo',
+      title: 'NoChinaNo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,

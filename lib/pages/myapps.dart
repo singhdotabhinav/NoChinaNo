@@ -1,11 +1,8 @@
-import 'dart:html';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'dart:js' as js;
-
 import 'package:flutter/rendering.dart';
 import 'package:flutterapp/Models/DesciptionApp.dart';
+import 'package:flutterapp/ProductDetailsPage/Widgets/ProductList/ProductListDesktop.dart';
 
 class LargeApps extends StatefulWidget {
 
@@ -18,8 +15,312 @@ class _LargeAppsState extends State<LargeApps> {
   double elevation =10.0;
   double x=0;
   double y=0;
+  int categoryListIndex=0;
+  int productListX=0;
+  int productListY=0;
+
+
   @override
   Widget build(BuildContext context) {
+
+    Widget categoryCard(String type){
+      return Card(
+        child: Container(
+          width: MediaQuery.of(context).size.width/2 ,
+          color: Colors.red[300],
+          child: Text('$type',textAlign: TextAlign.center,),
+        ),
+      );
+    }
+
+    List<Widget> category_list=[
+      categoryCard('Best Camera Phone'),
+      categoryCard('Best Processor Phone'),
+      categoryCard('Best Battery Phone'),
+    ];
+
+    List<List<Widget>> product_list=[
+      [
+        ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+                            
+      ],
+       [
+        ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+                            
+      ],
+       [
+        ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+         ProductListDesktop(
+                                amazonUrl: 'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
+                              batteryRating: 90,
+                              cameraRating: 90,
+                              osRating: 80,
+                              vlmRating: 70,
+                              processorRating: 100,
+                              productBrand: 'America',
+                              productCountry: 'USA',
+                              productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+                              productName: 'Iphone 11 Pro',
+                              productPrice: 10000,
+                              productRank: 1,
+
+                              flipKartUrl: 'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
+                              imageUrl: 'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
+
+                            ),
+                            
+      ],    
+       
+    ];
     List<ModelDescription> productList = [
       ModelDescription(
           "Drzewostan",
@@ -40,11 +341,9 @@ class _LargeAppsState extends State<LargeApps> {
 
     // initState() {
     //   super.initState();
-    // }
-
-    
+    // } 
     return SizedBox(
-      height: 900,
+      height: 1200,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
@@ -75,14 +374,12 @@ class _LargeAppsState extends State<LargeApps> {
                         crossAxisAlignment: WrapCrossAlignment.start,
                         children: [
                           InkWell(
-                            
                              onTap: () {
                                setState(() {
-                               // elevation+=10;
+                                 productListX=0;
+                                 categoryListIndex=0;
+                              
                                });
-                               // js.context.callMethod(
-                               //     "open", ["https://play.google.com/store/apps/details?id=com.anioncode.smogu"]);
-//                            _launchURL("https://github.com/Lukieoo");
                              },
                              child: MenuCard(
                              title: "Smoguś",
@@ -94,9 +391,10 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.anioncode.witcher"]);
-//                            _launchURL("https://github.com/Lukieoo");
+                              setState(() {
+                                productListX=1; 
+                                 categoryListIndex=1;   
+                              });   
                             },
                             child: MenuCard(
                               title: "Witcher \"Toss a coin to your Witcher \"",
@@ -108,9 +406,11 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.anioncode.memory"]);
-//                            _launchURL("https://github.com/Lukieoo");
+                              setState(() {
+                                productListX=2;
+                                 categoryListIndex=2;                
+                              });
+                             
                             },
                             child: MenuCard(
                               title: "Zaznacz to",
@@ -122,169 +422,101 @@ class _LargeAppsState extends State<LargeApps> {
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    // Text("Commercial apps",
-                    //     style: TextStyle(
-                    //         fontSize: 35,
-                    //         fontWeight: FontWeight.normal,
-                    //         color: Colors.black87
-                    //         )
-                    //         ),
                     // SizedBox(
-                    //   height: 30,
+                    //   height: 10,
                     // ),
-//                       Wrap(
-//                         children: [
-//                           InkWell(
-//                             onTap: () {
-//                               js.context.callMethod(
-//                                   "open", ["https://play.google.com/store/apps/details?id=com.lasoft.viewconnect"]);
-// //                            _launchURL("https://github.com/Lukieoo");
-//                             },
-//                             child: MenuCard(
-//                               title: "viewConnect 2",
-//                               html: "assets/myapp/comer3.png",
-//                             ),
-//                           ),
-//                           SizedBox(
-//                             width: 20,
-//                           ),
-//                           InkWell(
-//                             onTap: () {
-//                               js.context.callMethod(
-//                                   "open", ["https://play.google.com/store/apps/details?id=com.lasoft.viewanalytics"]);
-// //                            _launchURL("https://github.com/Lukieoo");
-//                             },
-//                             child: MenuCard(
-//                               title: "viewAnalytics",
-//                               html: "assets/myapp/comer2.png",
-//                             ),
-//                           ),
-//                           SizedBox(
-//                             width: 20,
-//                           ),
-//                           InkWell(
-//                             onTap: () {
-//                               js.context.callMethod(
-//                                   "open", ["https://play.google.com/store/apps/details?id=com.lasoft.Rachunek_Sumienia"]);
-// //                            _launchURL("https://github.com/Lukieoo");
-//                             },
-//                             child: MenuCard(
-//                               title: "Rachunek Sumienia",
-//                               html: "assets/myapp/comer1.png",
-//                             ),
-//                           ),
-//                           SizedBox(
-//                             width: 20,
-//                           ),
-//                           InkWell(
-//                             onTap: () {
-//                               js.context.callMethod(
-//                                   "open", ["https://play.google.com/store/apps/details?id=pl.lasoft.Alleluja"]);
-// //                            _launchURL("https://github.com/Lukieoo");
-//                             },
-//                             child: MenuCard(
-//                               title: "Alleluja",
-//                               html: "assets/myapp/comer4.png",
-//                             ),
-//                           ),
-//                           SizedBox(
-//                             width: 20,
-//                           ),
-//                         ],
-//                       ),
-
                   ]
                 )
               ),
-
-
+          category_list[categoryListIndex],
           Padding(
             padding: EdgeInsets.all(100),
             child: CarouselSlider(
               options: CarouselOptions(
-                height: 400.0,
+                height: 650.0,
+                reverse: true,
+
                 autoPlay: true,
                 enlargeCenterPage: true,
+                scrollDirection: Axis.vertical
               ),
-              items: [1, 2, 3, 4, 5].map((i) {
+              items: [1, 2, 3,].map((i) {
                 return Builder(
                   builder: (BuildContext context) {
                     return Card(
                       elevation: 4,
-                      child: Container(
-                          //  decoration: BoxDecoration(
-                          //    gradient: LinearGradient(
-                          //        colors: [Color(0xFF3a1c71 ), Color(0xFFd76d77), Color(0xFFffaf7b)],
+                      child: product_list[productListX][i-1],
+                      // child: Container(
+                      //     //  decoration: BoxDecoration(
+                      //     //    gradient: LinearGradient(
+                      //     //        colors: [Color(0xFF3a1c71 ), Color(0xFFd76d77), Color(0xFFffaf7b)],
 
-                          //        begin: Alignment.bottomRight,
-                          //        end: Alignment.topLeft),
-                          //    boxShadow: [
-                          //      BoxShadow(
-                          //          color: Color(0xFF6578ea).withOpacity(.3),
-                          //          offset: Offset(0, 8),
-                          //          blurRadius: 8)
-                          //    ],
-                          //  ),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            (MediaQuery.of(context).size.width > 1510 ||
-                                    MediaQuery.of(context).size.width < 760)
-                                ? Image.asset(
-                                    "assets/myapp/rect$i.png",
-                                    height: 350,
-                                  )
-                                : Container(),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Expanded(
-                              child: Container(
-                                padding: EdgeInsets.all(20),
-                                child: Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.center,
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.center,
-                                  children: [
-                                    Image.asset(
-                                      "assets/myapp/unnamed${i - 1}.png",
-                                      height: 80,
-                                    ),
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Text(
-                                        "${productList.elementAt(i - 1).title}",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontFamily: 'Montserrat-Bold',
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.black54)),
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Flexible(
-                                      child: Text(
-                                          "${productList.elementAt(i - 1).desc}",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontFamily:
-                                                  'Montserrat-Regular',
-                                              fontSize: 14,
-                                              color: Colors.black54)),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
+                      //     //        begin: Alignment.bottomRight,
+                      //     //        end: Alignment.topLeft),
+                      //     //    boxShadow: [
+                      //     //      BoxShadow(
+                      //     //          color: Color(0xFF6578ea).withOpacity(.3),
+                      //     //          offset: Offset(0, 8),
+                      //     //          blurRadius: 8)
+                      //     //    ],
+                      //     //  ),
+                      //   child: Row(
+                      //     crossAxisAlignment: CrossAxisAlignment.center,
+                      //     mainAxisAlignment: MainAxisAlignment.start,
+                      //     children: [
+                      //       (MediaQuery.of(context).size.width > 1510 ||
+                      //               MediaQuery.of(context).size.width < 760)
+                      //           ? Image.asset(
+                      //               "assets/myapp/rect$i.png",
+                      //               height: 350,
+                      //             )
+                      //           : Container(),
+                      //       SizedBox(
+                      //         width: 10,
+                      //       ),
+                      //       Expanded(
+                      //         child: Container(
+                      //           padding: EdgeInsets.all(20),
+                      //           child: Column(
+                      //             mainAxisAlignment:
+                      //                 MainAxisAlignment.center,
+                      //             crossAxisAlignment:
+                      //                 CrossAxisAlignment.center,
+                      //             children: [
+                      //               Image.asset(
+                      //                 "assets/myapp/unnamed${i - 1}.png",
+                      //                 height: 80,
+                      //               ),
+                      //               SizedBox(
+                      //                 height: 20,
+                      //               ),
+                      //               Text(
+                      //                   "${productList.elementAt(i - 1).title}",
+                      //                   style: TextStyle(
+                      //                       fontSize: 16,
+                      //                       fontFamily: 'Montserrat-Bold',
+                      //                       fontWeight: FontWeight.bold,
+                      //                       color: Colors.black54)),
+                      //               SizedBox(
+                      //                 height: 20,
+                      //               ),
+                      //               Flexible(
+                      //                 child: Text(
+                      //                     "${productList.elementAt(i - 1).desc}",
+                      //                     textAlign: TextAlign.center,
+                      //                     style: TextStyle(
+                      //                         fontFamily:
+                      //                             'Montserrat-Regular',
+                      //                         fontSize: 14,
+                      //                         color: Colors.black54)),
+                      //               )
+                      //             ],
+                      //           ),
+                      //         ),
+                      //       )
+                      //     ],
+                      //   ),
+                      // ),
                     );
                   },
                 );
