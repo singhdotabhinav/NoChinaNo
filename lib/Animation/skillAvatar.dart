@@ -1,5 +1,7 @@
+import 'dart:js';
 import 'package:flutter/material.dart';
 import 'package:avatar_glow/avatar_glow.dart';
+import 'package:flutterapp/pages/myapps.dart';
 
 Widget skillAvatar(String imgUrl, Color glow) {
   return SingleChildScrollView(
@@ -32,18 +34,17 @@ Widget skillAvatar(String imgUrl, Color glow) {
   );
 }
 
-
-
-
-  @override
-  Widget roundIcon(String imglink, Color backglow, String category) {
-    return SizedBox(
+@override
+Widget roundIcon(String imglink, Color backglow, String category) {
+  return FlatButton(
+    shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(30.0),
+    ),
+    child: SizedBox(
         child: Column(
       children: [
         Container(
-          child: skillAvatar(
-              imglink,
-              backglow),
+          child: skillAvatar(imglink, backglow),
         ),
         Column(
           mainAxisSize: MainAxisSize.min,
@@ -56,5 +57,7 @@ Widget skillAvatar(String imgUrl, Color glow) {
           ],
         ),
       ],
-    ));
-  }
+    )),
+    onPressed: () {},
+  );
+}

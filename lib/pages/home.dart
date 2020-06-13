@@ -70,36 +70,38 @@ class LargeChild extends StatelessWidget {
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.black87)),
-
                   Wrap(
                     children: [
                       Row(
                         children: [
-                          roundIcon('https://i.imgur.com/QWQpPUG.png',Colors.green, 'Mobile Phone'),
-                          roundIcon('https://i.imgur.com/OhckF3X.png',Colors.yellow, 'Laptop'),
-                          roundIcon('https://i.imgur.com/Y6JN5hg.png',Colors.red, 'Television'),
-                          roundIcon('https://i.imgur.com/8uqzLuO.png',Colors.purple, 'Audio'),
-                          roundIcon('https://i.imgur.com/qZYgJH8.png',Colors.blue, 'Camera'),
-                          
+                          roundIcon('https://i.imgur.com/QWQpPUG.png',
+                              Colors.green, 'Mobile Phone'),
+                          roundIcon('https://i.imgur.com/OhckF3X.png',
+                              Colors.yellow, 'Laptop'),
+                          roundIcon('https://i.imgur.com/Y6JN5hg.png',
+                              Colors.red, 'Television'),
+                          roundIcon('https://i.imgur.com/8uqzLuO.png',
+                              Colors.purple, 'Audio'),
+                          roundIcon('https://i.imgur.com/qZYgJH8.png',
+                              Colors.blue, 'Camera'),
                         ],
                       ),
                       Row(
                         children: [
-                          roundIcon('https://i.imgur.com/lAwJW9n.png',Colors.blue, 'Tablets'),
-                          roundIcon('https://i.imgur.com/CY7brg5.png',Colors.purple, 'power bank'),
-                          roundIcon('https://i.imgur.com/ZzFxF4W.png',Colors.green, 'Air Condition'),                         
-                          roundIcon('https://i.imgur.com/yHTYOrX.png',Colors.yellow, 'Refrigerators'),
-                          roundIcon('https://i.imgur.com/GhqdEPD.png',Colors.red, 'washing machine'),
-                          
-                          
+                          roundIcon('https://i.imgur.com/lAwJW9n.png',
+                              Colors.blue, 'Tablets'),
+                          roundIcon('https://i.imgur.com/CY7brg5.png',
+                              Colors.purple, 'power bank'),
+                          roundIcon('https://i.imgur.com/ZzFxF4W.png',
+                              Colors.green, 'Air Conditioner'),
+                          roundIcon('https://i.imgur.com/yHTYOrX.png',
+                              Colors.yellow, 'Refrigerators'),
+                          roundIcon('https://i.imgur.com/GhqdEPD.png',
+                              Colors.red, 'washing machine'),
                         ],
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 40,
-                  ),
-                  //Search()
                 ],
               ),
             ),
@@ -154,14 +156,6 @@ class SmallChild extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontFamily: "Montserrat-Regular",
                   ),
-//                    children: [
-//                      TextSpan(
-//                          text: "\n\n Contact:  pawkrzysciak@gmail.com",
-//                          style: TextStyle(
-//                              fontSize: 20,
-//                              fontWeight: FontWeight.bold,
-//                              color: Colors.black87))
-//                    ]
                 ),
               ),
             ),
@@ -180,102 +174,55 @@ class SmallChild extends StatelessWidget {
             SizedBox(
               height: 42,
             ),
-            //   Search(),
             Wrap(
               children: [
-                SizedBox(
-                  width: 20,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/QWQpPUG.png', Colors.green,
+                        'Mobile Phone'),
+                    roundIcon('https://i.imgur.com/OhckF3X.png', Colors.yellow,
+                        'Laptop'),
+                  ],
                 ),
-                SizedBox(
-                    child: FloatingActionButton(
-                  backgroundColor: Colors.white10,
-                  child: Center(
-                      child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset("assets/github.png"),
-                  )),
-                  onPressed: () {
-                    js.context
-                        .callMethod("open", ["https://github.com/Lukieoo"]);
-//                            _launchURL("https://github.com/Lukieoo");
-                  },
-                )),
-                SizedBox(
-                  width: 20,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/Y6JN5hg.png', Colors.red,
+                        'Television'),
+                    roundIcon('https://i.imgur.com/8uqzLuO.png', Colors.purple,
+                        'Audio'),
+                  ],
                 ),
-                SizedBox(
-                    child: FloatingActionButton(
-                  backgroundColor: Colors.white10,
-                  child: Center(
-                      child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset("assets/youtube.png"),
-                  )),
-                  onPressed: () {
-                    js.context.callMethod("open", [
-                      "https://www.youtube.com/channel/UCseP9k1DwSAqzZ-iyeAlTvg"
-                    ]);
-                  },
-                )),
-                SizedBox(
-                  width: 20,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/qZYgJH8.png', Colors.blue,
+                        'Camera'),
+                    roundIcon('https://i.imgur.com/lAwJW9n.png', Colors.blue,
+                        'Tablets'),
+                  ],
                 ),
-                SizedBox(
-                    child: FloatingActionButton(
-                  backgroundColor: Colors.white10,
-                  child: Center(
-                      child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset("assets/fb.png"),
-                  )),
-                  onPressed: () {
-                    js.context.callMethod("open", [
-                      "https://www.facebook.com/Anion-Code-115934359788737"
-                    ]);
-                  },
-                )),
-                SizedBox(
-                  width: 20,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/CY7brg5.png', Colors.purple,
+                        'power bank'),
+                    roundIcon('https://i.imgur.com/ZzFxF4W.png', Colors.green,
+                        'Air Conditioner'),
+                  ],
                 ),
-                SizedBox(
-                    child: FloatingActionButton(
-                  backgroundColor: Colors.white10,
-                  child: Center(
-                      child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset("assets/google.png"),
-                  )),
-                  onPressed: () {
-                    js.context.callMethod("open", [
-                      "https://play.google.com/store/apps/dev?id=5300491392807005874"
-                    ]);
-                  },
-                )),
-                SizedBox(
-                  width: 20,
-                ),
-                SizedBox(
-                    child: FloatingActionButton(
-                  backgroundColor: Colors.white10,
-                  child: Center(
-                      child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Image.asset("assets/linkedin.png"),
-                  )),
-                  onPressed: () {
-                    js.context.callMethod("open", [
-                      "https://www.linkedin.com/in/pawe%C5%82-krzy%C5%9Bciak-2691a8186/"
-                    ]);
-                  },
-                )),
-                SizedBox(
-                  width: 20,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    roundIcon('https://i.imgur.com/yHTYOrX.png', Colors.yellow,
+                        'Refrigerators'),
+                    roundIcon('https://i.imgur.com/GhqdEPD.png', Colors.red,
+                        'washing machine'),
+                  ],
                 ),
               ],
             ),
-            SizedBox(
-              height: 30,
-            )
           ],
         ),
       ),

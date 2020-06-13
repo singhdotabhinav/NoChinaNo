@@ -1,5 +1,4 @@
-
-class ModelDescription{
+class ModelDescription {
   String title;
   String desc;
 
