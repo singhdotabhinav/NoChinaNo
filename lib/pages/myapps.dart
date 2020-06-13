@@ -42,7 +42,6 @@ class _LargeAppsState extends State<LargeApps> {
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-
           FractionallySizedBox(
               alignment: Alignment.centerRight,
               widthFactor: .55,
@@ -162,10 +161,8 @@ class _LargeAppsState extends State<LargeApps> {
                       ),
                       Wrap(
                         runSpacing: 10,
-
                         spacing: 10,
                         crossAxisAlignment: WrapCrossAlignment.start,
-
                         children: [
                           InkWell(
                             onTap: () {
@@ -184,8 +181,9 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.anioncode.spojrzyj"]);
+                              js.context.callMethod("open", [
+                                "https://play.google.com/store/apps/details?id=com.anioncode.spojrzyj"
+                              ]);
 //                            _launchURL("https://github.com/Lukieoo");
                             },
                             child: MenuCard(
@@ -198,8 +196,9 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.anioncode.smogu"]);
+                              js.context.callMethod("open", [
+                                "https://play.google.com/store/apps/details?id=com.anioncode.smogu"
+                              ]);
 //                            _launchURL("https://github.com/Lukieoo");
                             },
                             child: MenuCard(
@@ -212,8 +211,9 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.anioncode.witcher"]);
+                              js.context.callMethod("open", [
+                                "https://play.google.com/store/apps/details?id=com.anioncode.witcher"
+                              ]);
 //                            _launchURL("https://github.com/Lukieoo");
                             },
                             child: MenuCard(
@@ -226,8 +226,9 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.anioncode.memory"]);
+                              js.context.callMethod("open", [
+                                "https://play.google.com/store/apps/details?id=com.anioncode.memory"
+                              ]);
 //                            _launchURL("https://github.com/Lukieoo");
                             },
                             child: MenuCard(
@@ -254,8 +255,9 @@ class _LargeAppsState extends State<LargeApps> {
                         children: [
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.lasoft.viewconnect"]);
+                              js.context.callMethod("open", [
+                                "https://play.google.com/store/apps/details?id=com.lasoft.viewconnect"
+                              ]);
 //                            _launchURL("https://github.com/Lukieoo");
                             },
                             child: MenuCard(
@@ -268,8 +270,9 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.lasoft.viewanalytics"]);
+                              js.context.callMethod("open", [
+                                "https://play.google.com/store/apps/details?id=com.lasoft.viewanalytics"
+                              ]);
 //                            _launchURL("https://github.com/Lukieoo");
                             },
                             child: MenuCard(
@@ -282,8 +285,9 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=com.lasoft.Rachunek_Sumienia"]);
+                              js.context.callMethod("open", [
+                                "https://play.google.com/store/apps/details?id=com.lasoft.Rachunek_Sumienia"
+                              ]);
 //                            _launchURL("https://github.com/Lukieoo");
                             },
                             child: MenuCard(
@@ -296,8 +300,9 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                           InkWell(
                             onTap: () {
-                              js.context.callMethod(
-                                  "open", ["https://play.google.com/store/apps/details?id=pl.lasoft.Alleluja"]);
+                              js.context.callMethod("open", [
+                                "https://play.google.com/store/apps/details?id=pl.lasoft.Alleluja"
+                              ]);
 //                            _launchURL("https://github.com/Lukieoo");
                             },
                             child: MenuCard(
@@ -310,7 +315,6 @@ class _LargeAppsState extends State<LargeApps> {
                           ),
                         ],
                       ),
-
                     ])),
           )
         ],
@@ -365,7 +369,6 @@ class SmallApps extends StatelessWidget {
                     ),
                     Wrap(
                       runSpacing: 15,
-
                       spacing: 10,
                       crossAxisAlignment: WrapCrossAlignment.start,
                       children: [

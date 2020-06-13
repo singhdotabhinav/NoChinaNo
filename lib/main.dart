@@ -5,14 +5,12 @@ import 'package:flutterapp/pages/myapps.dart';
 import 'package:flutterapp/pages/videos.dart';
 import 'widgets/navbar.dart';
 import 'utils/responsiveLayout.dart';
-import 'widgets/search.dart';
-
 
 void main() => runApp(MaterialApp(
       title: 'Anioncode by Lukieoo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: HomePage(),
     ));
@@ -22,17 +20,15 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-
-
 class _HomePageState extends State<HomePage> {
-  int stateNumber=0;
+  int stateNumber = 0;
 
-  void setStateNumber(int number){
-
+  void setStateNumber(int number) {
     setState(() {
-      stateNumber=number;
+      stateNumber = number;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -47,7 +43,12 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
           child: Column(
-            children: <Widget>[NavBar(setStatePage:setStateNumber), Body(stateNumber: stateNumber,)],
+            children: <Widget>[
+              NavBar(setStatePage: setStateNumber),
+              Body(
+                stateNumber: stateNumber,
+              )
+            ],
           ),
         ),
       ),
@@ -56,15 +57,13 @@ class _HomePageState extends State<HomePage> {
 }
 
 class Body extends StatelessWidget {
-
   final stateNumber;
 
   const Body({Key key, this.stateNumber}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
-    switch(stateNumber){
+    switch (stateNumber) {
       case 0:
         return ResponsiveLayout(
           largeScreen: LargeChild(),
@@ -86,8 +85,5 @@ class Body extends StatelessWidget {
           smallScreen: SmallAbout(),
         );
     }
-
-
-
   }
 }

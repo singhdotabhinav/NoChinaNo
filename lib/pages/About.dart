@@ -29,7 +29,9 @@ class _LargeAboutState extends State<LargeAbout> {
               html: "assets/Lukieoo.png",
               title: "Paweł Krzyściak / Lukieoo",
             ),
-            SizedBox(width: 20,),
+            SizedBox(
+              width: 20,
+            ),
             Flexible(
               fit: FlexFit.loose,
               child: Container(
@@ -94,7 +96,6 @@ class _LargeAboutState extends State<LargeAbout> {
                                     "https://2.bp.blogspot.com/-tzm1twY_ENM/XlCRuI0ZkRI/AAAAAAAAOso/BmNOUANXWxwc5vwslNw3WpjrDlgs9PuwQCLcBGAsYHQ/s1600/pasted%2Bimage%2B0.png",
                                     height: 50,
                                   ),
-
                                   Image.network(
                                     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png",
                                     height: 50,
@@ -113,18 +114,12 @@ class _LargeAboutState extends State<LargeAbout> {
                           SizedBox(
                             height: 30,
                           ),
-                          SelectableText(
-
-                              "pawkrzysciak@gmail.com",
+                          SelectableText("pawkrzysciak@gmail.com",
                               style: TextStyle(
                                   fontSize: 15,
-
                                   fontFamily: "Montserrat-Regular",
                                   fontWeight: FontWeight.normal,
-                                  color: Colors.black87)
-
-                          ),
-
+                                  color: Colors.black87)),
                         ],
                       ),
                     ),
@@ -146,126 +141,117 @@ class _LargeAboutState extends State<LargeAbout> {
 class SmallAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return
-        Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          MenuCard(
-            html: "assets/Lukieoo.png",
-            title: "Paweł Krzyściak / Lukieoo",
-          ),
-          SizedBox(
-            height: 30,
-          ),
-
-            Container(
-              width: MediaQuery.of(context).size.width ,
-              child: Card(
-                elevation: 4,
-                child: Padding(
-                  padding: const EdgeInsets.all(45.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                          "Hi, I ‘m Android Developer in work and overtime Flutter Developer. I create my applications in Java / Kotlin / Dart. In the meantime I'm developing my Github and creating video on my Youtube.",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize:   (MediaQuery.of(context).size.width > 970)?20:15,
-
-                              fontFamily: "Montserrat-Regular",
-                              fontWeight: FontWeight.normal,
-                              color: Colors.black87)),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Text("Skills in",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 35,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black87)),
-                      Container(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Wrap(
-                            alignment: WrapAlignment.start,
-                            spacing: 10,
-                            runSpacing: 10,
-                            children: [
-                              Image.network(
-                                "https://www.mmj.ne.jp/wp-content/uploads/kotlin_logo.jpg",
-                                height: 72,
-                              ),
-                              Image.network(
-                                "https://greenlogic.pl/wp-content/uploads/2019/07/java_logo-1200x700.png",
-                                height: 70,
-                              ),
-                              Image.network(
-                                "https://miro.medium.com/max/3840/1*v61-QL8UkB1OGUdBpFCQqQ.png",
-                                height: 72,
-                              )
-                            ]),
-                      ),
-                      Text("Programing with",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 35,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black87)),
-                      Container(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Wrap(
-                            alignment: WrapAlignment.start,
-                            spacing: 40,
-                            runSpacing: 10,
-                            children: [
-                              Image.network(
-                                "https://2.bp.blogspot.com/-tzm1twY_ENM/XlCRuI0ZkRI/AAAAAAAAOso/BmNOUANXWxwc5vwslNw3WpjrDlgs9PuwQCLcBGAsYHQ/s1600/pasted%2Bimage%2B0.png",
-                                height: 72,
-                              ),
-
-                              Image.network(
-                                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png",
-                                height: 70,
-                              ),
-                              Image.network(
-                                "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/IntelliJ_IDEA_Logo.svg/1200px-IntelliJ_IDEA_Logo.svg.png",
-                                height: 72,
-                              )
-                            ]),
-                      ),
-                      Text("Contact",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 35,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black87)),
-                      SizedBox(
-                        height: 30,
-                      ),
-                      SelectableText(
-
-                          "pawkrzysciak@gmail.com",
-                          style: TextStyle(
-                              fontSize: 15,
-
-                              fontFamily: "Montserrat-Regular",
-                              fontWeight: FontWeight.normal,
-                              color: Colors.black87)
-
-                      ),
-                      SizedBox(
-                        height: 30,
-                      ),
-                    ],
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        MenuCard(
+          html: "assets/Lukieoo.png",
+          title: "Paweł Krzyściak / Lukieoo",
+        ),
+        SizedBox(
+          height: 30,
+        ),
+        Container(
+          width: MediaQuery.of(context).size.width,
+          child: Card(
+            elevation: 4,
+            child: Padding(
+              padding: const EdgeInsets.all(45.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                      "Hi, I ‘m Android Developer in work and overtime Flutter Developer. I create my applications in Java / Kotlin / Dart. In the meantime I'm developing my Github and creating video on my Youtube.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: (MediaQuery.of(context).size.width > 970)
+                              ? 20
+                              : 15,
+                          fontFamily: "Montserrat-Regular",
+                          fontWeight: FontWeight.normal,
+                          color: Colors.black87)),
+                  SizedBox(
+                    height: 20,
                   ),
-                ),
+                  Text("Skills in",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 35,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87)),
+                  Container(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Wrap(
+                        alignment: WrapAlignment.start,
+                        spacing: 10,
+                        runSpacing: 10,
+                        children: [
+                          Image.network(
+                            "https://www.mmj.ne.jp/wp-content/uploads/kotlin_logo.jpg",
+                            height: 72,
+                          ),
+                          Image.network(
+                            "https://greenlogic.pl/wp-content/uploads/2019/07/java_logo-1200x700.png",
+                            height: 70,
+                          ),
+                          Image.network(
+                            "https://miro.medium.com/max/3840/1*v61-QL8UkB1OGUdBpFCQqQ.png",
+                            height: 72,
+                          )
+                        ]),
+                  ),
+                  Text("Programing with",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 35,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87)),
+                  Container(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Wrap(
+                        alignment: WrapAlignment.start,
+                        spacing: 40,
+                        runSpacing: 10,
+                        children: [
+                          Image.network(
+                            "https://2.bp.blogspot.com/-tzm1twY_ENM/XlCRuI0ZkRI/AAAAAAAAOso/BmNOUANXWxwc5vwslNw3WpjrDlgs9PuwQCLcBGAsYHQ/s1600/pasted%2Bimage%2B0.png",
+                            height: 72,
+                          ),
+                          Image.network(
+                            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png",
+                            height: 70,
+                          ),
+                          Image.network(
+                            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/IntelliJ_IDEA_Logo.svg/1200px-IntelliJ_IDEA_Logo.svg.png",
+                            height: 72,
+                          )
+                        ]),
+                  ),
+                  Text("Contact",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 35,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87)),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  SelectableText("pawkrzysciak@gmail.com",
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontFamily: "Montserrat-Regular",
+                          fontWeight: FontWeight.normal,
+                          color: Colors.black87)),
+                  SizedBox(
+                    height: 30,
+                  ),
+                ],
               ),
             ),
-
-        ],
-
+          ),
+        ),
+      ],
     );
   }
 }
@@ -290,9 +276,7 @@ class MenuCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: (MediaQuery.of(context).size.width > 970)
-          ? 250
-          : 250,
+      width: (MediaQuery.of(context).size.width > 970) ? 250 : 250,
       padding: EdgeInsets.all(5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(0),
