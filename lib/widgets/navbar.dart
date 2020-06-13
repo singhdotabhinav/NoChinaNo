@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/AboutPage/AboutPage.dart';
 import '../utils/responsiveLayout.dart';
 class NavBar extends StatefulWidget {
   final Function setStatePage;
@@ -25,11 +26,13 @@ class _NavBarState extends State<NavBar> {
             child: Container(
                 margin: EdgeInsets.all(10),
                 child: Text(entry.value,
-                    style: TextStyle(fontFamily: "Montserrat-Bold")))),
+                    style: TextStyle(fontFamily: "Montserrat-Bold")
+                    )
+                 )
+               ),
       );
     }).toList();
   }
-
   @override
   Widget build(BuildContext context) {
     if(MediaQuery.of(context).size.width>800)pressMenu=false;
@@ -99,7 +102,19 @@ class _NavBarState extends State<NavBar> {
           (pressMenu) ? Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column( crossAxisAlignment:CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.center,children: <Widget>[...navItem()]..add(InkWell(
-                onTap: () =>{ widget.setStatePage(3),pressMenu=false},
+                // onTap: () =>{ 
+                  
+                //   widget.setStatePage(3),pressMenu=false
+                //   },
+//                onTap: (){
+//                  Navigator.push(
+//                            this.context,new MaterialPageRoute(
+//                            //builder: (context)=>ProductDetailNavigationNew(),
+//                            builder: (context)=>AboutPage(),
+//
+//                          )
+//                        );
+//                },
                 child: Container(
                   margin: EdgeInsets.only(left: 20, right: 20),
                   width: 120,
