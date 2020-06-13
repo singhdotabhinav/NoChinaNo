@@ -5,14 +5,13 @@ import 'package:flutterapp/pages/myapps.dart';
 import 'package:flutterapp/pages/videos.dart';
 import 'widgets/navbar.dart';
 import 'utils/responsiveLayout.dart';
-import 'widgets/search.dart';
 
 
 void main() => runApp(MaterialApp(
-      title: 'Anioncode by Lukieoo',
+      title: 'NoChinaNo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: HomePage(),
     ));
