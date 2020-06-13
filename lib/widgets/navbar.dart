@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../utils/responsiveLayout.dart';
-
 class NavBar extends StatefulWidget {
   final Function setStatePage;
 
@@ -63,7 +62,7 @@ class _NavBarState extends State<NavBar> {
                         height: 40,
                         decoration: BoxDecoration(
                             gradient: LinearGradient(
-                                colors: [Colors.black.withOpacity(.8), Colors.red],
+                                colors: [Color(0xFFC86DD7), Color(0xFF3023AE)],
                                 begin: Alignment.bottomRight,
                                 end: Alignment.topLeft),
                             borderRadius: BorderRadius.circular(20),
@@ -107,7 +106,7 @@ class _NavBarState extends State<NavBar> {
                   height: 40,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
-                          colors: [Colors.red, Colors.black],
+                          colors: [Color(0xFFC86DD7), Color(0xFF3023AE)],
                           begin: Alignment.bottomRight,
                           end: Alignment.topLeft),
                       borderRadius: BorderRadius.circular(20),
