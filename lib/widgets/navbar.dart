@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/AboutPage/AboutPage.dart';
+import 'file:///C:/Users/Abhinav/Desktop/Project/NoChinaNo/lib/utils/roundIcon.dart';
+import 'package:flutterapp/productPage/mobilePage.dart';
+import 'package:flutterapp/utils/roundedIconNav.dart';
 import '../utils/responsiveLayout.dart';
 class NavBar extends StatefulWidget {
-  final Function setStatePage;
 
-  NavBar({Key key, this.setStatePage}) : super(key: key);
+  //bool visibility=false;
+  //final Function setStatePage;
+
+  NavBar({Key key,}) : super(key: key);
+  //NavBar({Key key, this.setStatePage}) : super(key: key);
 
   @override
   _NavBarState createState() => _NavBarState();
@@ -22,7 +28,7 @@ class _NavBarState extends State<NavBar> {
       return Padding(
         padding: EdgeInsets.only(left: 18),
         child: InkWell(
-            onTap: () => {widget.setStatePage(entry.key),pressMenu = false},
+           // onTap: () => {widget.setStatePage(entry.key),pressMenu = false},
             child: Container(
                 margin: EdgeInsets.all(10),
                 child: Text(entry.value,
@@ -50,15 +56,16 @@ class _NavBarState extends State<NavBar> {
             ),
                 ],
               ),
+              SizedBox(width: 15.0,),
               if (!ResponsiveLayout.isSmallScreen(context))
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[...navItem()]..add(InkWell(
-                      onTap: () => {widget.setStatePage(3),
-                        setState(() {
-                          pressMenu = false;
-                        })
-                      },
+//                      onTap: () => {widget.setStatePage(3),
+//                        setState(() {
+//                          pressMenu = false;
+//                        })
+//                      },
                       child: Container(
                         margin: EdgeInsets.only(left: 20, right: 20),
                         width: 120,
@@ -83,7 +90,8 @@ class _NavBarState extends State<NavBar> {
                                     color: Colors.white,
                                     fontSize: 15,
                                     letterSpacing: 1,
-                                    fontFamily: "Montserrat-Bold")),
+                                    fontFamily: "Montserrat-Bold")
+                            ),
                           ),
                         ),
                       ))),
@@ -102,10 +110,10 @@ class _NavBarState extends State<NavBar> {
           (pressMenu) ? Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column( crossAxisAlignment:CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.center,children: <Widget>[...navItem()]..add(InkWell(
-                // onTap: () =>{ 
-                  
-                //   widget.setStatePage(3),pressMenu=false
-                //   },
+//                 onTap: () =>{
+////
+////                   widget.setStatePage(3),pressMenu=false
+////                   },
 //                onTap: (){
 //                  Navigator.push(
 //                            this.context,new MaterialPageRoute(

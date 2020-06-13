@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/AboutPage/AboutPage.dart';
 import 'dart:js' as js;
 
-import 'package:flutterapp/Animation/skillAvatar.dart';
-import 'package:flutterapp/pages/roundIcon.dart';
+import 'package:flutterapp/productPage/mobilePage.dart';
+import 'package:flutterapp/utils/roundIcon.dart';
 
 class LargeChild extends StatefulWidget {
   @override
@@ -96,11 +96,14 @@ class _LargeChildState extends State<LargeChild> {
 //                              Colors.blue, 'Camera'),
 
 
-                            roundIcon(
-                              imglink:'https://i.imgur.com/QWQpPUG.png',
-                              backglow: Colors.green,
-                              category: 'MobilePhone',
-                              GotoPage: AboutPage(),
+                            Hero(
+                              tag: 'mobile',
+                              child: roundIcon(
+                                imglink:'https://i.imgur.com/QWQpPUG.png',
+                                backglow: Colors.green,
+                                category: 'MobilePhone',
+                                GotoPage: mobilePage(),
+                              ),
                             )
                           ],
                         ),
