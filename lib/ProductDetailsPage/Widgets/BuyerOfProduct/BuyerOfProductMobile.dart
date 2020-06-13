@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'dart:js' as js;
 
+
 Widget BuyerOfProductMobile(double width,String AmazonUrl,String FlipKartUrl){
   return Container(
     width: width,
     child: Column(
       children: [
         Text(
-          'Buy Now\nFrom',
+          'Buy Now From',
           //style: kTextStyle,
         ),
         SizedBox(height: 10.0,),

@@ -18,7 +18,9 @@ Widget ProductListMobile(
       double processorRating,
       double cameraRating,
       double osRating,
-      double vlmRating}
+      double vlmRating,
+      double displayRating
+      }
 
     ){
   return LayoutBuilder(
@@ -43,52 +45,66 @@ Widget ProductListMobile(
                         '$productName',
                         '$productBrand',
                         '$productCountry',
-                        productPrice,
+                          productPrice,
                         '$productDescription'
                     ),
                   ),
-                  BuyerOfProductMobile(
-                      constraints.biggest.width,
-                      '$amazonUrl',
-                      '$flipKartUrl')
                 ],
               ),
               SizedBox(height: 30.0,),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  SizedBox(
-                    height: 120.0,
-                    width: 120,
-                    child: Container(
-                      decoration: BoxDecoration(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 120.0,
+                        width: 120,
+                        child: MainCircle(rating: batteryRating, category: 'Battery'),
                       ),
-                      child: MainCircle(
-                        rating: batteryRating,
-                        category: 'Battery',
-                      ),
-                    ),
-                  ),
-                  SizedBox(
+                       SizedBox(
                       height: 120.0,
                       width: 120,
                       child: MainCircle(rating: processorRating, category: 'Processor',)
+                      ),
+                    ],
                   ),
-                  SizedBox(
-                      height: 120.0,
-                      width: 120,
-                      child: MainCircle(rating: cameraRating, category: 'Camera',)
-                  ),
-                  SizedBox(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 120.0,
+                        width: 120,
+                        child: MainCircle(rating: cameraRating, category: 'Camera'),
+                      ),
+                       SizedBox(
                       height: 120.0,
                       width: 120,
                       child: MainCircle(rating: osRating, category: 'OS',)
+                      ),
+                    ],
                   ),
-                  SizedBox(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 120.0,
+                        width: 120,
+                        child: MainCircle(rating: vlmRating, category: 'VLM'),
+                      ),
+                       SizedBox(
                       height: 120.0,
                       width: 120,
-                      child: MainCircle(rating: vlmRating, category: 'VLM',)
+                      child: MainCircle(rating: displayRating, category: 'Display',)
+                      ),
+                    ],
                   ),
+                   BuyerOfProductMobile(
+                      constraints.biggest.width,
+                      '$amazonUrl',
+                      '$flipKartUrl'
+                      )
                 ],
               ),
             ],
