@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/AboutPage/AboutPage.dart';
-import 'package:flutterapp/utils/roundIcon.dart';
-import 'package:flutterapp/productPage/mobilePage.dart';
-import 'package:flutterapp/utils/roundedIconNav.dart';
 import '../utils/responsiveLayout.dart';
 class NavBar extends StatefulWidget {
   //final Function setStatePage;
@@ -41,7 +37,7 @@ class _NavBarState extends State<NavBar> {
   Widget build(BuildContext context) {
     if(MediaQuery.of(context).size.width>800)pressMenu=false;
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 45, vertical: 38),
+      padding: EdgeInsets.symmetric(horizontal: 45, vertical: 10),
       child: Column(
         children: [
           Row(
@@ -70,7 +66,7 @@ class _NavBarState extends State<NavBar> {
                         height: 40,
                         decoration: BoxDecoration(
                             gradient: LinearGradient(
-                                colors: [Color(0xFFC86DD7), Color(0xFF3023AE)],
+                                colors: [Colors.black, Colors.red],
                                 begin: Alignment.bottomRight,
                                 end: Alignment.topLeft),
                             borderRadius: BorderRadius.circular(20),
