@@ -4,14 +4,12 @@ import 'package:flutter/rendering.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/ProductList/ProductListDesktop.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/ProductList/ProductListMobile.dart';
 
-class LargeApps extends StatefulWidget {
-
-  
+class LargeAppsAudio extends StatefulWidget {
   @override
-  _LargeAppsState createState() => _LargeAppsState();
+  _LargeAppsAudioState createState() => _LargeAppsAudioState();
 }
 
-class _LargeAppsState extends State<LargeApps> {
+class _LargeAppsAudioState extends State<LargeAppsAudio> {
   int categoryListIndex=0;
   int productListX=0;
   int productListY=0;
@@ -317,11 +315,7 @@ class _LargeAppsState extends State<LargeApps> {
                             
       ],    
        
-    ];
-
-    // initState() {
-    //   super.initState();
-    // } 
+    ]; 
     return SizedBox(
       height: 1200,
       child: Stack(
@@ -401,15 +395,10 @@ class _LargeAppsState extends State<LargeApps> {
                               html: "assets/myapp/unnamed4.png",
                             ),
                           ),
-
-                          //  Image.network("assets/myapp/unnamed.png"),
                         ],
                       ),
 
                     ),
-                    // SizedBox(
-                    //   height: 10,
-                    // ),
                   ]
                 )
               ),
@@ -431,103 +420,26 @@ class _LargeAppsState extends State<LargeApps> {
                     return Card(
                       elevation: 4,
                       child: product_list[productListX][i-1],
-                      // child: Container(
-                      //     //  decoration: BoxDecoration(
-                      //     //    gradient: LinearGradient(
-                      //     //        colors: [Color(0xFF3a1c71 ), Color(0xFFd76d77), Color(0xFFffaf7b)],
-
-                      //     //        begin: Alignment.bottomRight,
-                      //     //        end: Alignment.topLeft),
-                      //     //    boxShadow: [
-                      //     //      BoxShadow(
-                      //     //          color: Color(0xFF6578ea).withOpacity(.3),
-                      //     //          offset: Offset(0, 8),
-                      //     //          blurRadius: 8)
-                      //     //    ],
-                      //     //  ),
-                      //   child: Row(
-                      //     crossAxisAlignment: CrossAxisAlignment.center,
-                      //     mainAxisAlignment: MainAxisAlignment.start,
-                      //     children: [
-                      //       (MediaQuery.of(context).size.width > 1510 ||
-                      //               MediaQuery.of(context).size.width < 760)
-                      //           ? Image.asset(
-                      //               "assets/myapp/rect$i.png",
-                      //               height: 350,
-                      //             )
-                      //           : Container(),
-                      //       SizedBox(
-                      //         width: 10,
-                      //       ),
-                      //       Expanded(
-                      //         child: Container(
-                      //           padding: EdgeInsets.all(20),
-                      //           child: Column(
-                      //             mainAxisAlignment:
-                      //                 MainAxisAlignment.center,
-                      //             crossAxisAlignment:
-                      //                 CrossAxisAlignment.center,
-                      //             children: [
-                      //               Image.asset(
-                      //                 "assets/myapp/unnamed${i - 1}.png",
-                      //                 height: 80,
-                      //               ),
-                      //               SizedBox(
-                      //                 height: 20,
-                      //               ),
-                      //               Text(
-                      //                   "${productList.elementAt(i - 1).title}",
-                      //                   style: TextStyle(
-                      //                       fontSize: 16,
-                      //                       fontFamily: 'Montserrat-Bold',
-                      //                       fontWeight: FontWeight.bold,
-                      //                       color: Colors.black54)),
-                      //               SizedBox(
-                      //                 height: 20,
-                      //               ),
-                      //               Flexible(
-                      //                 child: Text(
-                      //                     "${productList.elementAt(i - 1).desc}",
-                      //                     textAlign: TextAlign.center,
-                      //                     style: TextStyle(
-                      //                         fontFamily:
-                      //                             'Montserrat-Regular',
-                      //                         fontSize: 14,
-                      //                         color: Colors.black54)),
-                      //               )
-                      //             ],
-                      //           ),
-                      //         ),
-                      //       )
-                      //     ],
-                      //   ),
-                      // ),
+                      
                     );
                   },
                 );
               }).toList(),
-//                  ),
-
-              //Search()
             ),
           ),
-          
-
           ],),
-        
-
         ],
       ),
     );
   }
 }
 
-class SmallApps extends StatefulWidget {
+class SmallAppsAudio extends StatefulWidget {
   @override
-  _SmallAppsState createState() => _SmallAppsState();
+  _SmallAppsAudioState createState() => _SmallAppsAudioState();
 }
 
-class _SmallAppsState extends State<SmallApps> {
+class _SmallAppsAudioState extends State<SmallAppsAudio> {
   @override
   Widget build(BuildContext context) {
     Widget categoryCard(String type){
@@ -640,61 +552,6 @@ class _SmallAppsState extends State<SmallApps> {
                         return Builder(
                           builder: (BuildContext context) {
                             return productList[0][i-1];
-                            // return Card(
-                            //   elevation: 4,
-                            //   child: Container(
-                            //     child: Row(
-                            //       crossAxisAlignment: CrossAxisAlignment.center,
-                            //       mainAxisAlignment: MainAxisAlignment.start,
-                            //       children: [
-                            //         SizedBox(
-                            //           width: 10,
-                            //         ),
-                            //         Expanded(
-                            //           child: Container(
-                            //             padding: EdgeInsets.all(20),
-                            //             child: Column(
-                            //               mainAxisAlignment:
-                            //                   MainAxisAlignment.center,
-                            //               crossAxisAlignment:
-                            //                   CrossAxisAlignment.center,
-                            //               children: [
-                            //                 Image.asset(
-                            //                   "assets/myapp/unnamed${i - 1}.png",
-                            //                   height: 80,
-                            //                 ),
-                            //                 SizedBox(
-                            //                   height: 20,
-                            //                 ),
-                            //                 Text(
-                            //                     "${myAppsLis.elementAt(i - 1).title}",
-                            //                     style: TextStyle(
-                            //                         fontSize: 16,
-                            //                         fontFamily:
-                            //                             'Montserrat-Bold',
-                            //                         fontWeight: FontWeight.bold,
-                            //                         color: Colors.black54)),
-                            //                 SizedBox(
-                            //                   height: 20,
-                            //                 ),
-                            //                 Flexible(
-                            //                   child: Text(
-                            //                       "${myAppsLis.elementAt(i - 1).desc}",
-                            //                       textAlign: TextAlign.center,
-                            //                       style: TextStyle(
-                            //                           fontFamily:
-                            //                               'Montserrat-Regular',
-                            //                           fontSize: 14,
-                            //                           color: Colors.black54)),
-                            //                 )
-                            //               ],
-                            //             ),
-                            //           ),
-                            //         )
-                            //       ],
-                            //     ),
-                            //   ),
-                            // );
                           },
                         );
                       }).toList(),
@@ -717,7 +574,6 @@ class _SmallAppsState extends State<SmallApps> {
 class MenuCard extends StatelessWidget {
   final String html;
   final String title;
-
   const MenuCard({
     Key key,
     this.html,
@@ -743,7 +599,7 @@ class MenuCard extends StatelessWidget {
       ),
     ],
         ),
-        child: Column(
+        child: Row(
     children: <Widget>[
       // Image.asset(image, height: 40),
       Image.asset(

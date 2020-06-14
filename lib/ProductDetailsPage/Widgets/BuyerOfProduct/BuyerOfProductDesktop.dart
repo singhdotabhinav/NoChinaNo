@@ -7,37 +7,24 @@ const kTextStyle=TextStyle(
   // fontWeight: FontWeight.w900,
 );
 
-Widget BuyerOfProductDesktop(double width,String AmazonUrl,String FlipKartUrl){
+Widget buyerOfProductDesktop(double width,String amazonUrl,String flipKartUrl){
   return Container(
     width: width,
     child: Column(
       children: <Widget>[
-        Text(
-          'Buy Now\nFrom',
-          style: kTextStyle,
-        ),
         SizedBox(height: 10.0,),
-        MaterialButton(
-          elevation: 20.0,
-          color: Colors.redAccent,
+        FlatButton(
           onPressed: (){
-            js.context.callMethod("open", ["$AmazonUrl"]);
+            js.context.callMethod("open", ["$amazonUrl"]);
           },
-
-          child: Text(
-              'Amazon'
-          ),
+          child: Image.network("https://i.imgur.com/ZDYsTZh.png")
         ),
-        SizedBox(height: 10.0,),
-        MaterialButton(
-          elevation: 20.0,
-          color: Colors.blueAccent,
+        SizedBox(height: 15.0,),
+        FlatButton(
           onPressed: (){
-            js.context.callMethod("open", ["$FlipKartUrl"]);
+            js.context.callMethod("open", ["$flipKartUrl"]);
           },
-          child: Text(
-              'Flipkart'
-          ),
+          child: Image.network("https://i.imgur.com/uaZk1yU.png")
         ),
       ],
     ),

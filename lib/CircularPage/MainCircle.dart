@@ -31,34 +31,39 @@ class _MainCircle extends State<MainCircle> with SingleTickerProviderStateMixin 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          Text(widget.category),
-          Center(
-            child: CustomPaint(
-              foregroundPainter: CircleProgress(animation.value), // this will add custom painter after child
-              child: Container(
-                width: 100,
-                height: 100,
-                child: GestureDetector(
-                    onTap: (){
-                      if(animation.value ==widget.rating.toDouble()){
-                        progressController.reverse();
-                      }else {
-                        progressController.forward();
-                      }
-                    },
-                    child: Center(child: Text("${animation.value.toInt()/10} /10",style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold
-                        ),
-                      )
-                    )
+      body: Container(
+        color: Colors.white,
+        child: Column(
+          children: <Widget>[
+            Text(widget.category),
+            Container(
+              child: Center(
+                child: CustomPaint(
+                  foregroundPainter: CircleProgress(animation.value), // this will add custom painter after child
+                  child: Container(
+                    width: 80,
+                    height: 80,
+                    child: GestureDetector(
+                        onTap: (){
+                          if(animation.value ==widget.rating.toDouble()){
+                            progressController.reverse();
+                          }else {
+                            progressController.forward();
+                          }
+                        },
+                        child: Center(child: Text("${animation.value.toInt()/10} /10",style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold
+                            ),
+                          )
+                        )
+                    ),
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -39,6 +39,7 @@ Widget skillAvatar(String imgUrl, Color glow) {
 @override
 Widget roundIcon(String imglink, Color backglow, String category) {
   return FlatButton(
+    
     shape: new RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(30.0),
     ),

@@ -43,7 +43,7 @@ Widget ProductListDesktop(
                       productPrice,
                       '$productDescription'
                   ),
-                  BuyerOfProductDesktop(
+                  buyerOfProductDesktop(
                       constraints.biggest.width / 8,
                       '$amazonUrl',
                       '$flipKartUrl')
@@ -56,36 +56,34 @@ Widget ProductListDesktop(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     SizedBox(
-                      height: 120.0,
-                      width: 120,
-                      child: Container(
-                        decoration: BoxDecoration(
-                        ),
-                        child: MainCircle(
-                          rating: batteryRating,
-                          category: 'Battery',
-                        ),
-                      ),
+                        height: 100.0,
+                        width: 100,
+                        child: MainCircle(rating: processorRating, category: 'Proformance',)
                     ),
                     SizedBox(
-                        height: 120.0,
-                        width: 120,
-                        child: MainCircle(rating: processorRating, category: 'Processor',)
+                        height: 100.0,
+                        width: 100,
+                        child: MainCircle(rating: cameraRating, category: 'Display',)
                     ),
                     SizedBox(
-                        height: 120.0,
-                        width: 120,
-                        child: MainCircle(rating: cameraRating, category: 'Camera',)
+                        height: 100.0,
+                        width: 100,
+                        child: MainCircle(rating: osRating, category: 'Camera',)
                     ),
                     SizedBox(
-                        height: 120.0,
-                        width: 120,
-                        child: MainCircle(rating: osRating, category: 'OS',)
+                        height: 100.0,
+                        width: 100,
+                        child: MainCircle(rating: vlmRating, category: 'Design',)
                     ),
                     SizedBox(
-                        height: 120.0,
-                        width: 120,
-                        child: MainCircle(rating: vlmRating, category: 'VLM',)
+                        height: 100.0,
+                        width: 100,
+                        child: MainCircle(rating: vlmRating, category: 'Battery',)
+                    ),
+                    SizedBox(
+                        height: 100.0,
+                        width: 100,
+                        child: MainCircle(rating: vlmRating, category: 'Software',)
                     ),
                   ],
                 ),

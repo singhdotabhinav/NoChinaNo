@@ -7,7 +7,7 @@ class LargeChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 600,
+      height: 610,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
@@ -15,7 +15,7 @@ class LargeChild extends StatelessWidget {
             alignment: Alignment.centerRight,
             widthFactor: .5,
             child: Image.network(
-              'https://i.imgur.com/PtlvTHf.png',
+              'https://i.imgur.com/CeEB8po.png',
               height: 100,
               width: 100,
             ),
@@ -75,7 +75,7 @@ class LargeChild extends StatelessWidget {
                       Row(
                         children: [
                           roundIcon('https://i.imgur.com/QWQpPUG.png',
-                              Colors.green, 'Mobile Phone'),
+                                Colors.green, 'Mobile Phone'),
                           roundIcon('https://i.imgur.com/OhckF3X.png',
                               Colors.yellow, 'Laptop'),
                           roundIcon('https://i.imgur.com/Y6JN5hg.png',
