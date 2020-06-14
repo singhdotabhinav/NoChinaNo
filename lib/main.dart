@@ -7,16 +7,14 @@ import 'package:flutterapp/widgets/bottom.dart';
 import 'widgets/navbar.dart';
 import 'utils/responsiveLayout.dart';
 
-void main() => runApp(
-  MaterialApp(
+void main() => runApp(MaterialApp(
       title: 'NoChinaNo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.black12,
+        primarySwatch: Colors.red,
       ),
       home: HomePage(),
-    )
- );
+    ));
 
 class HomePage extends StatefulWidget {
   @override
@@ -25,6 +23,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int stateNumber = 0;
+
   void setStateNumber(int number) {
     setState(() {
       stateNumber = number;
@@ -61,7 +60,9 @@ class _HomePageState extends State<HomePage> {
 
 class Body extends StatelessWidget {
   final stateNumber;
+
   const Body({Key key, this.stateNumber}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     switch (stateNumber) {
