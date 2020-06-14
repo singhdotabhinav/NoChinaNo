@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/ProductPage/ACPage/ACPageDetails.dart';
 import 'package:flutterapp/pages/myapps.dart';
 import 'package:flutterapp/utils/responsiveLayout.dart';
 import 'package:flutterapp/widgets/navbar.dart';
@@ -38,8 +39,8 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveLayout(
-          largeScreen: LargeApps(),
-          smallScreen: SmallApps(),
+          largeScreen: LargeAppso(),
+          smallScreen: SmallAppso(),
         );
   }
 }

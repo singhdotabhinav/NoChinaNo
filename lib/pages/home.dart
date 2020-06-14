@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/utils/roundedIcon.dart';
+import 'package:flutterapp/ProductPage/ACPage/ACPageMain.dart';
 import 'dart:js' as js;
 
 import 'package:flutterapp/Animation/skillAvatar.dart';
@@ -74,30 +76,31 @@ class LargeChild extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          roundIcon('https://i.imgur.com/QWQpPUG.png',
-                                Colors.green, 'Mobile Phone'),
-                          roundIcon('https://i.imgur.com/OhckF3X.png',
-                              Colors.yellow, 'Laptop'),
-                          roundIcon('https://i.imgur.com/Y6JN5hg.png',
-                              Colors.red, 'Television'),
-                          roundIcon('https://i.imgur.com/8uqzLuO.png',
-                              Colors.purple, 'Audio'),
-                          roundIcon('https://i.imgur.com/qZYgJH8.png',
-                              Colors.blue, 'Camera'),
+                          RoundIcon(imglink:'https://i.imgur.com/QWQpPUG.png',backglow: Colors.green,category:'Mobile Phone',gotoPage: ACPageMain(),)
+                          // roundIcon('https://i.imgur.com/QWQpPUG.png',
+                          //       Colors.green, 'Mobile Phone'),
+                          // roundIcon('https://i.imgur.com/OhckF3X.png',
+                          //     Colors.yellow, 'Laptop'),
+                          // roundIcon('https://i.imgur.com/Y6JN5hg.png',
+                          //     Colors.red, 'Television'),
+                          // roundIcon('https://i.imgur.com/8uqzLuO.png',
+                          //     Colors.purple, 'Audio'),
+                          // roundIcon('https://i.imgur.com/qZYgJH8.png',
+                          //     Colors.blue, 'Camera'),
                         ],
                       ),
                       Row(
                         children: [
-                          roundIcon('https://i.imgur.com/lAwJW9n.png',
-                              Colors.blue, 'Tablets'),
-                          roundIcon('https://i.imgur.com/CY7brg5.png',
-                              Colors.purple, 'power bank'),
-                          roundIcon('https://i.imgur.com/ZzFxF4W.png',
-                              Colors.green, 'Air Conditioner'),
-                          roundIcon('https://i.imgur.com/yHTYOrX.png',
-                              Colors.yellow, 'Refrigerators'),
-                          roundIcon('https://i.imgur.com/GhqdEPD.png',
-                              Colors.red, 'washing machine'),
+                          // roundIcon('https://i.imgur.com/lAwJW9n.png',
+                          //     Colors.blue, 'Tablets'),
+                          // roundIcon('https://i.imgur.com/CY7brg5.png',
+                          //     Colors.purple, 'power bank'),
+                          // roundIcon('https://i.imgur.com/ZzFxF4W.png',
+                          //     Colors.green, 'Air Conditioner'),
+                          // roundIcon('https://i.imgur.com/yHTYOrX.png',
+                          //     Colors.yellow, 'Refrigerators'),
+                          // roundIcon('https://i.imgur.com/GhqdEPD.png',
+                          //     Colors.red, 'washing machine'),
                         ],
                       ),
                     ],
@@ -179,46 +182,46 @@ class SmallChild extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    roundIcon('https://i.imgur.com/QWQpPUG.png', Colors.green,
-                        'Mobile Phone'),
-                    roundIcon('https://i.imgur.com/OhckF3X.png', Colors.yellow,
-                        'Laptop'),
+                    // roundIcon('https://i.imgur.com/QWQpPUG.png', Colors.green,
+                    //     'Mobile Phone'),
+                    // roundIcon('https://i.imgur.com/OhckF3X.png', Colors.yellow,
+                    //     'Laptop'),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    roundIcon('https://i.imgur.com/Y6JN5hg.png', Colors.red,
-                        'Television'),
-                    roundIcon('https://i.imgur.com/8uqzLuO.png', Colors.purple,
-                        'Audio'),
+                    // roundIcon('https://i.imgur.com/Y6JN5hg.png', Colors.red,
+                    //     'Television'),
+                    // roundIcon('https://i.imgur.com/8uqzLuO.png', Colors.purple,
+                    //     'Audio'),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    roundIcon('https://i.imgur.com/qZYgJH8.png', Colors.blue,
-                        'Camera'),
-                    roundIcon('https://i.imgur.com/lAwJW9n.png', Colors.blue,
-                        'Tablets'),
+                    // roundIcon('https://i.imgur.com/qZYgJH8.png', Colors.blue,
+                    //     'Camera'),
+                    // roundIcon('https://i.imgur.com/lAwJW9n.png', Colors.blue,
+                    //     'Tablets'),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    roundIcon('https://i.imgur.com/CY7brg5.png', Colors.purple,
-                        'power bank'),
-                    roundIcon('https://i.imgur.com/ZzFxF4W.png', Colors.green,
-                        'Air Conditioner'),
+                    // roundIcon('https://i.imgur.com/CY7brg5.png', Colors.purple,
+                    //     'power bank'),
+                    // roundIcon('https://i.imgur.com/ZzFxF4W.png', Colors.green,
+                    //     'Air Conditioner'),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    roundIcon('https://i.imgur.com/yHTYOrX.png', Colors.yellow,
-                        'Refrigerators'),
-                    roundIcon('https://i.imgur.com/GhqdEPD.png', Colors.red,
-                        'washing machine'),
+                    // roundIcon('https://i.imgur.com/yHTYOrX.png', Colors.yellow,
+                    //     'Refrigerators'),
+                    // roundIcon('https://i.imgur.com/GhqdEPD.png', Colors.red,
+                    //     'washing machine'),
                   ],
                 ),
               ],
