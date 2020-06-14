@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/AboutPage/AboutPage.dart';
+import 'package:flutterapp/utils/roundIcon.dart';
+import 'package:flutterapp/productPage/mobilePage.dart';
+import 'package:flutterapp/utils/roundedIconNav.dart';
 import '../utils/responsiveLayout.dart';
 class NavBar extends StatefulWidget {
   //final Function setStatePage;
@@ -26,11 +30,13 @@ class _NavBarState extends State<NavBar> {
             child: Container(
                 margin: EdgeInsets.all(10),
                 child: Text(entry.value,
-                    style: TextStyle(fontFamily: "Montserrat-Bold")))),
+                    style: TextStyle(fontFamily: "Montserrat-Bold")
+                    )
+                 )
+               ),
       );
     }).toList();
   }
-
   @override
   Widget build(BuildContext context) {
     if(MediaQuery.of(context).size.width>800)pressMenu=false;
@@ -48,6 +54,7 @@ class _NavBarState extends State<NavBar> {
             ),
                 ],
               ),
+              SizedBox(width: 15.0,),
               if (!ResponsiveLayout.isSmallScreen(context))
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -81,7 +88,8 @@ class _NavBarState extends State<NavBar> {
                                     color: Colors.white,
                                     fontSize: 15,
                                     letterSpacing: 1,
-                                    fontFamily: "Montserrat-Bold")),
+                                    fontFamily: "Montserrat-Bold")
+                            ),
                           ),
                         ),
                       ))),
