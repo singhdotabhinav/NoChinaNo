@@ -7,7 +7,6 @@ Widget skillAvatar(String imgUrl, Color glow) {
     scrollDirection: Axis.horizontal,
     child: AvatarGlow(
       startDelay: Duration(milliseconds: 1000),
-      //glowColor: Color(0xFF6C63FF),
 
       glowColor: glow,
       endRadius: 60.0,
