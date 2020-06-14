@@ -1056,7 +1056,7 @@ class _LargeAppsoState extends State<LargeAppso> {
                   options: CarouselOptions(
                       height: 650.0,
                       reverse: true,
-                      autoPlay: true,
+                      autoPlay: false,
                       enlargeCenterPage: true,
                       scrollDirection: Axis.vertical),
                   items: [
@@ -1284,7 +1284,7 @@ class _SmallAppsoState extends State<SmallAppso> {
                     CarouselSlider(
                       options: CarouselOptions(
                         height: 1200.0,
-                        autoPlay: true,
+                        autoPlay: false,
                         enlargeCenterPage: true,
                       ),
                       items: [1, 2, 3, 4, 5].map((i) {
