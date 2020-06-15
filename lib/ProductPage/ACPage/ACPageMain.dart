@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/ProductPage/ACPage/ACPageDetails.dart';
 import 'package:flutterapp/utils/responsiveLayout.dart';
+import 'package:flutterapp/widgets/bottom.dart';
 import 'package:flutterapp/widgets/navbar.dart';
 
 class ACPageMain extends StatefulWidget {
@@ -13,7 +14,7 @@ class _ACPageMainState extends State<ACPageMain> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [
+      gradient: LinearGradient(colors: [
         // Color(0xFFF8FBFF),
         Color(0xFFFfffff),
         // Color(0xFFFCFDFD),
@@ -25,7 +26,8 @@ class _ACPageMainState extends State<ACPageMain> {
           child: Column(
             children: <Widget>[
               NavBar(),
-              Body()
+              Body(),
+              BottomDesign()
             ],
           ),
         ),
@@ -38,8 +40,8 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveLayout(
-          largeScreen: LargeAppso(),
-          smallScreen: SmallAppso(),
+          largeScreen: LargeAppAC(),
+          smallScreen: SmallAppAC(),
         );
   }
 }

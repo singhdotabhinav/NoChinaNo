@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/ProductPage/AudioPage/AudioPageDetails.dart';
 import 'package:flutterapp/pages/myapps.dart';
 import 'package:flutterapp/utils/responsiveLayout.dart';
+import 'package:flutterapp/widgets/bottom.dart';
 import 'package:flutterapp/widgets/navbar.dart';
 
 class AudioPageMain extends StatefulWidget {
@@ -26,7 +27,8 @@ class _AudioPageMainState extends State<AudioPageMain> {
           child: Column(
             children: <Widget>[
               NavBar(),
-              Body()
+              Body(),
+              BottomDesign()
             ],
           ),
         ),
@@ -39,8 +41,8 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveLayout(
-          largeScreen: LargeAppsAudio(),
-          smallScreen: SmallAppsAudio(),
+          largeScreen: LargeAppAudio(),
+          smallScreen: SmallAppAudio(),
         );
   }
 }

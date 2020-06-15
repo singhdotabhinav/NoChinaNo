@@ -35,12 +35,14 @@ List<String> categoryList = [
   'Best mobile camera phones',
 ];
 
-class LargeAppso extends StatefulWidget {
+
+
+class LargeAppAC extends StatefulWidget {
   @override
-  _LargeAppsoState createState() => _LargeAppsoState();
+  _LargeAppACState createState() => _LargeAppACState();
 }
 
-class _LargeAppsoState extends State<LargeAppso> {
+class _LargeAppACState extends State<LargeAppAC> {
   @override
   Widget build(BuildContext context) {
     List<List<Widget>> product_list = [
@@ -337,7 +339,7 @@ class _LargeAppsoState extends State<LargeAppso> {
       ],
     ];
     return SizedBox(
-      height: 1400,
+      height: 1100,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
@@ -346,10 +348,10 @@ class _LargeAppsoState extends State<LargeAppso> {
               Container(
                 width: MediaQuery.of(context).size.width / 2,
                 child: RoudIconDesktop(
-                  imglink: 'https://i.imgur.com/QWQpPUG.png',
-                  backglow: Colors.green,
-                  category: categoryList[categoryListIndex],
-                ),
+                imglink: 'https://i.imgur.com/ZzFxF4W.png',
+                backglow: Colors.green,
+                category: categoryList[categoryListIndex],
+                  ),
               ),
               Container(
                   child: Card(
@@ -604,7 +606,8 @@ class _LargeAppsoState extends State<LargeAppso> {
               )
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(200, 10, 200, 150),
+               // padding: EdgeInsets.fromLTRB(200, 10, 200, 150),
+                padding: EdgeInsets.symmetric(horizontal: 200.0),
                 child: CarouselSlider(
                   options: CarouselOptions(
                       height: 650.0,
@@ -636,12 +639,12 @@ class _LargeAppsoState extends State<LargeAppso> {
   }
 }
 
-class SmallAppso extends StatefulWidget {
+class SmallAppAC extends StatefulWidget {
   @override
-  _SmallAppsoState createState() => _SmallAppsoState();
+  _SmallAppACState createState() => _SmallAppACState();
 }
 
-class _SmallAppsoState extends State<SmallAppso> {
+class _SmallAppACState extends State<SmallAppAC> {
   @override
   Widget build(BuildContext context) {
     List<List<Widget>> productList = [
@@ -680,7 +683,7 @@ class _SmallAppsoState extends State<SmallAppso> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 RoudIconMobile(
-                  imglink: 'https://i.imgur.com/QWQpPUG.png',
+                  imglink: 'https://i.imgur.com/ZzFxF4W.png',
                   backglow: Colors.green,
                   category: categoryList[categoryListIndex],
                 ),
@@ -1027,25 +1030,32 @@ class _SmallAppsoState extends State<SmallAppso> {
 //   }
 // }
 
-class MenuCard extends StatelessWidget {
+class MenuCard extends StatefulWidget {
   final String title;
   final Color color;
+  //double padValue=30.0;
 
   const MenuCard({Key key, this.title, this.color}) : super(key: key);
 
+  @override
+  _MenuCardState createState() => _MenuCardState();
+}
+
+class _MenuCardState extends State<MenuCard> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Card(
-          color: color,
+          color: widget.color,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30.0),
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(30.0),
+          child:Padding(
+            padding: EdgeInsets.all(30.0),
+          
             child: Text(
-              title,
+              widget.title,
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontSize: 12,

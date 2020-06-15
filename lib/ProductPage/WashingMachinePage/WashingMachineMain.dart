@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/ProductPage/WashingMachinePage/WashingMachineDetail.dart';
 import 'package:flutterapp/pages/myapps.dart';
 import 'package:flutterapp/utils/responsiveLayout.dart';
+import 'package:flutterapp/widgets/bottom.dart';
 import 'package:flutterapp/widgets/navbar.dart';
 
 class WashingMachineMain extends StatefulWidget {
@@ -25,7 +27,8 @@ class _WashingMachineMainState extends State<WashingMachineMain> {
           child: Column(
             children: <Widget>[
               NavBar(),
-              Body()
+              Body(),
+              BottomDesign()
             ],
           ),
         ),
@@ -38,8 +41,8 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveLayout(
-          largeScreen: LargeApps(),
-          smallScreen: SmallApps(),
+          largeScreen: LargeAppWashingMachine(),
+          smallScreen: SmallAppWashingMachine(),
         );
   }
 }
