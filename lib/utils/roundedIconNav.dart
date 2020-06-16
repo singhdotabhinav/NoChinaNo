@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/AboutPage/AboutPage.dart';
-import 'package:flutterapp/Animation/skillAvatar.dart';
+
 import 'package:flutterapp/utils/skillAvatarNav.dart';
 
 class roundIconNav extends StatefulWidget {

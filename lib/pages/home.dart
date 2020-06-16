@@ -63,8 +63,8 @@ class LargeChild extends StatelessWidget {
                     child: SelectableText.rich(
                       TextSpan(
                         text:
-                            "NoChinaNo is a Platform Desined for the Wallet Army.\n"
-                            "Unbaised Listing and Rating of Non-chinese Brand Etectronc items.",
+                            "NoChinaNo is a Platform Designed for the Wallet Army.\n"
+                            "Unbiased Listing and Rating of Non-Chinese Brand Etectronic items.",
                         style: TextStyle(
                           color: Colors.black87,
                           fontWeight: FontWeight.bold,
@@ -75,7 +75,7 @@ class LargeChild extends StatelessWidget {
                     ),
                   ),
                   SelectableText(
-                      "\n|| Shift To Non-Chinese Brand Hardware In A Year ||",
+                      "\n|| Shift To Non-Chinese Brand Hardware In a Year ||",
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,

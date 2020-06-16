@@ -50,7 +50,7 @@ class LargeBottom extends StatelessWidget {
               ),
              Container(
                 width:MediaQuery.of(context).size.width/4,
-                child: Text('About Page',style: ktextstyle,)
+                child: Text('NoChinaNo is a Platform Designed for the Wallet Army\nUnbiased Listing and Rating of Non-Chinese Brands Electronic items.',style: ktextstylebottom,textAlign: TextAlign.center,)
               ),
               Container(
                width: 2,
@@ -66,42 +66,45 @@ class LargeBottom extends StatelessWidget {
                     children: [
                       InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://stackoverflow.com/questions/ask"]);
+                       js.context.callMethod("open", ["https://mail.google.com/mail/u/0/?view=cm&fs=1&to=mail2nochinano@gmail.com&tf=1"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/DGz6tQ6.png',
-                      height: 80.0,
-                      width: 80.0,
+                      'https://i.imgur.com/7lS4VPq.png',
+                      height: 50.0,
+                      width: 50.0,
                       ),
                   ),
+                  SizedBox(width: 5,),
                   InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://stackoverflow.com/questions/ask"]);
+                       js.context.callMethod("open", ["https://t.me/teltonochinano"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/DGz6tQ6.png',
-                      height: 80.0,
-                      width: 80.0,
+                      'https://i.imgur.com/iNAoewH.png',
+                      height: 40.0,
+                      width: 40.0,
                       ),
                   ),
+                  SizedBox(width: 5,),
                   InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://stackoverflow.com/questions/ask"]);
+                       js.context.callMethod("open", ["https://twitter.com/intent/tweet?url=https%3A%2F%2Ftwitter.com%2Fnochinano1"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/DGz6tQ6.png',
-                      height: 80.0,
-                      width: 80.0,
+                      'https://i.imgur.com/erWajt4.png',
+                      height: 37.0,
+                      width: 37.0,
                       ),
                   ),
+                  SizedBox(width: 5,),
                   InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://stackoverflow.com/questions/ask"]);
+                       js.context.callMethod("open", ["https://www.facebook.com/No-China-No-100168928418054"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/DGz6tQ6.png',
-                      height: 80.0,
-                      width: 80.0,
+                      'https://i.imgur.com/RgTrk1W.png',
+                      height: 33.0,
+                      width: 37.0,
                       ),
                   ),
                     ],
@@ -121,7 +124,7 @@ class LargeBottom extends StatelessWidget {
           height: 50.0,
           color: Colors.black,
           alignment: Alignment(0.0, 0.0),
-          child: Text('Copyright NOChinaNo 2020',style: ktextstyle,textAlign: TextAlign.center,),
+          child: Text('Copyright © 2020 NoChinaNo.com',style: ktextstyle,textAlign: TextAlign.center,),
         )
       ],
     );
@@ -161,7 +164,7 @@ class SmallBottom extends StatelessWidget {
              Container(
                alignment: Alignment(0.0,0.0),
                 width:MediaQuery.of(context).size.width,
-                child: Text('About Page',style: ktextstyle,)
+                child: Text('NoChinaNo is a Platform Designed for the Wallet Army\nUnbiased Listing and Rating of Non-Chinese Brands Electronic items.',style: ktextstylebottom,textAlign: TextAlign.center,)
               ),
               Container(
                width: MediaQuery.of(context).size.width/1.5,
@@ -175,42 +178,45 @@ class SmallBottom extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://stackoverflow.com/questions/ask"]);
+                       js.context.callMethod("open", ["https://mail.google.com/mail/u/0/?view=cm&fs=1&to=mail2nochinano@gmail.com&tf=1"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/DGz6tQ6.png',
-                      height: 80.0,
-                      width: 80.0,
+                      'https://i.imgur.com/7lS4VPq.png',
+                      height: 50.0,
+                      width: 50.0,
                       ),
                   ),
+                  SizedBox(width: 5,),
                   InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://stackoverflow.com/questions/ask"]);
+                       js.context.callMethod("open", ["https://t.me/teltonochinano"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/DGz6tQ6.png',
-                      height: 80.0,
-                      width: 80.0,
+                      'https://i.imgur.com/iNAoewH.png',
+                      height: 40.0,
+                      width: 40.0,
                       ),
                   ),
+                  SizedBox(width: 5,),
                   InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://stackoverflow.com/questions/ask"]);
+                       js.context.callMethod("open", ["https://twitter.com/intent/tweet?url=https%3A%2F%2Ftwitter.com%2Fnochinano1"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/DGz6tQ6.png',
-                      height: 80.0,
-                      width: 80.0,
+                      'https://i.imgur.com/erWajt4.png',
+                      height: 37.0,
+                      width: 37.0,
                       ),
                   ),
+                  SizedBox(width: 5,),
                   InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://stackoverflow.com/questions/ask"]);
+                       js.context.callMethod("open", ["https://www.facebook.com/No-China-No-100168928418054"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/DGz6tQ6.png',
-                      height: 80.0,
-                      width: 80.0,
+                      'https://i.imgur.com/RgTrk1W.png',
+                      height: 33.0,
+                      width: 37.0,
                       ),
                   ),
                 ],
@@ -224,7 +230,7 @@ class SmallBottom extends StatelessWidget {
           height: 50.0,
           color: Colors.black,
           alignment: Alignment(0.0, 0.0),
-          child: Text('Copyright NoChinaNo 2020',style: ktextstyle,textAlign: TextAlign.center,),
+          child: Text('Copyright © 2020 NoChinaNo.com',style: ktextstyle,textAlign: TextAlign.center,),
         )
       ],
     );
