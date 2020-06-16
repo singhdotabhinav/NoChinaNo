@@ -8,7 +8,7 @@ import 'widgets/navbar.dart';
 import 'utils/responsiveLayout.dart';
 
 void main() => runApp(MaterialApp(
-      title: 'NoChinaNo',
+      title: 'NoChinaNo: Changing the way India buys!!',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,
