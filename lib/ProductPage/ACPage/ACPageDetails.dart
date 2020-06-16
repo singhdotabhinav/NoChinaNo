@@ -50,8 +50,9 @@ class _LargeAppACState extends State<LargeAppAC> {
           processorRating: 100,
           productBrand: 'America',
           productCountry: 'USA',
-          productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-          productName: 'Iphone 11 Pro',
+          productDescription: 'Lund jaissa phone hai ....mat lena kabhi ajdahddahshisdhadhashsddkjashkasshdkjashdkjahdkjhaskjdgsuyghfbvbjhbvgsvsfjsgfhfalhhgfhasgfuywgfjhbfjhgsufgjhsfgjshgfyerywjgfhsjgfuyegysgfygejhsfgfhgdfguyghfjhbhdjhskfhsufhieheiwfhskfhjdhfuieffhhsffhdjbhi',
+         
+          productName: 'IPHONE 11 PRO',
           productPrice: 10000,
           productRank: 1,
           flipKartUrl:
@@ -441,7 +442,7 @@ class _LargeAppACState extends State<LargeAppAC> {
                 padding: EdgeInsets.symmetric(horizontal: 200.0),
                 child: CarouselSlider(
                   options: CarouselOptions(
-                      height: 650.0,
+                      height: 550.0,
                       reverse: true,
                       autoPlay: false,
                       enlargeCenterPage: true,
@@ -491,7 +492,7 @@ class _SmallAppACState extends State<SmallAppAC> {
           processorRating: 100,
           productBrand: 'America',
           productCountry: 'USA',
-          productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
+          productDescription: 'Lund jaissa phone hai ....mat lena kabhi ajdahddahshisdhadhashsddkjashkasshdkjashdkjahdkjhaskjdgsuyghfbvbjhbvgsvsfjsgfhfalhhgfhasgfuywgfjhbfjhgsufgjhsfgjshgfyerywjgfhsjgfuyegysgfygejhsfgfhgdfguyghfjhbhdjhskfhsufhieheiwfhskfhjdhfuieffhhsffhdjbhi',
           productName: 'Iphone 11 Pro',
           productPrice: 10000,
           productRank: 1,

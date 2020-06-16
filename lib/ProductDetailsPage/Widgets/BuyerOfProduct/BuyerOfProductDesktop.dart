@@ -10,23 +10,25 @@ const kTextStyle=TextStyle(
 Widget buyerOfProductDesktop(double width,String amazonUrl,String flipKartUrl){
   return Container(
     width: width,
-    child: Column(
-      children: <Widget>[
-        SizedBox(height: 10.0,),
-        FlatButton(
-          onPressed: (){
-            js.context.callMethod("open", ["$amazonUrl"]);
-          },
-          child: Image.network("https://i.imgur.com/ZDYsTZh.png")
-        ),
-        SizedBox(height: 15.0,),
-        FlatButton(
-          onPressed: (){
-            js.context.callMethod("open", ["$flipKartUrl"]);
-          },
-          child: Image.network("https://i.imgur.com/uaZk1yU.png")
-        ),
-      ],
+    child: Padding(
+      padding: const EdgeInsets.fromLTRB(10, 40, 5, 5),
+      child: Column(
+        children: <Widget>[
+          FlatButton(
+            onPressed: (){
+              js.context.callMethod("open", ["$amazonUrl"]);
+            },
+            child: Image.network("https://i.imgur.com/ZDYsTZh.png",)
+          ),
+          SizedBox(height: 15.0,),
+          FlatButton(
+            onPressed: (){
+              js.context.callMethod("open", ["$flipKartUrl"]);
+            },
+            child: Image.network("https://i.imgur.com/uaZk1yU.png")
+          ),
+        ],
+      ),
     ),
   );
 }

@@ -34,19 +34,26 @@ Widget ProductListMobile(
                 children: <Widget>[
                   ImageOfProduct(
                       constraints.biggest.width,
-                      productRank,
                       '$imageUrl'
 
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     child: DetailsOfProduct(
-                        constraints.biggest.width ,
-                        '$productName',
-                        '$productBrand',
-                        '$productCountry',
-                          productPrice,
-                        '$productDescription'
+                        // constraints.biggest.width ,
+                        // '$productName',
+                        // '$productBrand',
+                        // '$productCountry',
+                        //   productPrice,
+                        // '$productDescription'
+
+                        Country: '$productCountry',
+                        Price: productPrice,
+                        brand: '$productBrand',
+                        details: '$productDescription',
+                        name: '$productName',
+                        rank: productRank,
+                        width: constraints.biggest.width
                     ),
                   ),
                 ],
