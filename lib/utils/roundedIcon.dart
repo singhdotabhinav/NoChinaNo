@@ -17,7 +17,8 @@ class _RoundIconState extends State<RoundIcon> {
     return FlatButton(
       shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(20.0)),
 //
-      onPressed: () {Navigator.push(
+      onPressed: () {
+        Navigator.push(
           this.context,new MaterialPageRoute(
         //builder: (context)=>ProductDetailNavigationNew(),
         builder: (context)=>widget.gotoPage,

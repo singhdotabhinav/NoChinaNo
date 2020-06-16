@@ -23,16 +23,9 @@ bool c10 = false;
 bool c11 = false;
 
 List<String> categoryList = [
-  'Best Mobile Phones In India',
-  'Best mobile phones under 5000',
-  '	Best mobile phones under 10000',
-  'Best mobile phones under 15000',
-  'Best mobile phones under 20000',
-  '	Best mobile phones under 30000',
-  'Best mobile phones under 50000',
-  'Best bettery phones',
-  'Best mobile gaming phones',
-  'Best mobile camera phones',
+ ' Best 1 ton AC ',
+'	Best 1.5 Split ton AC',
+'	Best 1.5 Window ton AC'
 ];
 
 
@@ -348,17 +341,17 @@ class _LargeAppACState extends State<LargeAppAC> {
               Container(
                 width: MediaQuery.of(context).size.width / 2,
                 child: RoudIconDesktop(
-                imglink: 'https://i.imgur.com/ZzFxF4W.png',
-                backglow: Colors.green,
-                category: categoryList[categoryListIndex],
-                  ),
+                  imglink: 'https://i.imgur.com/ZzFxF4W.png',
+                  backglow: Colors.green,
+                  category: categoryList[categoryListIndex],
+                ),
               ),
               Container(
                   child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                color: Colors.green[200],
+                color: Colors.green[100],
                 child: Container(
                   width: MediaQuery.of(context).size.width * .75,
                   child: SingleChildScrollView(
@@ -436,169 +429,7 @@ class _LargeAppACState extends State<LargeAppAC> {
                               title: categoryList[2],
                               color: c2 ? Colors.black12 : Colors.white),
                         ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 3;
-                              categoryListIndex = 3;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = true;
-                              c4 = false;
-                              c5 = false;
-                              c6 = false;
-                              c7 = false;
-                              c8 = false;
-                              c9 = false;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[3],
-                              color: c3 ? Colors.black12 : Colors.white),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 4;
-                              categoryListIndex = 4;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = true;
-                              c5 = false;
-                              c6 = false;
-                              c7 = false;
-                              c8 = false;
-                              c9 = false;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[4],
-                              color: c4 ? Colors.black12 : Colors.white),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 5;
-                              categoryListIndex = 5;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = false;
-                              c5 = true;
-                              c6 = false;
-                              c7 = false;
-                              c8 = false;
-                              c9 = false;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[5],
-                              color: c5 ? Colors.black12 : Colors.white),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 6;
-                              categoryListIndex = 6;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = false;
-                              c5 = false;
-                              c6 = true;
-                              c7 = false;
-                              c8 = false;
-                              c9 = false;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[6],
-                              color: c6 ? Colors.black12 : Colors.white),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 7;
-                              categoryListIndex = 7;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = false;
-                              c5 = false;
-                              c6 = false;
-                              c7 = true;
-                              c8 = false;
-                              c9 = false;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[7],
-                              color: c7 ? Colors.black12 : Colors.white),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 8;
-                              categoryListIndex = 8;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = false;
-                              c5 = false;
-                              c6 = false;
-                              c7 = false;
-                              c8 = true;
-                              c9 = false;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[8],
-                              color: c8 ? Colors.black12 : Colors.white),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 9;
-                              categoryListIndex = 9;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = false;
-                              c5 = false;
-                              c6 = false;
-                              c7 = false;
-                              c8 = false;
-                              c9 = true;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[9],
-                              color: c9 ? Colors.black12 : Colors.white),
-                        ),
-
-                        //  Image.network("assets/myapp/unnamed.png"),
+                       
                       ],
                     ),
                   ),
@@ -695,7 +526,7 @@ class _SmallAppACState extends State<SmallAppAC> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),
             ),
-            color: Colors.green[200],
+            color: Colors.green[100],
             child: Container(
               width: MediaQuery.of(context).size.width * .85,
               child: SingleChildScrollView(
@@ -773,169 +604,6 @@ class _SmallAppACState extends State<SmallAppAC> {
                           title: categoryList[2],
                           color: c2 ? Colors.black12 : Colors.white),
                     ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 3;
-                          categoryListIndex = 3;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = true;
-                          c4 = false;
-                          c5 = false;
-                          c6 = false;
-                          c7 = false;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[3],
-                          color: c3 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 4;
-                          categoryListIndex = 4;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = true;
-                          c5 = false;
-                          c6 = false;
-                          c7 = false;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[4],
-                          color: c4 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 5;
-                          categoryListIndex = 5;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = true;
-                          c6 = false;
-                          c7 = false;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[5],
-                          color: c5 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 6;
-                          categoryListIndex = 6;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = false;
-                          c6 = true;
-                          c7 = false;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[6],
-                          color: c6 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 7;
-                          categoryListIndex = 7;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = false;
-                          c6 = false;
-                          c7 = true;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[7],
-                          color: c7 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 8;
-                          categoryListIndex = 8;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = false;
-                          c6 = false;
-                          c7 = false;
-                          c8 = true;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[8],
-                          color: c8 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 9;
-                          categoryListIndex = 9;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = false;
-                          c6 = false;
-                          c7 = false;
-                          c8 = false;
-                          c9 = true;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[9],
-                          color: c9 ? Colors.black12 : Colors.white),
-                    ),
-
-                    //  Image.network("assets/myapp/unnamed.png"),
                   ],
                 ),
               ),

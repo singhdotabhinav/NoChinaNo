@@ -1,0 +1,90 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutterapp/main.dart';
+class navBarMobile extends StatefulWidget {
+
+  @override
+  _navBarMobileState createState() => _navBarMobileState();
+}
+
+class _navBarMobileState extends State<navBarMobile> {
+  bool isPressed=false;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(children: <Widget>[
+        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: FlatButton(
+                onPressed: (){
+                   Navigator.push(context, new MaterialPageRoute(builder: (context)=>HomePage()));
+                },
+                child: Image.network(
+                  'https://i.imgur.com/L8Mpi4R.png'
+                  )
+              ),
+            ),
+            FlatButton(
+              onPressed: (){
+                setState(() {
+                  if(isPressed==true){
+                    isPressed=false;
+                  }else{
+                    isPressed=true;
+                  }
+                });
+              },
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.network('https://i.imgur.com/dcIBzFx.png',width: 30,height: 30,),
+              ),
+            ),
+
+          ],
+        ),
+        isPressed?Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              FlatButton(
+                onPressed: (){
+                    Navigator.push(context, new MaterialPageRoute(builder: (context)=>HomePage()));
+                },
+                child: Text(
+                  "Home",
+                  style: TextStyle(color: Colors.black87,fontSize: 20,fontFamily: "Montserrat-Regular",fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(height: 5.0,),
+              FlatButton(
+                onPressed: (){
+
+                },
+                child: Text(
+                  "Contact Us",
+                  style: TextStyle(color: Colors.black87,fontSize: 20,fontFamily: "Montserrat-Regular",fontWeight: FontWeight.bold),
+                ),
+              ),
+               SizedBox(height: 5.0,),
+              MaterialButton(
+                color: Colors.pink,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                onPressed: () {
+
+                },
+                child: Text(
+                  "About US",
+                  style: TextStyle(color: Colors.white,fontFamily: "Montserrat-Regular"),
+                ),
+              )
+            ],
+          ),
+        ):Container()
+      ]),
+    );
+  }
+}

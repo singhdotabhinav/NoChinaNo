@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/main.dart';
 import 'package:flutterapp/utils/responsiveLayout.dart';
 import 'package:flutterapp/utils/textstyle.dart';
 import 'dart:js' as js;
@@ -27,22 +28,20 @@ class LargeBottom extends StatelessWidget {
           width:MediaQuery.of(context).size.width,
           height:200,
           color: Colors.black12,
-          // decoration: BoxDecoration(
-          //   gradient: LinearGradient(
-          //   begin: Alignment.topCenter,
-          //   end: Alignment.bottomCenter, // 10% of the width, so there are ten blinds.
-          //   //colors: [const Color(0xFFFFFFEE), const Color(0xFF999999)], // whitish to gray
-          //   colors: [Colors.white,Colors.white,Colors.black], // whitish to gray
-          //   //tileMode: TileMode.repeated, // repeats the gradient over the canvas
-          //   ),
-          // ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 alignment: Alignment(0.0,0.0),
                 width:MediaQuery.of(context).size.width/5,
-                child: Image.network('https://i.imgur.com/L8Mpi4R.png'),
+                child: FlatButton(
+                  onPressed: (){
+                    Navigator.push(context, new MaterialPageRoute(builder: (context)=>HomePage()));
+                  },
+                  child: Image.network(
+                    'https://i.imgur.com/L8Mpi4R.png'
+                    )
+                 ),
               ),
              Container(
                width: 2,
@@ -139,22 +138,20 @@ class SmallBottom extends StatelessWidget {
           width:MediaQuery.of(context).size.width,
           height:500,
           color: Colors.black12,
-          // decoration: BoxDecoration(
-          //   gradient: LinearGradient(
-          //   begin: Alignment.topCenter,
-          //   end: Alignment.bottomCenter, // 10% of the width, so there are ten blinds.
-          //   //colors: [const Color(0xFFFFFFEE), const Color(0xFF999999)], // whitish to gray
-          //   colors: [Colors.white,Colors.white,Colors.black], // whitish to gray
-          //   //tileMode: TileMode.repeated, // repeats the gradient over the canvas
-          //   ),
-          // ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 alignment: Alignment(0.0,0.0),
                 width:MediaQuery.of(context).size.width,
-                child: Image.network('https://i.imgur.com/L8Mpi4R.png'),
+                child: FlatButton(
+                  onPressed: (){
+                    Navigator.push(context, new MaterialPageRoute(builder: (context)=>HomePage()));
+                  },
+                  child: Image.network(
+                    'https://i.imgur.com/L8Mpi4R.png'
+                    )
+                 ),
               ),
              Container(
                width: MediaQuery.of(context).size.width/1.5,
@@ -227,7 +224,7 @@ class SmallBottom extends StatelessWidget {
           height: 50.0,
           color: Colors.black,
           alignment: Alignment(0.0, 0.0),
-          child: Text('Copyright NOChinaNo 2020',style: ktextstyle,textAlign: TextAlign.center,),
+          child: Text('Copyright NoChinaNo 2020',style: ktextstyle,textAlign: TextAlign.center,),
         )
       ],
     );

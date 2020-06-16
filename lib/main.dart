@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/Experiment/navBarMain.dart';
 import 'package:flutterapp/pages/About.dart';
 import 'package:flutterapp/pages/home.dart';
 import 'package:flutterapp/pages/myapps.dart';
 import 'package:flutterapp/pages/videos.dart';
 import 'package:flutterapp/widgets/bottom.dart';
-import 'widgets/navbar.dart';
 import 'utils/responsiveLayout.dart';
 
 void main() => runApp(MaterialApp(
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              NavBar(),
+              navBarMain(),
               Body(
                 stateNumber: stateNumber,
               ),

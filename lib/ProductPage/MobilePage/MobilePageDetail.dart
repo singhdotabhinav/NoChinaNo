@@ -24,7 +24,7 @@ bool c11 = false;
 
 List<String> categoryList = [
   'Best Mobile Phones In India',
-  'Best mobile phones under 5000',
+  'Best mobile phones under 7000',
   '	Best mobile phones under 10000',
   'Best mobile phones under 15000',
   'Best mobile phones under 20000',

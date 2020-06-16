@@ -23,19 +23,19 @@ bool c10 = false;
 bool c11 = false;
 
 List<String> categoryList = [
-  'Best Mobile Phones In India',
-  'Best mobile phones under 5000',
-  '	Best mobile phones under 10000',
-  'Best mobile phones under 15000',
-  'Best mobile phones under 20000',
-  '	Best mobile phones under 30000',
-  'Best mobile phones under 50000',
-  'Best bettery phones',
-  'Best mobile gaming phones',
-  'Best mobile camera phones',
+  'Best portable speakers' ,
+	'Best portable speaker under 5k',
+	'Best portable speaker under 10k',
+	'Best headphone under 5k',
+	'Best headphone under 2k',
+	'Best earphone under 5k',
+	'Best earphone under 2k',
+	'Best bluetooth headphone under 5k',
+	'Best bluetooth headphone under 2k',
+	'Best bluetooth earphone under 5k',
+	'Best bluetooth earphone under 2k',
+	'Best budget soundbar',
 ];
-
-
 
 class LargeAppAudio extends StatefulWidget {
   @override
@@ -358,7 +358,7 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                color: Colors.green[200],
+                color: Colors.purple[200],
                 child: Container(
                   width: MediaQuery.of(context).size.width * .75,
                   child: SingleChildScrollView(
@@ -597,6 +597,52 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
                               title: categoryList[9],
                               color: c9 ? Colors.black12 : Colors.white),
                         ),
+                        InkWell(
+                          onTap: () {
+                            setState(() {
+                              productListX = 9;
+                              categoryListIndex = 9;
+                              c0 = false;
+                              c1 = false;
+                              c2 = false;
+                              c3 = false;
+                              c4 = false;
+                              c5 = false;
+                              c6 = false;
+                              c7 = false;
+                              c8 = false;
+                              c9 = true;
+                              c10 = false;
+                              c11 = false;
+                            });
+                          },
+                          child: MenuCard(
+                              title: categoryList[9],
+                              color: c9 ? Colors.black12 : Colors.white),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            setState(() {
+                              productListX = 9;
+                              categoryListIndex = 9;
+                              c0 = false;
+                              c1 = false;
+                              c2 = false;
+                              c3 = false;
+                              c4 = false;
+                              c5 = false;
+                              c6 = false;
+                              c7 = false;
+                              c8 = false;
+                              c9 = true;
+                              c10 = false;
+                              c11 = false;
+                            });
+                          },
+                          child: MenuCard(
+                              title: categoryList[9],
+                              color: c9 ? Colors.black12 : Colors.white),
+                        ),
 
                         //  Image.network("assets/myapp/unnamed.png"),
                       ],
@@ -695,7 +741,7 @@ class _SmallAppAudioState extends State<SmallAppAudio> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),
             ),
-            color: Colors.green[200],
+            color: Colors.purple[200],
             child: Container(
               width: MediaQuery.of(context).size.width * .85,
               child: SingleChildScrollView(

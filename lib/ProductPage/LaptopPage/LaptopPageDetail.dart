@@ -23,16 +23,18 @@ bool c10 = false;
 bool c11 = false;
 
 List<String> categoryList = [
-  'Best Mobile Phones In India',
-  'Best mobile phones under 5000',
-  '	Best mobile phones under 10000',
-  'Best mobile phones under 15000',
-  'Best mobile phones under 20000',
-  '	Best mobile phones under 30000',
-  'Best mobile phones under 50000',
-  'Best bettery phones',
-  'Best mobile gaming phones',
-  'Best mobile camera phones',
+  'best laptops in india',
+	'best budget laptops under 35k',
+'	best gaming laptops.',
+	'best laptops for video editing.',
+	'best business laptops.',
+'	best battery laptops.',
+	'Ultrabooks under Rs 40,000',
+	'gaming laptops under Rs 45,000',
+	'Ultrabooks under Rs 50,000',
+	'gaming laptops under Rs 60,000',
+	'Ultrabooks under Rs 70,000',
+	'gaming laptops under Rs 80,000',
 ];
 
 

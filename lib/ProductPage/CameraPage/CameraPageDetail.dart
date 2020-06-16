@@ -23,16 +23,15 @@ bool c10 = false;
 bool c11 = false;
 
 List<String> categoryList = [
-  'Best Mobile Phones In India',
-  'Best mobile phones under 5000',
-  '	Best mobile phones under 10000',
-  'Best mobile phones under 15000',
-  'Best mobile phones under 20000',
-  '	Best mobile phones under 30000',
-  'Best mobile phones under 50000',
-  'Best bettery phones',
-  'Best mobile gaming phones',
-  'Best mobile camera phones',
+  'best DSLR cameras under 25k',
+  'best DSLR cameras under 30k',
+  'best DSLR cameras under 40k',
+   'best DSLR cameras under 55k',
+       'best DSLR cameras under 70k',
+      ' best DSLR cameras under 90k',
+       'best DSLR cameras.',
+       'best mirrorless camera.',
+       'best budget mirror cameras.'
 ];
 
 
@@ -349,7 +348,7 @@ class _LargeAppCameraState extends State<LargeAppCamera> {
                 width: MediaQuery.of(context).size.width / 2,
                 child: RoudIconDesktop(
                   imglink: 'https://i.imgur.com/qZYgJH8.png',
-                  backglow: Colors.green,
+                  backglow: Colors.blueAccent,
                   category: categoryList[categoryListIndex],
                 ),
               ),
@@ -358,7 +357,7 @@ class _LargeAppCameraState extends State<LargeAppCamera> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                color: Colors.green[200],
+                color: Colors.blueAccent[100],
                 child: Container(
                   width: MediaQuery.of(context).size.width * .75,
                   child: SingleChildScrollView(
@@ -574,29 +573,7 @@ class _LargeAppCameraState extends State<LargeAppCamera> {
                               title: categoryList[8],
                               color: c8 ? Colors.black12 : Colors.white),
                         ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 9;
-                              categoryListIndex = 9;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = false;
-                              c5 = false;
-                              c6 = false;
-                              c7 = false;
-                              c8 = false;
-                              c9 = true;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[9],
-                              color: c9 ? Colors.black12 : Colors.white),
-                        ),
+                        
 
                         //  Image.network("assets/myapp/unnamed.png"),
                       ],
@@ -684,7 +661,7 @@ class _SmallAppCameraState extends State<SmallAppCamera> {
               children: <Widget>[
                 RoudIconMobile(
                   imglink: 'https://i.imgur.com/qZYgJH8.png',
-                  backglow: Colors.green,
+                  backglow: Colors.blueAccent,
                   category: categoryList[categoryListIndex],
                 ),
                 SizedBox(
@@ -695,7 +672,7 @@ class _SmallAppCameraState extends State<SmallAppCamera> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),
             ),
-            color: Colors.green[200],
+            color: Colors.blueAccent[100],
             child: Container(
               width: MediaQuery.of(context).size.width * .85,
               child: SingleChildScrollView(
@@ -911,29 +888,7 @@ class _SmallAppCameraState extends State<SmallAppCamera> {
                           title: categoryList[8],
                           color: c8 ? Colors.black12 : Colors.white),
                     ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 9;
-                          categoryListIndex = 9;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = false;
-                          c6 = false;
-                          c7 = false;
-                          c8 = false;
-                          c9 = true;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[9],
-                          color: c9 ? Colors.black12 : Colors.white),
-                    ),
+                   
 
                     //  Image.network("assets/myapp/unnamed.png"),
                   ],

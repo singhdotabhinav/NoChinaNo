@@ -23,16 +23,16 @@ bool c10 = false;
 bool c11 = false;
 
 List<String> categoryList = [
-  'Best Mobile Phones In India',
-  'Best mobile phones under 5000',
-  '	Best mobile phones under 10000',
-  'Best mobile phones under 15000',
-  'Best mobile phones under 20000',
-  '	Best mobile phones under 30000',
-  'Best mobile phones under 50000',
-  'Best bettery phones',
-  'Best mobile gaming phones',
-  'Best mobile camera phones',
+  'Best 32 inch LED TVs',
+	'Best 40 inch LED TVs',
+	'Best 43 inch LED TVs',
+	'Best 50 inch LED TVs',
+'	Best 55 inch LED TVs',
+	'Best Ultra HD (UHD) 4K LED TVs',
+	'Best LED TVs under Rs 15,000',
+	'Best LED TVs under Rs 20,000',
+	'Best LED TVs under Rs 25,000',
+	'Best LED TVs under Rs 30,000'
 ];
 
 
@@ -409,7 +409,7 @@ class _LargeAppTVState extends State<LargeAppTV> {
                             });
                           },
                           child: MenuCard(
-                              title: categoryList[1],
+                              title: categoryList[categoryListIndex],
                               color: c1 ? Colors.black12 : Colors.white),
                         ),
 
@@ -574,31 +574,7 @@ class _LargeAppTVState extends State<LargeAppTV> {
                               title: categoryList[8],
                               color: c8 ? Colors.black12 : Colors.white),
                         ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 9;
-                              categoryListIndex = 9;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = false;
-                              c5 = false;
-                              c6 = false;
-                              c7 = false;
-                              c8 = false;
-                              c9 = true;
-                              c10 = false;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[9],
-                              color: c9 ? Colors.black12 : Colors.white),
-                        ),
-
-                        //  Image.network("assets/myapp/unnamed.png"),
+                        
                       ],
                     ),
                   ),

@@ -3,7 +3,7 @@ import 'package:flutterapp/Experiment/navBarDesktop.dart';
 import 'package:flutterapp/Experiment/navBarMobile.dart';
 
 
-class NavBar extends StatelessWidget {
+class navBarMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
