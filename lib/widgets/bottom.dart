@@ -62,7 +62,7 @@ class LargeBottom extends StatelessWidget {
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                               child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       InkWell(
                     onTap: (){
@@ -121,7 +121,7 @@ class LargeBottom extends StatelessWidget {
         ),
         Container(
           width:MediaQuery.of(context).size.width,
-          height: 50.0,
+          height: 40.0,
           color: Colors.black,
           alignment: Alignment(0.0, 0.0),
           child: Text('Copyright © 2020 NoChinaNo.com',style: ktextstyle,textAlign: TextAlign.center,),
