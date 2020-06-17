@@ -341,7 +341,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
       // ],
     ];
     return SizedBox(
-      height: 1100,
+      height: 750,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[

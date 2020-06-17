@@ -68,7 +68,7 @@ class _LargeAppMobileState extends State<LargeAppMobile> {
       ],
     ];
     return SizedBox(
-      height: 1100,
+      height: 750,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
