@@ -4,22 +4,24 @@ import 'package:flutterapp/ProductDetailsPage/Widgets/BuyerOfProduct/BuyerOfProd
 import 'package:flutterapp/ProductDetailsPage/Widgets/DetailsOdProduct/DetailsOfProduct.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/ImageOfProduct/ImageOfProduct.dart';
 
-Widget ProductListMobile(
-    {int productRank,
+Widget productListMobile(
+    {
+      int productRank,
+      double rank,
       String imageUrl,
       String productName,
       String productCountry,
       String productBrand,
-      double productPrice,
+      String productPrice,
       String productDescription,
       String amazonUrl,
       String flipKartUrl,
-      double batteryRating,
-      double processorRating,
+      double proformanceRating,
+      double displayRating,
       double cameraRating,
-      double osRating,
-      double vlmRating,
-      double displayRating
+      double batteryRating,
+      double designRating,
+      double softwareRating,
       }
 
     ){
@@ -48,7 +50,7 @@ Widget ProductListMobile(
                         // '$productDescription'
 
                         Country: '$productCountry',
-                        Price: productPrice,
+                        Price: '$productPrice',
                         brand: '$productBrand',
                         details: '$productDescription',
                         name: '$productName',
@@ -68,37 +70,7 @@ Widget ProductListMobile(
                       SizedBox(
                         height: 120.0,
                         width: 120,
-                        child: MainCircle(rating: batteryRating, category: 'Battery'),
-                      ),
-                       SizedBox(
-                      height: 120.0,
-                      width: 120,
-                      child: MainCircle(rating: processorRating, category: 'Processor',)
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        height: 120.0,
-                        width: 120,
-                        child: MainCircle(rating: cameraRating, category: 'Camera'),
-                      ),
-                       SizedBox(
-                      height: 120.0,
-                      width: 120,
-                      child: MainCircle(rating: osRating, category: 'OS',)
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        height: 120.0,
-                        width: 120,
-                        child: MainCircle(rating: vlmRating, category: 'VLM'),
+                        child: MainCircle(rating: proformanceRating, category: 'Proformance',),
                       ),
                        SizedBox(
                       height: 120.0,
@@ -107,8 +79,38 @@ Widget ProductListMobile(
                       ),
                     ],
                   ),
-                   BuyerOfProductMobile(
-                      constraints.biggest.width,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 120.0,
+                        width: 120,
+                        child: MainCircle(rating: cameraRating, category: 'Camera',),
+                      ),
+                       SizedBox(
+                      height: 120.0,
+                      width: 120,
+                      child: MainCircle(rating: batteryRating, category: 'Battery',)
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 120.0,
+                        width: 120,
+                        child: MainCircle(rating: designRating, category: 'Design',),
+                      ),
+                       SizedBox(
+                      height: 120.0,
+                      width: 120,
+                      child: MainCircle(rating: softwareRating, category: 'Software',)
+                      ),
+                    ],
+                  ),
+                   buyerOfProductMobile(
+                      constraints.biggest.width/2,
                       '$amazonUrl',
                       '$flipKartUrl'
                       )

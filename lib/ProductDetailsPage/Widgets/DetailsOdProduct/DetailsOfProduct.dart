@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/utils/textstyle.dart';
-Widget DetailsOfProduct({double width,int rank,String name,String brand,String Country,double Price,String details}){
+Widget DetailsOfProduct({double width,int rank,String name,String brand,String Country,String Price,String details}){
   return Container(
     width: width,
     child: Column(
@@ -10,7 +10,7 @@ Widget DetailsOfProduct({double width,int rank,String name,String brand,String C
         Card(
           elevation: 10.0,
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
                     child: Row(
                       
             children: [
@@ -26,7 +26,7 @@ Widget DetailsOfProduct({double width,int rank,String name,String brand,String C
           ),
                   ),
         ),
-        SizedBox(height: 5.0,),
+        SizedBox(height: 15.0,),
         Text(
           ' ₹$Price',
           style: ktextstylenameprice,
@@ -44,6 +44,7 @@ Widget DetailsOfProduct({double width,int rank,String name,String brand,String C
         SizedBox(height: 5.0,),
         Text(
           'Details: $details',
+          textAlign: TextAlign.justify,
           style: ktextstylebottom,
         )
       ],

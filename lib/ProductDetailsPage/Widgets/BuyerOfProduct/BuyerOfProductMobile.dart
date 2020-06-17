@@ -2,47 +2,28 @@ import 'package:flutter/material.dart';
 import 'dart:js' as js;
 
 
-Widget BuyerOfProductMobile(double width,String AmazonUrl,String FlipKartUrl){
+Widget buyerOfProductMobile(double width,String amazonUrl,String flipKartUrl){
   return Container(
     width: width,
-    child: Column(
-      children: [
-        Text(
-          'Buy Now From',
-          //style: kTextStyle,
-        ),
-        SizedBox(height: 10.0,),
-
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-
-            //SizedBox(height: 10.0,),
-            MaterialButton(
-              elevation: 20.0,
-              color: Colors.redAccent,
-              onPressed: (){
-                js.context.callMethod("open", ["$AmazonUrl"]);
-              },
-
-              child: Text(
-                  'Amazon'
-              ),
-            ),
-            SizedBox(height: 10.0,),
-            MaterialButton(
-              elevation: 20.0,
-              color: Colors.blueAccent,
-              onPressed: (){
-                js.context.callMethod("open", ["$FlipKartUrl"]);
-              },
-              child: Text(
-                  'Flipkart'
-              ),
-            ),
-          ],
-        ),
-      ],
+    child: Padding(
+      padding: const EdgeInsets.fromLTRB(20, 20, 5, 5),
+      child: Column(
+        children: <Widget>[
+          FlatButton(
+            onPressed: (){
+              js.context.callMethod("open", ["$amazonUrl"]);
+            },
+            child: Image.network("https://i.imgur.com/ZDYsTZh.png",)
+          ),
+          SizedBox(height: 15.0,),
+          FlatButton(
+            onPressed: (){
+              js.context.callMethod("open", ["$flipKartUrl"]);
+            },
+            child: Image.network("https://i.imgur.com/uaZk1yU.png")
+          ),
+        ],
+      ),
     ),
   );
 }

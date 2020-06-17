@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/Experiment/navBarMain.dart';
 import 'package:flutterapp/pages/About.dart';
 import 'package:flutterapp/pages/home.dart';
-import 'package:flutterapp/pages/myapps.dart';
-import 'package:flutterapp/pages/videos.dart';
 import 'package:flutterapp/widgets/bottom.dart';
 import 'utils/responsiveLayout.dart';
 
@@ -70,16 +68,6 @@ class Body extends StatelessWidget {
         return ResponsiveLayout(
           largeScreen: LargeChild(),
           smallScreen: SmallChild(),
-        );
-      case 1:
-        return ResponsiveLayout(
-          largeScreen: LargeApps(),
-          smallScreen: SmallApps(),
-        );
-      case 2:
-        return ResponsiveLayout(
-          largeScreen: LargeVideos(),
-          smallScreen: SmallVideos(),
         );
       case 3:
         return ResponsiveLayout(
