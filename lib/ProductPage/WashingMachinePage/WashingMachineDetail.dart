@@ -334,7 +334,7 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
       // ],
     ];
     return SizedBox(
-      height: 1100,
+      height: 750,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[

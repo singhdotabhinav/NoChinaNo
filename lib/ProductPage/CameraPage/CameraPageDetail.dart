@@ -338,7 +338,7 @@ class _LargeAppCameraState extends State<LargeAppCamera> {
       // ],
     ];
     return SizedBox(
-      height: 1100,
+      height: 750,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[

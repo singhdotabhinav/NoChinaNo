@@ -78,8 +78,8 @@ class LargeAboutUs extends StatelessWidget {
               Container(
                 width:MediaQuery.of(context).size.width/3.0,
                 child: Text(
-                  'NoChinaNo is a Platform Designed for the Wallet Army\nUnbiased Listing and Rating of Non-Chinese Brands Electronic items.',
-                  textAlign: TextAlign.center,
+                  'NoChinaNo is a Platform Designed for the Wallet Army.\nUnbiased Listing and Rating of Non-Chinese Brands Electronic items.',
+                  textAlign: TextAlign.justify,
                   style: ktextstylebottom,
                 ),
               )
@@ -132,8 +132,8 @@ class SmallAboutUs extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30.0),
                 child: Text(
-                  'NoChinaNo is a Platform Designed for the Wallet Army.Unbiased Listing and Rating of Non-Chinese Brands Electronic items.',
-                  textAlign: TextAlign.center,
+                  'NoChinaNo is a Platform Designed for the Wallet Army.\nUnbiased Listing and Rating of Non-Chinese Brands Electronic items.',
+                  textAlign: TextAlign.justify,
                   style: ktextstylebottom,
                 ),
               )

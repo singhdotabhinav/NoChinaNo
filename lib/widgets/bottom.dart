@@ -50,7 +50,7 @@ class LargeBottom extends StatelessWidget {
               ),
              Container(
                 width:MediaQuery.of(context).size.width/4,
-                child: Text('NoChinaNo is a Platform Designed for the Wallet Army\nUnbiased Listing and Rating of Non-Chinese Brands Electronic items.',style: ktextstylebottom,textAlign: TextAlign.center,)
+                child: Text('NoChinaNo is a Platform Designed for the Wallet Army. Unbiased Listing and Rating of Non-Chinese Brands Electronic items.',style: ktextstylebottom,textAlign: TextAlign.justify,)
               ),
               Container(
                width: 2,
