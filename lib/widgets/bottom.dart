@@ -64,17 +64,21 @@ class LargeBottom extends StatelessWidget {
                               child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      InkWell(
+                      Row(
+                        children: [
+                          InkWell(
                     onTap: (){
-                       js.context.callMethod("open", ["https://mail.google.com/mail/u/0/?view=cm&fs=1&to=mail2nochinano@gmail.com&tf=1"]);
+                           js.context.callMethod("open", ["https://mail.google.com/mail/u/0/?view=cm&fs=1&to=mail2nochinano@gmail.com&tf=1"]);
                     },
                     child: Image.network(
-                      'https://i.imgur.com/7lS4VPq.png',
-                      height: 50.0,
-                      width: 50.0,
-                      ),
+                          'https://i.imgur.com/7lS4VPq.png',
+                          height: 50.0,
+                          width: 50.0,
+                          ),
                   ),
-                  SizedBox(width: 5,),
+                        ],
+                      ),
+                  SizedBox(width: 30,),
                   InkWell(
                     onTap: (){
                        js.context.callMethod("open", ["https://t.me/teltonochinano"]);
@@ -85,7 +89,7 @@ class LargeBottom extends StatelessWidget {
                       width: 40.0,
                       ),
                   ),
-                  SizedBox(width: 5,),
+                  SizedBox(width: 30,),
                   InkWell(
                     onTap: (){
                        js.context.callMethod("open", ["https://twitter.com/intent/tweet?url=https%3A%2F%2Ftwitter.com%2Fnochinano1"]);
@@ -96,7 +100,7 @@ class LargeBottom extends StatelessWidget {
                       width: 37.0,
                       ),
                   ),
-                  SizedBox(width: 5,),
+                  SizedBox(width: 30,),
                   InkWell(
                     onTap: (){
                        js.context.callMethod("open", ["https://www.facebook.com/No-China-No-100168928418054"]);

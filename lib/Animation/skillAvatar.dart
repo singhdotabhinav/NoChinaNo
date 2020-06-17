@@ -19,7 +19,7 @@ Widget skillAvatar(String imgUrl, Color glow) {
         shape: CircleBorder(),
         child: CircleAvatar(
           backgroundColor: Colors.grey[100],
-          child: Image.network(
+          child: Image.asset(
             imgUrl,
           ),
           radius: 40.0,

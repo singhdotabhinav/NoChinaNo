@@ -24,11 +24,10 @@ class LargeChild extends StatelessWidget {
           FractionallySizedBox(
             alignment: Alignment.centerRight,
             widthFactor: .5,
-            child: Image.network(
-              'https://i.imgur.com/CeEB8po.png',
-              height: 100,
-              width: 100,
-            ),
+            child: Image.asset('assets/home.png',
+            height: 100,
+            width: 100,
+            )
           ),
           FractionallySizedBox(
             alignment: Alignment.centerLeft,
@@ -86,11 +85,11 @@ class LargeChild extends StatelessWidget {
                         scrollDirection: Axis.horizontal,
                          child: Row(
                           children: [
-                            RoundIcon(imglink:'https://i.imgur.com/QWQpPUG.png',backglow: Colors.green,category:'Mobile Phone',gotoPage: MobilePageMain(),),
-                            RoundIcon(imglink:'https://i.imgur.com/OhckF3X.png',backglow: Colors.yellow,category: 'Laptop',gotoPage: LaptopPageMain()),
-                            RoundIcon(imglink:'https://i.imgur.com/Y6JN5hg.png',backglow: Colors.red,category: 'Television',gotoPage: TVPageMain(),),
-                            RoundIcon(imglink:'https://i.imgur.com/8uqzLuO.png',backglow: Colors.purple,category: 'Audio',gotoPage: AudioPageMain(),),
-                            RoundIcon(imglink: 'https://i.imgur.com/qZYgJH8.png',backglow: Colors.blue,category: 'Camera',gotoPage: CameraPageMain(),)
+                            RoundIcon(imglink:'assets/mobile.png',backglow: Colors.green,category:'Mobile Phone',gotoPage: MobilePageMain(),),
+                            RoundIcon(imglink:'assets/laptop.png',backglow: Colors.yellow,category: 'Laptop',gotoPage: LaptopPageMain()),
+                            RoundIcon(imglink:'assets/tv.png',backglow: Colors.red,category: 'Television',gotoPage: TVPageMain(),),
+                            RoundIcon(imglink:'assets/audio.png',backglow: Colors.purple,category: 'Audio',gotoPage: AudioPageMain(),),
+                            RoundIcon(imglink: 'assets/camera.png',backglow: Colors.blue,category: 'Camera',gotoPage: CameraPageMain(),)
                           ],
                         ),
                       ),
@@ -102,11 +101,11 @@ class LargeChild extends StatelessWidget {
                             //     Colors.green, 'Air Conditioner'),
                             // roundIcon('https://i.imgur.com/yHTYOrX.png',
                             //     Colors.yellow, 'Refrigerators'),
-                            RoundIcon(imglink:'https://i.imgur.com/lAwJW9n.png',backglow: Colors.blue,category:'Tablets',gotoPage: TabletPageMain(),),
-                            RoundIcon(imglink:'https://i.imgur.com/CY7brg5.png',backglow: Colors.purple,category: 'Power Bank',gotoPage: PowerBankMain()),
-                            RoundIcon(imglink:'https://i.imgur.com/ZzFxF4W.png',backglow: Colors.red,category: 'Air Conditioner',gotoPage: ACPageMain(),),
-                            RoundIcon(imglink:'https://i.imgur.com/yHTYOrX.png',backglow: Colors.purple,category: 'Refrigerator',gotoPage: RefrigeratorPageMain(),),
-                            RoundIcon(imglink: 'https://i.imgur.com/GhqdEPD.png',backglow: Colors.red,category: 'Washing Machine',gotoPage: WashingMachineMain(),)
+                            RoundIcon(imglink:'assets/tablet.png',backglow: Colors.blue,category:'Tablets',gotoPage: TabletPageMain(),),
+                            RoundIcon(imglink:'assets/powerbank.png',backglow: Colors.purple,category: 'Power Bank',gotoPage: PowerBankMain()),
+                            RoundIcon(imglink:'assets/ac.png',backglow: Colors.green,category: 'Air Conditioner',gotoPage: ACPageMain(),),
+                            RoundIcon(imglink:'assets/refrigerator.png',backglow: Colors.yellow,category: 'Refrigerator',gotoPage: RefrigeratorPageMain(),),
+                            RoundIcon(imglink: 'assets/washingmachine.png',backglow: Colors.red,category: 'Washing Machine',gotoPage: WashingMachineMain(),)
                           ],
                         ),
                       ),
@@ -179,7 +178,7 @@ class SmallChild extends StatelessWidget {
               height: 50,
             ),
             Center(
-              child: Image.network('https://i.imgur.com/CeEB8po.png'),
+              child: Image.asset('assets/home.png'),
             ),
             SizedBox(
               height: 42,
@@ -189,36 +188,36 @@ class SmallChild extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    RoundIcon(imglink:'https://i.imgur.com/QWQpPUG.png',backglow: Colors.green,category:'Mobile Phone',gotoPage: MobilePageMain(),),
-                    RoundIcon(imglink:'https://i.imgur.com/OhckF3X.png',backglow: Colors.yellow,category: 'Laptop',gotoPage: LaptopPageMain()),
+                    RoundIcon(imglink:'assets/mobile.png',backglow: Colors.green,category:'Mobile Phone',gotoPage: MobilePageMain(),),
+                    RoundIcon(imglink:'assets/laptop.png',backglow: Colors.yellow,category: 'Laptop',gotoPage: LaptopPageMain()),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                     RoundIcon(imglink:'https://i.imgur.com/Y6JN5hg.png',backglow: Colors.red,category: 'Television',gotoPage: TVPageMain(),),
-                     RoundIcon(imglink:'https://i.imgur.com/8uqzLuO.png',backglow: Colors.purple,category: 'Audio',gotoPage: AudioPageMain(),),
+                     RoundIcon(imglink:'assets/tv.png',backglow: Colors.red,category: 'Television',gotoPage: TVPageMain(),),
+                     RoundIcon(imglink:'assets/audio.png',backglow: Colors.purple,category: 'Audio',gotoPage: AudioPageMain(),),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    RoundIcon(imglink: 'https://i.imgur.com/qZYgJH8.png',backglow: Colors.blue,category: 'Camera',gotoPage: CameraPageMain(),),
-                    RoundIcon(imglink:'https://i.imgur.com/lAwJW9n.png',backglow: Colors.blue,category:'Tablets',gotoPage: TabletPageMain(),),
+                    RoundIcon(imglink: 'assets/camera.png',backglow: Colors.blue,category: 'Camera',gotoPage: CameraPageMain(),),
+                    RoundIcon(imglink:'assets/tablet.png',backglow: Colors.blue,category:'Tablets',gotoPage: TabletPageMain(),),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    RoundIcon(imglink:'https://i.imgur.com/CY7brg5.png',backglow: Colors.purple,category: 'Power Bank',gotoPage: PowerBankMain()),
-                    RoundIcon(imglink:'https://i.imgur.com/ZzFxF4W.png',backglow: Colors.red,category: 'Air Conditioner',gotoPage: ACPageMain(),),
+                    RoundIcon(imglink:'assets/powerbank.png',backglow: Colors.purple,category: 'Power Bank',gotoPage: PowerBankMain()),
+                    RoundIcon(imglink:'assets/ac.png',backglow: Colors.green,category: 'Air Conditioner',gotoPage: ACPageMain(),),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                     RoundIcon(imglink:'https://i.imgur.com/yHTYOrX.png',backglow: Colors.purple,category: 'Refrigerator',gotoPage: RefrigeratorPageMain(),),
-                     RoundIcon(imglink: 'https://i.imgur.com/GhqdEPD.png',backglow: Colors.red,category: 'Washing Machine',gotoPage: WashingMachineMain(),)
+                     RoundIcon(imglink:'assets/refrigerator.png',backglow: Colors.yellow,category: 'Refrigerator',gotoPage: RefrigeratorPageMain(),),
+                     RoundIcon(imglink: 'assets/washingmachine.png',backglow: Colors.red,category: 'Washing Machine',gotoPage: WashingMachineMain(),)
                   ],
                 ),
               ],
