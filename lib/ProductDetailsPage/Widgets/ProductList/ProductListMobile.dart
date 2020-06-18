@@ -16,12 +16,23 @@ Widget productListMobile(
       String productDescription,
       String amazonUrl,
       String flipKartUrl,
-      double proformanceRating,
-      double displayRating,
-      double cameraRating,
-      double batteryRating,
-      double designRating,
-      double softwareRating,
+      String categoryone,
+      double ratingone,
+
+      String categorytwo,
+      double ratingtwo,
+
+      String categorythree,
+      double ratingthree,
+
+      String categoryfour,
+      double ratingfour,
+
+      String categoryfive,
+      double ratingfive,
+
+      String categorysix,
+      double ratingsix,
       }
 
     ){
@@ -70,12 +81,12 @@ Widget productListMobile(
                       SizedBox(
                         height: 120.0,
                         width: 120,
-                        child: MainCircle(rating: proformanceRating, category: 'Proformance',),
+                        child: MainCircle(rating: ratingone, category: '$categoryone',),
                       ),
                        SizedBox(
                       height: 120.0,
                       width: 120,
-                      child: MainCircle(rating: displayRating, category: 'Display',)
+                      child: MainCircle(rating: ratingtwo, category: '$categorytwo',)
                       ),
                     ],
                   ),
@@ -85,12 +96,12 @@ Widget productListMobile(
                       SizedBox(
                         height: 120.0,
                         width: 120,
-                        child: MainCircle(rating: cameraRating, category: 'Camera',),
+                        child: MainCircle(rating: ratingthree, category: '$categorythree',),
                       ),
                        SizedBox(
                       height: 120.0,
                       width: 120,
-                      child: MainCircle(rating: batteryRating, category: 'Battery',)
+                      child: MainCircle(rating: ratingfour, category: '$categoryfour',)
                       ),
                     ],
                   ),
@@ -100,12 +111,12 @@ Widget productListMobile(
                       SizedBox(
                         height: 120.0,
                         width: 120,
-                        child: MainCircle(rating: designRating, category: 'Design',),
+                        child: MainCircle(rating: ratingfive, category: '$categoryfive',),
                       ),
                        SizedBox(
                       height: 120.0,
                       width: 120,
-                      child: MainCircle(rating: softwareRating, category: 'Software',)
+                      child: MainCircle(rating: ratingsix, category: '$categorysix',)
                       ),
                     ],
                   ),

@@ -348,7 +348,7 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
               Container(
                 width: MediaQuery.of(context).size.width / 2,
                 child: RoudIconDesktop(
-                  imglink: 'https://i.imgur.com/8uqzLuO.png',
+                  imglink: 'assets/audio.png',
                   backglow: Colors.purple,
                   category: categoryList[categoryListIndex],
                 ),
@@ -703,12 +703,12 @@ class _SmallAppAudioState extends State<SmallAppAudio> {
           productBrand: 'APPLE Inc.',  
           productCountry: 'USA',
           productDescription: 'The iPhone 11 Pro is one of the best mobile phones in India, From a Compay that respects privacy and security of their customers. It is powered with Apple\'s latest and greatest A13 Bionic Chip. On the top u get excelent display. on back it features a 12MP triple Camera Setup.',   
-          proformanceRating: 100,
-          cameraRating: 100,
-          displayRating: 100,
-          batteryRating: 90,
-          softwareRating: 100,
-          designRating: 80,
+          ratingone: 100,
+          ratingthree: 100,
+          ratingtwo: 100,
+          ratingfour: 90,
+          ratingsix: 100,
+          ratingfive: 80,
           amazonUrl:'https://amzn.to/2ADJlPd',
           flipKartUrl: 'http://fkrt.it/s49TtfuuuN', 
         ),
@@ -726,7 +726,7 @@ class _SmallAppAudioState extends State<SmallAppAudio> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 RoudIconMobile(
-                  imglink: 'https://i.imgur.com/8uqzLuO.png',
+                  imglink: 'assets/audio.png',
                   backglow: Colors.purple,
                   category: categoryList[categoryListIndex],
                 ),

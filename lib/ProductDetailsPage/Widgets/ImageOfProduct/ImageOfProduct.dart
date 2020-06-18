@@ -10,7 +10,7 @@ Widget ImageOfProduct(double width ,String ImageUrl,){
           height: 300,
           width: 200,
           //color: Colors.black12,
-          child: Image.network(
+          child: Image.asset(
             ImageUrl,
             //fit: BoxFit.,
 

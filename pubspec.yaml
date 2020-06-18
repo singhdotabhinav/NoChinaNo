@@ -49,6 +49,11 @@ flutter:
   assets:
     - assets/
     - assets/myapp/
+    - assets/img/mobile/bestgaming/
+    - assets/img/mobile/bestmobIndia/
+    - assets/img/mobile/bestbattery/
+
+
 #     - assets/sent.png
   #   - images/a_dot_ham.jpeg
 
