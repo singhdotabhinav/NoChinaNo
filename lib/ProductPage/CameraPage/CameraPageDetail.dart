@@ -689,23 +689,7 @@ class _SmallAppCameraState extends State<SmallAppCamera> {
   Widget build(BuildContext context) {
     List<List<Widget>> productList = [
       [
-        productListMobile(
-          productRank: 1,
-          imageUrl:'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-          productName: 'iPHONE 11 PRO',
-          productPrice: ' 1,21,000.00',
-          productBrand: 'APPLE Inc.',  
-          productCountry: 'USA',
-          productDescription: 'The iPhone 11 Pro is one of the best mobile phones in India, From a Compay that respects privacy and security of their customers. It is powered with Apple\'s latest and greatest A13 Bionic Chip. On the top u get excelent display. on back it features a 12MP triple Camera Setup.',   
-          ratingone: 100,
-          ratingthree: 100,
-          ratingtwo: 100,
-          ratingfour: 90,
-          ratingsix: 100,
-          ratingfive: 80,
-          amazonUrl:'https://amzn.to/2ADJlPd',
-          flipKartUrl: 'http://fkrt.it/s49TtfuuuN', 
-        ),
+        
       ]
     ];
     return SingleChildScrollView(
@@ -833,125 +817,7 @@ class _SmallAppCameraState extends State<SmallAppCamera> {
                           title: categoryList[3],
                           color: c3 ? Colors.black12 : Colors.white),
                     ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 4;
-                          categoryListIndex = 4;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = true;
-                          c5 = false;
-                          c6 = false;
-                          c7 = false;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[4],
-                          color: c4 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 5;
-                          categoryListIndex = 5;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = true;
-                          c6 = false;
-                          c7 = false;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[5],
-                          color: c5 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 6;
-                          categoryListIndex = 6;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = false;
-                          c6 = true;
-                          c7 = false;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[6],
-                          color: c6 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 7;
-                          categoryListIndex = 7;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = false;
-                          c6 = false;
-                          c7 = true;
-                          c8 = false;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[7],
-                          color: c7 ? Colors.black12 : Colors.white),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          productListX = 8;
-                          categoryListIndex = 8;
-                          c0 = false;
-                          c1 = false;
-                          c2 = false;
-                          c3 = false;
-                          c4 = false;
-                          c5 = false;
-                          c6 = false;
-                          c7 = false;
-                          c8 = true;
-                          c9 = false;
-                          c10 = false;
-                          c11 = false;
-                        });
-                      },
-                      child: MenuCard(
-                          title: categoryList[8],
-                          color: c8 ? Colors.black12 : Colors.white),
-                    ),
-                   
-
-                    //  Image.network("assets/myapp/unnamed.png"),
-                  ],
+                    ],
                 ),
               ),
             ),
