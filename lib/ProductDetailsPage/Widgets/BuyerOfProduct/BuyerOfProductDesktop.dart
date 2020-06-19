@@ -18,14 +18,14 @@ Widget buyerOfProductDesktop(double width,String amazonUrl,String flipKartUrl){
             onPressed: (){
               js.context.callMethod("open", ["$amazonUrl"]);
             },
-            child: Image.network("https://i.imgur.com/ZDYsTZh.png",)
+            child: Image.network("https://i.imgur.com/ZDYsTZh.png",width: 150,height: 150,)
           ),
-          SizedBox(height: 15.0,),
+          SizedBox(height: 5.0,),
           FlatButton(
             onPressed: (){
               js.context.callMethod("open", ["$flipKartUrl"]);
             },
-            child: Image.network("https://i.imgur.com/uaZk1yU.png")
+            child: Image.network("https://i.imgur.com/uaZk1yU.png",width: 150,height: 150,)
           ),
         ],
       ),

@@ -38,73 +38,80 @@ Widget productListDesktop(
 {
  return LayoutBuilder(
       builder: (context,constraints) {
-        return Card(
-          elevation: 20.0,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              ImageOfProduct(
-                  constraints.biggest.width / 4,
-                  '$imageUrl'
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  DetailsOfProduct(
-                    rank: productRank,
-                    Country: '$productCountry',
-                    Price: '$productPrice',
-                    brand: '$productBrand',
-                    details: '$productDescription',
-                    name: '$productName',
-                    width: constraints.biggest.width / 2,
-                  ),
-                  SizedBox(height: 30.0,),
-                  SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        return SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+                  child: Card(
+            elevation: 20.0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                ImageOfProduct(
+                    //constraints.biggest.width / 4,
+                    300.0,
+                    '$imageUrl'
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(
-                        height: 100.0,
-                        width: 100,
-                        child: MainCircle(rating: ratingone, category: '$categoryone',)
+                    DetailsOfProduct(
+                      rank: productRank,
+                      Country: '$productCountry',
+                      Price: '$productPrice',
+                      brand: '$productBrand',
+                      details: '$productDescription',
+                      name: '$productName',
+                     // width: constraints.biggest.width / 2,
+                     width: 600.0
                     ),
-                    SizedBox(
-                        height: 100.0,
-                        width: 100,
-                        child: MainCircle(rating: ratingtwo, category: '$categorytwo',)
-                    ),
-                    SizedBox(
-                        height: 100.0,
-                        width: 100,
-                        child: MainCircle(rating: ratingthree, category: '$categorythree',)
-                    ),
-                    SizedBox(
-                        height: 100.0,
-                        width: 100,
-                        child: MainCircle(rating: ratingfour, category: '$categoryfour',)
-                    ),
-                    SizedBox(
-                        height: 100.0,
-                        width: 100,
-                        child: MainCircle(rating: ratingfive, category: '$categoryfive',)
-                    ),
-                    SizedBox(
-                        height: 100.0,
-                        width: 100,
-                        child: MainCircle(rating: ratingsix, category: '$categorysix',)
-                    ),
+                    SizedBox(height: 30.0,),
+                    SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                          height: 100.0,
+                          width: 100,
+                          child: MainCircle(rating: ratingone, category: '$categoryone',)
+                      ),
+                      SizedBox(
+                          height: 100.0,
+                          width: 100,
+                          child: MainCircle(rating: ratingtwo, category: '$categorytwo',)
+                      ),
+                      SizedBox(
+                          height: 100.0,
+                          width: 100,
+                          child: MainCircle(rating: ratingthree, category: '$categorythree',)
+                      ),
+                      SizedBox(
+                          height: 100.0,
+                          width: 100,
+                          child: MainCircle(rating: ratingfour, category: '$categoryfour',)
+                      ),
+                      SizedBox(
+                          height: 100.0,
+                          width: 100,
+                          child: MainCircle(rating: ratingfive, category: '$categoryfive',)
+                      ),
+                      SizedBox(
+                          height: 100.0,
+                          width: 100,
+                          child: MainCircle(rating: ratingsix, category: '$categorysix',)
+                      ),
+                    ],
+                  ),
+                ),
                   ],
                 ),
-              ),
-                ],
-              ),
-              buyerOfProductDesktop(
-                  constraints.biggest.width / 5,
-                  '$amazonUrl',
-                  '$flipKartUrl')
-            ],
+                buyerOfProductDesktop(
+                   // constraints.biggest.width / 5,
+                   250,
+
+                    '$amazonUrl',
+                    '$flipKartUrl')
+              ],
+            ),
           ),
         );
       }
