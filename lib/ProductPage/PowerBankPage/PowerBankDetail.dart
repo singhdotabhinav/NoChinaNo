@@ -132,7 +132,8 @@ productListDesktop(
           categorysix: 'Reviews',
           ratingsix: 100,   
           amazonUrl:'https://www.amazon.in/Intex-PB11K-11000mAH-Power-Black/dp/B01951R2S2/ref=sr_1_5?crid=1649RQX3X3NWW&dchild=1&keywords=best+power+bank&qid=1592489236&refinements=p_89%3AIntex&rnid=3837712031&sprefix=best+power%2Caps%2C622&sr=8-5',
-          flipKartUrl:'' ),
+          flipKartUrl:'' 
+          ),
 
 productListDesktop(
           productRank:5,       
