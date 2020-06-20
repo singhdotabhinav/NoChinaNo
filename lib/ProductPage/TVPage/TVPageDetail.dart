@@ -27,7 +27,7 @@ List<String> categoryList = [
 	'Best 40 inch LED TVs',
 	'Best 43 inch LED TVs',
 	'Best 50 inch LED TVs',
-'	Best 55 inch LED TVs',
+  'Best 55 inch LED TVs',
 	'Best Ultra HD (UHD) 4K LED TVs',
 	'Best LED TVs under Rs 15,000',
 	'Best LED TVs under Rs 20,000',
@@ -46,297 +46,99 @@ class _LargeAppTVState extends State<LargeAppTV> {
   @override
   Widget build(BuildContext context) {
     List<List<Widget>> product_list = [
-      // [
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      // ],
-      // [
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      // ],
-      // [
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      //   ProductListDesktop(
-      //     amazonUrl:
-      //         'https://www.amazon.in/Apple-iPhone-11-Pro-64GB/dp/B07XVM1JFS/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11+pro&qid=1591720603&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTlhZTzhCWVNWVk9NJmVuY3J5cHRlZElkPUEwMTY4MzE4Mk9XTDRGUURJQ05OUiZlbmNyeXB0ZWRBZElkPUEwOTM5MzQzMUk2WlNGR0tKNFVONSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=',
-      //     batteryRating: 90,
-      //     cameraRating: 90,
-      //     osRating: 80,
-      //     vlmRating: 70,
-      //     processorRating: 100,
-      //     productBrand: 'America',
-      //     productCountry: 'USA',
-      //     productDescription: 'Lund jaissa phone hai ....mat lena kabhi bhi',
-      //     productName: 'Iphone 11 Pro',
-      //     productPrice: 10000,
-      //     productRank: 1,
-      //     flipKartUrl:
-      //         'https://www.flipkart.com/apple-iphone-11-pro-midnight-green-64-gb/p/itm471de0d2e8474?pid=MOBFKCTSN3TG3RFJ&lid=LSTMOBFKCTSN3TG3RFJWPVPDJ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7a7fb9f4-b06d-4cac-ad2e-8c44bf035c7e.MOBFKCTSN3TG3RFJ.SEARCH&ppt=sp&ppn=sp&ssid=vnqvx1kreo0000001591720613046&qH=2af92350bd5b683b',
-      //     imageUrl:
-      //         'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-      //   ),
-      // ],
+      [
+        productListDesktop(
+          productRank:   1,      
+         imageUrl:'assets/Sony Bravia W672F 80.1cm (32 inch) Full HD LED Smart TV.png',   
+          productName: 'Sony Bravia KLV-32W672F',
+          productPrice: '33,390',
+          productBrand: 'Sony',  
+          productCountry: 'Japan',
+          productDescription: 'Full HD clarity, a Deep Bass and superior sound quality make for a great TV. This Sony TV comes with a bundle of exciting features, such as Instant YouTube Access, Multi-connectivity options and X-Protection PRO that looks after your TV no matter the weather condition.',   
+          categoryone: 'Display',
+          ratingone: 100,
+          categorytwo:'Resolution' ,
+          ratingtwo: 100,
+          categorythree: 'Smart TV',
+          ratingthree: 80,
+          amazonUrl:'',
+          flipKartUrl: 'https://www.flipkart.com/sony-bravia-w672f-80-1cm-32-inch-full-hd-led-smart-tv/p/itmf5fjurbbkthjc?pid=TVSF5FJUZ6AWHAPM&lid=LSTTVSF5FJUZ6AWHAPMLHUORY&marketplace=FLIPKART&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=010562c7-c6ae-4388-8d76-489a38b317a5.TVSF5FJUZ6AWHAPM.SEARCH&ppt=sp&ppn=sp&ssid=8z4vwg95xc0000001592504934099&qH=da801b48ba52c12a', 
+        ),
+productListDesktop(
+          productRank:2,      
+         imageUrl:'assets/LG 80 cm (32 Inches) HD Ready Smart LED TV 32LM560BPTC.png',   
+          productName: 'LG 80 cm 32LM560BPTC',
+          productPrice: '33,390',
+          productBrand: 'LG',  
+          productCountry: 'South Korea',
+          productDescription: 'Enjoy your favourite movies & TV series on Netflix, Hotstar, Amazon Prime and many more on your LG 32LM560B Smart TV with WebOS. Key Features Include: IPS Panel, Wide Viewing Angle, Active HDR, AI Launcher (with preview), Home Dashboard, DTS Virtual:X, 4K Upscaler, Magic Mobile Connection, Quad Core Processor, Cloud Photo & Video.',   
+          categoryone: 'Display',
+          ratingone: 90,
+          categorytwo:'Resolution' ,
+          ratingtwo: 70,
+          categorythree: 'Smart TV',
+          ratingthree: 90,
+            amazonUrl:'https://www.amazon.in/LG-Inches-Ready-32LM560BPTC-Display/dp/B07TMFQMJC/ref=sr_1_1?dchild=1&keywords=LG+32LM560BPTC&qid=1592506075&sr=8-1',
+          flipKartUrl: ''
+),
+
+productListDesktop(
+          productRank: 3,      
+         imageUrl:'Ignore this',   
+          productName: 'Samsung 80 cm Series 4 UA32N4300AR',
+          productPrice: '₹ 23,000',
+          productBrand: 'Samsung',  
+          productCountry: 'Japan',
+          productDescription: 'With this Samsung Smart TV, you can now combine both work and fun. Its ability to convert to a computer makes it highly efficient. You can work when you want to, and once you are bored, you can switch to unlimited entertainment. It can also be used as a virtual music system. You can also share content from your phone to this TV and enjoy videos and photos with your family. Besides these mentioned features, it also comes with a varied range of other user-friendly options that justify its smart tag.',   
+          categoryone: 'Display',
+          ratingone: 100,
+          categorytwo:'Screen' ,
+          ratingtwo: 100,
+          categorythree: 'Smart TV',
+          ratingthree: 80,
+            amazonUrl:'https://www.amazon.in/dp/B07G3K6TP9?tag=tvprodupldes-21',
+          flipKartUrl:'https://www.flipkart.com/samsung-series-4-80cm-32-inch-hd-ready-led-smart-tv/p/itmf5xzyyfcfcjdn?pid=TVSF5XZYHQRPXVJ6&lid=LSTTVSF5XZYHQRPXVJ62KWZTL&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=43be6079-9d7d-4582-af14-917bed63cb2a.TVSF5XZYHQRPXVJ6.SEARCH&ppt=sp&ppn=sp&ssid=tl5q8ntbts0000001592542590414&qH=21732181604140cd', 
+),
+
+productListDesktop(
+          productRank:4   ,      
+         imageUrl:'Ignore this',   
+          productName: 'Onida 80 cm IPS LED TV – Fire TV Edition',
+          productPrice: '₹ 16,999',
+          productBrand: 'Onida',  
+          productCountry: 'India',
+          productDescription: 'Access an ever-growing selection of streaming content from a vast catalog of movies and TV shows from Prime Video, Hotstar, Netflix, Zee5, Sony LIV, and more. Enjoy thousands of apps and Alexa skills. The 16W speaker output with Dolby and DTS TruSurround sound giving you a theatre-like Surround Sound Experience.',   
+          categoryone: 'Display Type',
+          ratingone:80 ,
+          categorytwo:'Screen Resolution' ,
+          ratingtwo:70,
+          categorythree: 'Smart TV',
+          ratingthree:70 ,
+          amazonUrl:'https://www.amazon.in/Onida-Inches-Ready-Smart-IPS/dp/B0816ZQ8TZ/ref=sr_1_2?crid=17CY57YG7BGL4&dchild=1&keywords=onida+32+inch+smart+led+tv+full+hd&qid=1592664168&sprefix=onida+%2Caps%2C361&sr=8-2',
+          flipKartUrl: '',
+        ),
+productListDesktop(
+          productRank: 5  ,      
+         imageUrl:'Ignore this',   
+          productName: 'Sony KLV-32R202F',
+          productPrice: '₹ 19,999',
+          productBrand: 'Sony',  
+          productCountry: 'Japan',
+          productDescription: 'After a tiring day, unwind by enjoying your favourite action flicks and romcoms on this Sony TV. Watch visuals come to life on its 80 cm display. You can use the Photoframe mode to watch your cherished pictures on the big screen.',   
+          categoryone: 'Display Type',
+          ratingone:70 ,
+          categorytwo:'Screen Resolution' ,
+          ratingtwo:70,
+          categorythree: 'Smart TV',
+          ratingthree:20 ,
+          amazonUrl:'https://www.amazon.in/Sony-inches-Ready-KLV-32R202F-Black/dp/B07CBWFQXC/ref=sr_1_1?dchild=1&keywords=sony+KLV-32R202F&qid=1592664861&sr=8-1',
+          flipKartUrl: 'https://www.flipkart.com/sony-bravia-r202f-80cm-32-inch-hd-ready-led-tv/p/itmf5fjurajqcy5g?pid=TVSF5FJUEGGA3AWT&lid=LSTTVSF5FJUEGGA3AWTFTIYMO&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=dc823aa2-a976-4a82-84f4-ce19d6214d95.TVSF5FJUEGGA3AWT.SEARCH&ppt=sp&ppn=sp&ssid=dwcdoibnhs0000001592665076610&qH=2cb52e7fdd35308b',
+        ),
+
+
+
+      ]
+
     ];
     return SizedBox(
       height: 750,
@@ -409,7 +211,7 @@ class _LargeAppTVState extends State<LargeAppTV> {
                             });
                           },
                           child: MenuCard(
-                              title: categoryList[categoryListIndex],
+                              title: categoryList[1],
                               color: c1 ? Colors.black12 : Colors.white),
                         ),
 
@@ -587,7 +389,7 @@ class _LargeAppTVState extends State<LargeAppTV> {
                 child: CarouselSlider(
                   options: CarouselOptions(
                       height: 500.0,
-                      reverse: true,
+                      reverse: false,
                       autoPlay: false,
                       enlargeCenterPage: true,
                       scrollDirection: Axis.vertical),
@@ -595,6 +397,8 @@ class _LargeAppTVState extends State<LargeAppTV> {
                     1,
                     2,
                     3,
+                    4,
+                    5
                   ].map((i) {
                     return Builder(
                       builder: (BuildContext context) {
