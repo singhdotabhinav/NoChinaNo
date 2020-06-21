@@ -25,7 +25,7 @@ bool c11 = false;
 List<String> categoryList = [
   'Best mini  Refrigerators',
   'Best  Refrigerators under 20k',
-  'Best mobile phones under 30k',
+  'Best Refrigerators under 30k',
   
 ];
 
