@@ -61,8 +61,8 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 80,
-          amazonUrl:'',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3eoFFPO',
+          flipKartUrl: 'http://fkrt.it/2UpPEPNNNN', 
         ),
         productListDesktop(
           productRank:  2,       
@@ -85,8 +85,8 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
           categorysix: 'Price',
           ratingsix: 70,
    
-          amazonUrl:'https://www.amazon.in/Sony-SRS-XB12-Portable-Waterproof-Wireless/dp/B07QD1FSWD/ref=sr_1_1?dchild=1&keywords=sony+srs-xb12+10w+bluetooth+speaker&qid=1592484626&sr=8-1 ',
-          flipKartUrl: 'https://www.flipkart.com/sony-srs-xb12-10-w-bluetooth-speaker/p/itm3f310308b23f1?pid=ACCFF9GFD7SRY5QG&lid=LSTACCFF9GFD7SRY5QGOHCP8A&marketplace=FLIPKART&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_17_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_17_na_na_na&fm=SEARCH&iid=dc1343d5-f1a6-473c-a41f-21e8cfa3a04e.ACCFF9GFD7SRY5QG.SEARCH&ppt=sp&ppn=sp&ssid=337lyinvfk0000001592547376115&qH=d79cfb32b8446778 ', 
+          amazonUrl:'https://amzn.to/2V2hzCS',
+          flipKartUrl:'http://fkrt.it/2d6nDPNNNN', 
         ),
         productListDesktop(
           productRank:   3,
@@ -108,8 +108,8 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 70,
-          amazonUrl:'https://www.amazon.in/JBL-Tuner-Wireless-Bluetooth-Speaker/dp/B07KRQTTF3/ref=sr_1_3?crid=2O8RCYNJAYWQK&dchild=1&keywords=jbl+tuner+portable+bluetooth+speaker&qid=1592485056&sprefix=jbl+tuner%2Caps%2C341&sr=8-3',
-          flipKartUrl: 'https://www.flipkart.com/jbl-tuner-portable-bluetooth-speaker/p/itma81488a704ad3?pid=ACCFB4ERBJQ7GZKJ&lid=LSTACCFB4ERBJQ7GZKJCGAMRQ&marketplace=FLIPKART&srno=s_1_2&otracker=search&otracker1=search&fm=SEARCH&iid=dd0bfd66-e163-49f2-a5f7-bf18bf5e874a.ACCFB4ERBJQ7GZKJ.SEARCH&ppt=sp&ppn=sp&ssid=trtfp8nmvk0000001592547988011&qH=2c0e338c5836b711', 
+          amazonUrl:'https://amzn.to/37P1HJc',
+          flipKartUrl: 'http://fkrt.it/2dMaEPNNNN', 
         ),
         productListDesktop(
           productRank: 4,       
@@ -132,8 +132,8 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
           categorysix: 'Price',
           ratingsix: 70,
 
-          amazonUrl:'https://www.amazon.in/Zebronics-Feast-100-Supporting-Connectivity/dp/B081H8NT15/ref=sr_1_1?dchild=1&keywords=Zebronics+ZEB-SOUND+FEAST+100+Bluetooth+Party+Speaker&qid=1592485957&sr=8-1',
-          flipKartUrl: 'https://www.flipkart.com/zebronics-zeb-sound-feast-100-bluetooth-party-speaker/p/itm1f989b4982989?pid=ACCFZG94VFGHJSHH&lid=LSTACCFZG94VFGHJSHHYIGYQZ&marketplace=FLIPKART&srno=s_1_27&otracker=search&otracker1=search&fm=SEARCH&iid=2c3077a9-a777-4428-83da-b4217476c1eb.ACCFZG94VFGHJSHH.SEARCH&ppt=sp&ppn=sp&ssid=yh85vrbjw00000001592548715891&qH=d380c563e1c549af', 
+          amazonUrl:'https://amzn.to/3deTxeg',
+          flipKartUrl: 'http://fkrt.it/LmqVI4uuuN', 
         ),
         productListDesktop(
           productRank: 5,
@@ -155,8 +155,8 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 70,
-          amazonUrl: '',
-          flipKartUrl: ''
+          amazonUrl: 'https://amzn.to/2YQgZcy',
+          flipKartUrl: 'http://fkrt.it/LCTMH4uuuN'
         ),
       ],
       [
@@ -181,8 +181,8 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
           categorysix: 'Price',
           ratingsix: 80,
 
-          amazonUrl : 'https://www.amazon.in/JBL-Charge-Portable-Speaker-Powerbank/dp/B01FTG72H8/ref=sr_1_4?dchild=1&keywords=jbl+portable+speakers&qid=1592491888&s=electronics&sr=1-4',
-          flipKartUrl: ''
+          amazonUrl : 'https://amzn.to/37PPYdb',
+          flipKartUrl: 'http://fkrt.it/LmUGI4uuuN'
  
         ),
         productListDesktop(
@@ -205,8 +205,8 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 90,       
-          amazonUrl :'',
-         flipKartUrl : 'https://www.amazon.in/JBL-Charge-Portable-Speaker-Powerbank/dp/B01FTG72H8/ref=sr_1_4?dchild=1&keywords=jbl+portable+speakers&qid=1592491888&s=electronics&sr=1-4'
+          amazonUrl :'https://amzn.to/318zqw1',
+         flipKartUrl : 'http://fkrt.it/2FtPFPNNNN'
         ),
         productListDesktop(
           productRank: 3,
@@ -228,8 +228,8 @@ class _LargeAppAudioState extends State<LargeAppAudio> {
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/JBL-Waterproof-Bluetooth-Speaker-PartyBoost/dp/B07SVH63PX/ref=sr_1_9?dchild=1&keywords=jbl+portable+speakers&qid=1592491888&s=electronics&sr=1-9',
-          flipKartUrl: 'https://www.flipkart.com/jbl-flip-5-20-w-bluetooth-speaker/p/itm1862a9a0b41d6?pid=ACCFGNE2G54FSFHZ&lid=LSTACCFGNE2G54FSFHZT2JPW4&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=d138f075-b8c6-4ae0-8062-0e009fd38d6e.ACCFGNE2G54FSFHZ.SEARCH&ppt=sp&ppn=sp&ssid=1w5uygxxu80000001592555861177&qH=1bed802db8fa9596', 
+          amazonUrl:'https://amzn.to/2zP5z08',
+          flipKartUrl: 'http://fkrt.it/LC0jV4uuuN', 
         ),
 
 productListDesktop(
@@ -252,8 +252,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix:60,
-          amazonUrl:'',
-          flipKartUrl: 'https://www.flipkart.com/bose-soundlink-micro-portable-bluetooth-speaker/p/itmd48ac004a8ab6?pid=ACCFFGNZGXMUXENJ&lid=LSTACCFFGNZGXMUXENJTCKNXS&marketplace=FLIPKART&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=53d39d1c-0798-4d87-b991-43179e973381.ACCFFGNZGXMUXENJ.SEARCH&ppt=sp&ppn=sp&ssid=i9viat4m7k0000001592557408460&qH=c7a0f80a5390fc89', 
+          amazonUrl:'https://amzn.to/37L3SgX',
+          flipKartUrl: 'http://fkrt.it/LX9dV4uuuN', 
         ),
 
 productListDesktop(
@@ -266,7 +266,7 @@ productListDesktop(
           productDescription: 'Compact speakers, Down-firing subwoofer, Wired remote, Headphone jack, Cable management system, Audio controls',   
          categoryone: 'Sound',
           ratingone: 80,
-          categorytwo:'Battery' ,
+          categorytwo:'Cable' ,
           ratingtwo: 70,
           categorythree: 'Durability',
           ratingthree: 80, 
@@ -276,8 +276,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/gp/offer-listing/B00KOUK1IM/ref=dp_olp_new_mbc?ie=UTF8&condition=new',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2Csft94',
+          flipKartUrl: 'http://fkrt.it/2oYwFPNNNN', 
         )
       ],
       [
@@ -301,8 +301,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:'https://www.amazon.in/JBL-Over-Ear-Wireless-Headphones-Connection/dp/B08145ZWFS/ref=sr_1_1?dchild=1&keywords=jbl+tune+700+bt&qid=1592514052&sr=8-1',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3dmyvdM',
+          flipKartUrl: 'http://fkrt.it/2GzgDPNNNN', 
         ),
          productListDesktop(
           productRank: 2,
@@ -324,8 +324,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:'https://rb.gy/9rlfwl',
-          flipKartUrl: 'https://rb.gy/9f9n2t',
+          amazonUrl:'https://amzn.to/3133uZC',
+          flipKartUrl: 'http://fkrt.it/2GLhFPNNNN',
         ),
 productListDesktop(
           productRank: 3,
@@ -337,7 +337,7 @@ productListDesktop(
           productDescription: 'Recommended for gaming and inbuilt mic available',   
            categoryone: 'Sound',
           ratingone: 80,
-          categorytwo:'Battery' ,
+          categorytwo:'Cable' ,
           ratingtwo: 70,
           categorythree: 'Durability',
           ratingthree: 70, 
@@ -347,8 +347,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 70,
-          amazonUrl:'',
-          flipKartUrl: 'https://rb.gy/ara6n7',
+          amazonUrl:'https://amzn.to/2V06bHG',
+          flipKartUrl: 'http://fkrt.it/L6TNI4uuuN',
           ),
 
 productListDesktop(
@@ -361,7 +361,7 @@ productListDesktop(
           productDescription: 'Smooth Audio Reproduction With Deep Bass Extension. Hypo-allergenic Earpads are Field-replacable',   
           categoryone: 'Sound',
           ratingone: 90,
-          categorytwo:'Battery' ,
+          categorytwo:'Cable' ,
           ratingtwo: 70,
           categorythree: 'Durability',
           ratingthree: 80,
@@ -371,8 +371,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 80,
-         amazonUrl:'',
-          flipKartUrl: 'https://rb.gy/qaem0m', 
+         amazonUrl:'https://amzn.to/3fKlZGC',
+          flipKartUrl: 'http://fkrt.it/LcRTH4uuuN', 
         ),
 
       productListDesktop(
@@ -385,7 +385,7 @@ productListDesktop(
           productDescription:'Connector type: USB,Noise canceling clarityExcellent sound clarity, Stereo sound - Sennheiser quality',   
            categoryone: 'Sound',
           ratingone: 90,
-          categorytwo:'Battery' ,
+          categorytwo:'Cable' ,
           ratingtwo: 100,
           categorythree: 'Durability',
           ratingthree: 80, 
@@ -395,8 +395,9 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:'',
-          flipKartUrl: 'https://rb.gy/vaoxnc' )	
+          amazonUrl:'https://amzn.to/2V43Dsi',
+          flipKartUrl: 'http://fkrt.it/2fr3DPNNNN'
+        )	
 
       ],
 
@@ -421,8 +422,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 100,
-          amazonUrl:'https://amzn.to/2zIfaFY',
-          flipKartUrl: 'https://bit.ly/3egskcs', 
+          amazonUrl:'https://amzn.to/3142q7Y',
+          flipKartUrl: 'http://fkrt.it/LxoBI4uuuN', 
         ),
 
      productListDesktop(
@@ -445,8 +446,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 80,
-         amazonUrl:'https://amzn.to/2UWGA2v',
-          flipKartUrl: '', 
+         amazonUrl:'https://amzn.to/2Yll61l',
+          flipKartUrl: 'http://fkrt.it/29tTDPNNNN', 
         ),
 
          productListDesktop(
@@ -469,8 +470,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 80,
-          amazonUrl:'https://amzn.to/3fQ3Ozp',
-          flipKartUrl: ' ' 
+          amazonUrl:'https://amzn.to/2Ne2A4F',
+          flipKartUrl: 'http://fkrt.it/29I!DPNNNN' 
            ),
 
        productListDesktop(
@@ -493,8 +494,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:'https://amzn.to/2AQU88D',
-          flipKartUrl: '' 
+          amazonUrl:'https://amzn.to/37MZFcx',
+          flipKartUrl: 'http://fkrt.it/LEiC34uuuN' 
           ),
 
         productListDesktop(
@@ -507,7 +508,7 @@ productListDesktop(
           productDescription: 'Connector type: 3.5 mm, Foldable/ Collapsible: Designed for people always on the move, easy storage and easy to carry, One button universal remote allows you to answer and manage your calls effortlessly',   
            categoryone: 'Sound',
           ratingone: 80,
-          categorytwo:'Battery' ,
+          categorytwo:'Cable' ,
           ratingtwo:90,
           categorythree: 'Durability',
           ratingthree: 80, 
@@ -517,8 +518,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:'',
-          flipKartUrl: 'https://bit.ly/3ddTXS3', 
+          amazonUrl:'https://amzn.to/2YVNVjL',
+          flipKartUrl: 'http://fkrt.it/LxyYV4uuuN', 
          )
       ],
       [
@@ -542,8 +543,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:'https://amzn.to/2NdIQhA',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3dlRGnK',
+          flipKartUrl: 'http://fkrt.it/LEyXV4uuuN', 
         ),
 
 productListDesktop(
@@ -566,8 +567,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 80,
-          amazonUrl:'https://amzn.to/2BqdGAA',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3dlxjY2',
+          flipKartUrl: 'http://fkrt.it/29nXDPNNNN', 
         ),
 
 productListDesktop(
@@ -590,8 +591,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 80,         
-          amazonUrl:'https://amzn.to/2UWEPSY',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/312xHbu',
+          flipKartUrl: 'http://fkrt.it/LWhDI4uuuN', 
         ),
 
 productListDesktop(
@@ -604,7 +605,7 @@ productListDesktop(
           productDescription: 'n-line mic for hands-free phone calling ; Sensitivities (dB/mW): 110 dB / mW ; Impedance (Ohm): 16 ohm (1 kHz). 12 mm neodymium drivers for powerful extra bass sound',   
           categoryone: 'Sound',
           ratingone: 80,
-          categorytwo:'Battery' ,
+          categorytwo:'Cable' ,
           ratingtwo: 80,
           categorythree: 'Durability',
           ratingthree: 80, 
@@ -614,8 +615,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 80,         
-          amazonUrl:'https://amzn.to/3ebp5D0',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3es8SK0',
+          flipKartUrl: 'http://fkrt.it/2llEDPNNNN', 
         ),
 
 productListDesktop(
@@ -638,8 +639,8 @@ productListDesktop(
           ratingfive: 70,
           categorysix: 'Price',
           ratingsix: 60,
-          amazonUrl:'https://amzn.to/2BprTy4',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/2Yi8qs2',
+          flipKartUrl:'http://fkrt.it/L7TA34uuuN' 
           )
       ],
       [
@@ -665,14 +666,15 @@ productListDesktop(
           categorysix: 'Price',
           ratingsix: 90,
 
-          amazonUrl:'https://amzn.to/3dglySP',
-          flipKartUrl: '', ),
+          amazonUrl:'https://amzn.to/312umt1',
+          flipKartUrl: 'http://fkrt.it/2zSXEPNNNN', 
+          ),
 
 productListDesktop(
           productRank: 2,
           imageUrl:'assets/JBL Endurance Run Wired Headset.png',
           productName: 'JBL Endurance Run Wired Headset',
-          productPrice: '1,299',
+          productPrice: '1,099',
           productBrand: 'JBL',  
           productCountry: 'United States',
           productDescription: 'Connector type: 3.5 mm. Flatwire: Stays tangle free even in your pocket',   
@@ -688,8 +690,8 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Price',
           ratingsix: 80,
-          amazonUrl:'',           
-          flipKartUrl: 'https://bit.ly/3fwLYBc', 
+          amazonUrl:'https://amzn.to/2V3X6xo',           
+          flipKartUrl: 'https://www.flipkart.com/jbl-endurance-run-wired-headset/p/itm012f947ddeaa9?pid=ACCF8CF7GTNYUWK7&amp;lid=LSTACCF8CF7GTNYUWK7I1G46I&amp;marketplace=FLIPKART&amp;spotlightTagId=BestvalueId_0pm/fcn&amp;srno=s_1_8&amp;otracker=AS_Query_OrganicAutoSuggest_4_3_na_na_na&amp;otracker1=AS_Query_OrganicAutoSuggest_4_3_na_na_na&amp;fm=SEARCH&amp;iid=11b052be-1b61-4f12-9f15-7e52a2ec234b.ACCF8CF7GTNYUWK7.SEARCH&amp;ppt=sp&amp;ppn=sp&amp;ssid=ubwp2itbgg0000001592627097892&amp;qH=026b2df5acdee0ff', 
         ),
 
 productListDesktop(
@@ -712,8 +714,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:'',
-          flipKartUrl: 'https://bit.ly/2YNc4Jy', 
+          amazonUrl:'https://amzn.to/3hQitfo',
+          flipKartUrl: 'http://fkrt.it/L7CoH4uuuN', 
         ),
 
 productListDesktop(
@@ -737,7 +739,8 @@ productListDesktop(
           ratingfive: 100,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:' //bit.ly/3ddTXS3'
+          amazonUrl:'https://amzn.to/2YYFjsZ',
+          flipKartUrl: 'http://fkrt.it/2KbrDPNNNN'
 ),
 productListDesktop(
           productRank: 5,
@@ -749,7 +752,7 @@ productListDesktop(
           productDescription: 'ightweight for ultimate music mobility. Comfortable, secure-fitting silicone earbuds for long listening hours',
           categoryone: 'Sound',
           ratingone: 80,
-          categorytwo:'Battery' ,
+          categorytwo:'Cable' ,
           ratingtwo: 90,
           categorythree: 'Durability',
           ratingthree: 80, 
@@ -759,8 +762,8 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Price',
           ratingsix: 90,
-          amazonUrl:'https://amzn.to/3efHwq5',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2YkrTrZ',
+          flipKartUrl: 'http://fkrt.it/LMHFH4uuuN', 
         )
       ]        
     ];
