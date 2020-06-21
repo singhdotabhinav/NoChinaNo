@@ -32,7 +32,6 @@ List<String> categoryList = [
 	'Gaming laptops under Rs 45,000',
    'Ultrabooks under Rs 60,000',
 	'Gaming laptops under Rs 60,000',
-	'remove this',
 	'Gaming laptops under Rs 80,000',
 ];
 
@@ -1596,31 +1595,6 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
                               title: categoryList[9],
                               color: c9 ? Colors.black12 : Colors.white),
                         ),
-                        InkWell(
-                          onTap: () {
-                            setState(() {
-                              productListX = 10;
-                              categoryListIndex = 10;
-                              c0 = false;
-                              c1 = false;
-                              c2 = false;
-                              c3 = false;
-                              c4 = false;
-                              c5 = false;
-                              c6 = false;
-                              c7 = false;
-                              c8 = false;
-                              c9 = false;
-                              c10 = true;
-                              c11 = false;
-                            });
-                          },
-                          child: MenuCard(
-                              title: categoryList[10],
-                              color: c10 ? Colors.black12 : Colors.white),
-                        ),
-                        
-                        //  Image.network("assets/myapp/unnamed.png"),
                       ],
                     ),
                   ),
