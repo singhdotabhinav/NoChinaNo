@@ -1042,10 +1042,11 @@ productListDesktop(
                               c6 = false;
                               c7 = false;
                               c8 = false;
-                              c9 = true;
-                              c10 = false;
+                              c9 = false;
+                              c10 = true;
                               c11 = false;
                             });
+                            
                           },
                           child: MenuCard(
                               title: categoryList[9],
@@ -1065,17 +1066,16 @@ productListDesktop(
                               c6 = false;
                               c7 = false;
                               c8 = false;
-                              c9 = true;
+                              c9 = false;
                               c10 = false;
-                              c11 = false;
+                              c11 = true;
                             });
                           },
                           child: MenuCard(
                               title: categoryList[9],
                               color: c9 ? Colors.black12 : Colors.white),
                         ),
-
-                        //  Image.network("assets/myapp/unnamed.png"),
+                         //  Image.network("assets/myapp/unnamed.png"),
                       ],
                     ),
                   ),
