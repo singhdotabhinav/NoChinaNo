@@ -1140,7 +1140,7 @@ productListMobile(
           flipKartUrl: 'http://fkrt.it/RvT2tPNNNN', 
         ),
 productListMobile(
-          productRank:   5,      
+          productRank:5,      
          imageUrl:'assets/Fujifilm X-T30.png',   
           productName: 'FUJIFILM X-T30',
           productPrice: ' 82,990.00',
