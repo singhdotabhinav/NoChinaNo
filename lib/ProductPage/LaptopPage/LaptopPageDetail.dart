@@ -681,8 +681,8 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 3,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
-          productName: 'Avita Liber  NS14A2IN214P',
+         imageUrl:'assets/Avita Liber NS14A2IN214P.png',   
+          productName: 'Avita Liber NS14A2IN214P',
           productPrice: ' 36,000',
           productBrand: 'AVITA',  
           productCountry: 'USA',
@@ -727,7 +727,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 5,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/HP 14q-cs0018TU.png',   
           productName: 'HP 14q-cs0018TU',
           productPrice: ' 25,000',
           productBrand: 'HP',  
@@ -752,7 +752,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
        [
         productListDesktop(
           productRank: 1,      
-         imageUrl:'assets/ASUS VivoBook 14 X412DA-EK140T.png',   
+         imageUrl:'assets/ASUS TUF Gaming FX505DY.png',   
           productName: 'ASUS TUF Gaming FX505DY',
           productPrice: ' 47,000',
           productBrand: 'ASUS.',  
@@ -798,7 +798,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 3,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/ASUS VivoBook Gaming F570ZD.png',   
           productName: 'ASUS VivoBook Gaming F570ZD',
           productPrice: ' 46,000',
           productBrand: 'ASUS',  
@@ -821,7 +821,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 4,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/Acer Aspire 3 A315-53 Laptop.png',   
           productName: 'Acer Aspire 3',
           productPrice: ' 42,000',
           productBrand: 'Acer',  
@@ -892,7 +892,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 2,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/Acer Swift 3.png',   
           productName: 'Acer Swift 3',
           productPrice: ' 55,000',
           productBrand: 'ASUS',  
@@ -915,7 +915,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 3,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/HP 14s.png',   
           productName: 'HP 14s',
           productPrice: ' 54,000',
           productBrand: 'HP',  
@@ -938,7 +938,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 4,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/ASUS VivoBook 14 X409FA.png',   
           productName: 'ASUS VivoBook 14 X409FJ',
           productPrice: ' 55,000',
           productBrand: 'ASUS',  
@@ -961,7 +961,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 5,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/ASUS VivoBook 14 X409FA.png',   
           productName: 'ASUS VivoBook 14 X409FA',
           productPrice: ' 45,000',
           productBrand: 'ASUS',  
@@ -986,7 +986,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
        [
         productListDesktop(
           productRank: 1,      
-         imageUrl:'assets/ASUS VivoBook 14 X412DA-EK140T.png',   
+         imageUrl:'assets/ASUS TUF Gaming FX505DT.png',   
           productName: 'ASUS TUF Gaming FX505DT',
           productPrice: ' 60,000',
           productBrand: 'ASUS.',  
@@ -1009,7 +1009,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 2,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/MSI Gaming GL63 9RCX-222IN.png',   
           productName: 'MSI Gaming GL63 9RCX-222IN',
           productPrice: ' 61,000',
           productBrand: 'MSI',  
@@ -1032,7 +1032,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 3,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/Acer Nitro 5 AN515-54.png',   
           productName: 'Acer Nitro 5 AN515-54',
           productPrice: ' 58,000',
           productBrand: 'Acer',  
@@ -1055,7 +1055,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 4,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/HP Pavilion Gaming 15-dk0045TX.png',   
           productName: 'HP Pavilion Gaming 15',
           productPrice: ' 56,000',
           productBrand: 'HP',  
@@ -1078,7 +1078,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 5,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/dell g3 3579.png',   
           productName: 'DELL Gaming-G3 3579',
           productPrice: ' 55,000',
           productBrand: 'Dell',  
@@ -1103,7 +1103,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
        [
         productListDesktop(
           productRank: 1,      
-         imageUrl:'assets/ASUS VivoBook 14 X412DA-EK140T.png',   
+         imageUrl:'assets/MSI Gaming GL65.png',   
           productName: 'MSI Gaming GL65',
           productPrice: ' 81,000',
           productBrand: ' MSI',  
@@ -1126,7 +1126,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 2,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/ASUS TUF Gaming A15.png',   
           productName: 'ASUS TUF Gaming A15',
           productPrice: ' 78,000',
           productBrand: 'ASUS',  
@@ -1149,7 +1149,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 3,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/HP Pavilion Gaming 15-dk0045TX.png',   
           productName: 'HP Pavilion Gaming 15-dk0045TX',
           productPrice: ' 71,000',
           productBrand: 'HP',  
@@ -1172,7 +1172,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 4,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/Acer Nitro 7 AN715-51.png',   
           productName: 'Acer Nitro 7 AN715-51',
           productPrice: ' 81,000',
           productBrand: 'Acer',  
@@ -1195,7 +1195,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 5,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/dell g3 3579.png',   
           productName: 'Dell G3 3579',
           productPrice: ' 80,000',
           productBrand: 'Dell',  
@@ -1220,7 +1220,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
        [
         productListDesktop(
           productRank: 1,      
-         imageUrl:'assets/ASUS VivoBook 14 X412DA-EK140T.png',   
+         imageUrl:'assets/MSI Gaming GL65.png',   
           productName: 'MSI Gaming GL65',
           productPrice: ' 81,000',
           productBrand: ' MSI',  
@@ -1243,7 +1243,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 2,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/ASUS TUF Gaming A15.png',   
           productName: 'ASUS TUF Gaming A15',
           productPrice: ' 78,000',
           productBrand: 'ASUS',  
@@ -1266,7 +1266,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 3,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/HP Pavilion Gaming 15-dk0045TX.png',   
           productName: 'HP Pavilion Gaming 15-dk0045TX',
           productPrice: ' 71,000',
           productBrand: 'HP',  
@@ -1289,7 +1289,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 4,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/Acer Nitro 7 AN715-51.png',   
           productName: 'Acer Nitro 7 AN715-51',
           productPrice: ' 81,000',
           productBrand: 'Acer',  
@@ -1312,7 +1312,7 @@ class _LargeAppACLaptopState extends State<LargeAppACLaptop> {
         ),
         productListDesktop(
           productRank: 5,      
-         imageUrl:'assets/ASUS VivoBook X407UA.png',   
+         imageUrl:'assets/dell g3 3579.png',   
           productName: 'Dell G3 3579',
           productPrice: ' 80,000',
           productBrand: 'Dell',  
