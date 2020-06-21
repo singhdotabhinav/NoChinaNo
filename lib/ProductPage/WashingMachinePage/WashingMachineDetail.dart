@@ -23,9 +23,9 @@ bool c10 = false;
 bool c11 = false;
 
 List<String> categoryList = [
-	'Washing Machine Under 10000',
-	'Washing Machine Under 25000',
-	'Washing Machine Under 30000'
+	'Washing Machine Under  ₹ 10,000',
+	'Washing Machine Under ₹ 20,000',
+	'Washing Machine Under ₹ 30,000'
 ];
 
 
@@ -60,8 +60,8 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 90,
           categorysix: 'VFM',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/LG-Semi-Automatic-Loading-P6510NBAY-Technology/dp/B081J583KB/ref=sr_1_2?dchild=1&keywords=LG+6.5+kg+Semi+Automatic+Top+Loading+Washing+Machine&qid=1592719716&s=kitchen&sr=1-2',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/3doiL9Y',
+          flipKartUrl: 'http://fkrt.it/LUjcV4uuuN',
         ),
         productListDesktop(
           productRank: 2 ,      
@@ -83,8 +83,8 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 90,
           categorysix: 'VFM',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/Whirlpool-Semi-Automatic-Superb-Atom-70S/dp/B07WGD8QQT/ref=as_li_ss_tl?fst=as:off&keywords=washing+machine&qid=1553116778&refinements=p_n_feature_sixteen_browse-bin:2753056031,p_89:Whirlpool&rnid=3837712031&s=kitchen&sr=1-3&th=1&linkCode=sl1&tag=mrwashingmach-21&linkId=d9657307145325cc38043d3a54a1180f&language=en_IN',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/3148PjE',
+          flipKartUrl: 'http://fkrt.it/LS9K34uuuN',
         ),
         productListDesktop(
           productRank: 3 ,      
@@ -106,8 +106,8 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 80,
           categorysix: 'VFM',
           ratingsix: 60,
-          amazonUrl:'https://www.amazon.in/Samsung-Semi-Automatic-Loading-Washing-WT725QPNDMP/dp/B00LSJY0JE',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/2AYIl8i',
+          flipKartUrl: 'http://fkrt.it/LU9sI4uuuN',
         ),
       ],
       [
@@ -131,8 +131,8 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 90,
           categorysix: 'VFM',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/Bosch-Fully-Automatic-Loading-Washing-WAB16060IN/dp/B01GEAOHJY/ref=as_li_ss_tl?fst=as:off&keywords=washing+machine&qid=1556118163&refinements=p_n_feature_fifteen_browse-bin:2753053031,p_89:Bosch&rnid=3837712031&s=kitchen&sr=1-4&linkCode=sl1&tag=mrwashingmach-21&linkId=7679f07e55f22080721f62cbaa2a9c2f&language=en_IN',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/2YVjIkX',
+          flipKartUrl: 'http://fkrt.it/LUf!H4uuuN',
         ),
         productListDesktop(
           productRank: 2 ,      
@@ -154,16 +154,16 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 90,
           categorysix: 'VFM',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/Bosch-Fully-Automatic-Loading-Washing-WAB16060IN/dp/B01GEAOHJY/ref=as_li_ss_tl?fst=as:off&keywords=washing+machine&qid=1556118163&refinements=p_n_feature_fifteen_browse-bin:2753053031,p_89:Bosch&rnid=3837712031&s=kitchen&sr=1-4&linkCode=sl1&tag=mrwashingmach-21&linkId=7679f07e55f22080721f62cbaa2a9c2f&language=en_IN',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/2YkdhZL',
+          flipKartUrl: 'http://fkrt.it/2I73tPNNNN',
         ),
         productListDesktop(
           productRank: 3 ,      
           imageUrl:'assets/Samsung 6 kg Front Loading Washing Machine.png',   
-          productName: 'Samsung 6kg',
+          productName: 'Samsung 6kg Automatic Washing Machine',
           productPrice: '19,990',
-          productBrand: 'Whirlpool',  
-          productCountry: 'USA',
+          productBrand: 'Samsung',  
+          productCountry: 'South Korea',
           productDescription: 'For people who deal with the dirtiest laundry on an almost daily basis, the Agipeller with 3D scrub pads will do wonder for you. The combo helps you knock off the hardest stains and give the whitest whitewash you ever have seen.',   
           categoryone: 'Size',
           ratingone:70 ,
@@ -177,8 +177,8 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 60,
           categorysix: 'VFM',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/Bosch-Fully-Automatic-Loading-Washing-WAB16060IN/dp/B01GEAOHJY/ref=as_li_ss_tl?fst=as:off&keywords=washing+machine&qid=1556118163&refinements=p_n_feature_fifteen_browse-bin:2753053031,p_89:Bosch&rnid=3837712031&s=kitchen&sr=1-4&linkCode=sl1&tag=mrwashingmach-21&linkId=7679f07e55f22080721f62cbaa2a9c2f&language=en_IN',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/2zV8GE0',
+          flipKartUrl: 'http://fkrt.it/2!EaDPNNNN',
         ),
       ],
       [
@@ -202,8 +202,8 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 90,
           categorysix: 'VFM',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/Bosch-Fully-Automatic-Loading-Washing-WAK24268IN/dp/B00OT9D4SS',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/37OeNGx',
+          flipKartUrl: 'http://fkrt.it/2!XdDPNNNN',
         ),
         productListDesktop(
           productRank: 2 ,      
@@ -225,8 +225,8 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 80,
           categorysix: 'VFM',
           ratingsix: 80,
-          amazonUrl:'https://www.amazon.in/IFB-Fully-Automatic-Senorita-Aqua-SX/dp/B00FZCA51C',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/2YlzOoW',
+          flipKartUrl: 'http://fkrt.it/L!awH4uuuN',
         ),
         productListDesktop(
           productRank: 3 ,      
@@ -248,8 +248,8 @@ class _LargeAppWashingMachineState extends State<LargeAppWashingMachine> {
           ratingfive: 60,
           categorysix: 'VFM',
           ratingsix: 60,
-          amazonUrl:'https://www.amazon.in/LG-Fully-Automatic-Loading-Washing-FH2G6HDNL42/dp/B071DN517K',
-          flipKartUrl: '',
+          amazonUrl:'https://amzn.to/3fIwBWj',
+          flipKartUrl: 'http://fkrt.it/2afXDPNNNN',
         ),
 
       ]
