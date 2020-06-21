@@ -61,8 +61,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/LG-Direct-cool-Single-Refrigerator-GL-051SSW/dp/B00QA1OY0A/ref=sr_1_4?dchild=1&keywords=LG+GL-051SSW+Direct-cool+Single+Door+Mini+Refrigerator&qid=1592710972&s=kitchen&sr=1-4',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3hQDEOv',
+          flipKartUrl: 'http://fkrt.it/2FrmEPNNNN', 
         ),
         productListDesktop(
           productRank:  2,       
@@ -84,8 +84,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/Mitashi-Direct-Cool-Single-Refrigerator-MSD052RF200/dp/B07RYLK3LL/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=lko01-21&linkId=82c25fd8cc78748ef77604dd8ca563ec&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2V4jd76',
+          flipKartUrl: 'https://amzn.to/2V4jd76', 
         ),
         productListDesktop(
           productRank:  3,       
@@ -107,8 +107,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 70,   
-          amazonUrl:'https://www.amazon.in/Whirlpool-Refrigerator-65-W-ATOM-PRM-3S-Steel/dp/B07QP1J91D/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=lko01-21&linkId=49f6299a1197352b116b2371616a4b45&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/37L7q2I',
+          flipKartUrl: 'http://fkrt.it/LXWqV4uuuN', 
         ),
       ],
       [
@@ -132,8 +132,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/LG-Refrigerator-GL-B201ASPY-ASPZEBN-Plumeria-Compressor/dp/B079QP11T3/ref=sr_1_4?dchild=1&keywords=LG+190L+Single+Door+Refrigerator&qid=1592712328&s=kitchen&sr=1-4',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2Z9dsGD',
+          flipKartUrl: 'http://fkrt.it/L1ODV4uuuN', 
         ),productListDesktop(
           productRank:  2,       
           imageUrl:'assets/Whirlpool 215 L 3 Star Inverter Direct-Cool Single Door Refrigerator with Moisture Lock-In Technology.png',   
@@ -154,8 +154,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 70,   
-          amazonUrl:'https://www.amazon.in/Whirlpool-Refrigerator-230-PRM-INV/dp/B083KSWRFW/ref=sr_1_4?dchild=1&keywords=Whirlpool+215L+Single+Door+Refrigerator&qid=1592712564&s=kitchen&sr=1-4',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2NhQpUh',
+          flipKartUrl: 'http://fkrt.it/2othDPNNNN', 
         ),productListDesktop(
           productRank:  3,       
           imageUrl:'assets/Godrej 236 L 2 Star Inverter Frost-Free Double Door Refrigerator.png',   
@@ -176,8 +176,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/Godrej-Frost-Free-Refrigerator-EON-236B/dp/B083SQK6GH/ref=sr_1_5?dchild=1&keywords=Godrej+236L+Double+Door+Refrigerator&qid=1592712762&s=kitchen&sr=1-5',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3hMwYRr',
+          flipKartUrl: 'http://fkrt.it/L1CI34uuuN', 
         ),
       ],
       [
@@ -201,8 +201,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive:90,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/LG-Refrigerator-GL-I292RPZL-APZZEBN-Inverter-Compressor/dp/B01DM8HR1Q/ref=as_li_ss_tl?s=kitchen&ie=UTF8&qid=1577536412&sr=1-3&linkCode=sl1&tag=refrigeratorg-21&linkId=69e7541475fcb688dff800816fd021ff&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2NdqRro',
+          flipKartUrl: 'http://fkrt.it/2fniFPNNNN', 
         ),
         productListDesktop(
           productRank:2,       
@@ -224,8 +224,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/Samsung-Refrigerator-RT28M3424S8-HL-Compressor/dp/B06XCB7LPD/ref=as_li_ss_tl?s=kitchen&ie=UTF8&qid=1577536412&sr=1-2&linkCode=sl1&tag=refrigeratorg-21&linkId=9405e1cdabb683f0c0fff561f5295012&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3elvjjR',
+          flipKartUrl: 'http://fkrt.it/2fW!FPNNNN', 
         ),
         productListDesktop(
           productRank:3,       
@@ -247,8 +247,8 @@ class _LargeAppRefrigeratorState extends State<LargeAppRefrigerator> {
           ratingfive: 90,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/Whirlpool-INV-CNV-278-ELT/dp/B07QV1LNYJ/ref=as_li_ss_tl?s=kitchen&ie=UTF8&qid=1577536412&sr=1-15&linkCode=sl1&tag=refrigeratorg-21&linkId=a252c72cdb144bca2749fb6838bb26ad&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3hN2P4G',
+          flipKartUrl: 'http://fkrt.it/2f2dDPNNNN', 
         ),
 
 
@@ -403,11 +403,11 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
   @override
   Widget build(BuildContext context) {
     List<List<Widget>> productList = [
-            [
+     [
         productListMobile(
           productRank:  1,       
           imageUrl:'assets/LG 45 L Direct-cool Single Door Refrigerator.png',   
-          productName: 'LG 45 L Direct-cool ',
+          productName: 'LG 45L Direct-cool ',
           productPrice: '7, 990',
           productBrand: 'LG',  
           productCountry: 'South Korea',
@@ -424,8 +424,8 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/LG-Direct-cool-Single-Refrigerator-GL-051SSW/dp/B00QA1OY0A/ref=sr_1_4?dchild=1&keywords=LG+GL-051SSW+Direct-cool+Single+Door+Mini+Refrigerator&qid=1592710972&s=kitchen&sr=1-4',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3hQDEOv',
+          flipKartUrl: 'http://fkrt.it/2FrmEPNNNN', 
         ),
         productListMobile(
           productRank:  2,       
@@ -447,8 +447,8 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/Mitashi-Direct-Cool-Single-Refrigerator-MSD052RF200/dp/B07RYLK3LL/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=lko01-21&linkId=82c25fd8cc78748ef77604dd8ca563ec&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2V4jd76',
+          flipKartUrl: 'https://amzn.to/2V4jd76', 
         ),
         productListMobile(
           productRank:  3,       
@@ -470,15 +470,15 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 70,   
-          amazonUrl:'https://www.amazon.in/Whirlpool-Refrigerator-65-W-ATOM-PRM-3S-Steel/dp/B07QP1J91D/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=lko01-21&linkId=49f6299a1197352b116b2371616a4b45&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/37L7q2I',
+          flipKartUrl: 'http://fkrt.it/LXWqV4uuuN', 
         ),
       ],
       [
         productListMobile(
           productRank:  1,       
           imageUrl:'assets/LG 190 L 4 Star Inverter Direct-Cool Single Door Refrigerator.png',   
-          productName: 'LG 190 L 4 Star',
+          productName: 'LG 190L 4 Star',
           productPrice: '15, 190',
           productBrand: 'LG',  
           productCountry: 'South Korea',
@@ -495,8 +495,8 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/LG-Refrigerator-GL-B201ASPY-ASPZEBN-Plumeria-Compressor/dp/B079QP11T3/ref=sr_1_4?dchild=1&keywords=LG+190L+Single+Door+Refrigerator&qid=1592712328&s=kitchen&sr=1-4',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2Z9dsGD',
+          flipKartUrl: 'http://fkrt.it/L1ODV4uuuN', 
         ),productListMobile(
           productRank:  2,       
           imageUrl:'assets/Whirlpool 215 L 3 Star Inverter Direct-Cool Single Door Refrigerator with Moisture Lock-In Technology.png',   
@@ -517,8 +517,8 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 70,   
-          amazonUrl:'https://www.amazon.in/Whirlpool-Refrigerator-230-PRM-INV/dp/B083KSWRFW/ref=sr_1_4?dchild=1&keywords=Whirlpool+215L+Single+Door+Refrigerator&qid=1592712564&s=kitchen&sr=1-4',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2NhQpUh',
+          flipKartUrl: 'http://fkrt.it/2othDPNNNN', 
         ),productListMobile(
           productRank:  3,       
           imageUrl:'assets/Godrej 236 L 2 Star Inverter Frost-Free Double Door Refrigerator.png',   
@@ -539,15 +539,15 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/Godrej-Frost-Free-Refrigerator-EON-236B/dp/B083SQK6GH/ref=sr_1_5?dchild=1&keywords=Godrej+236L+Double+Door+Refrigerator&qid=1592712762&s=kitchen&sr=1-5',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3hMwYRr',
+          flipKartUrl: 'http://fkrt.it/L1CI34uuuN', 
         ),
       ],
       [
         productListMobile(
           productRank:  1,       
           imageUrl:'assets/LG 260 L 3 Star Frost Free Double Door Refrigerator.png',   
-          productName: 'LG 260L 3 Star',
+          productName: 'LG 260L 3 Star ',
           productPrice: '24, 490',
           productBrand: 'LG',  
           productCountry: 'South Korea',
@@ -564,8 +564,8 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive:90,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/LG-Refrigerator-GL-I292RPZL-APZZEBN-Inverter-Compressor/dp/B01DM8HR1Q/ref=as_li_ss_tl?s=kitchen&ie=UTF8&qid=1577536412&sr=1-3&linkCode=sl1&tag=refrigeratorg-21&linkId=69e7541475fcb688dff800816fd021ff&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/2NdqRro',
+          flipKartUrl: 'http://fkrt.it/2fniFPNNNN', 
         ),
         productListMobile(
           productRank:2,       
@@ -587,8 +587,8 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/Samsung-Refrigerator-RT28M3424S8-HL-Compressor/dp/B06XCB7LPD/ref=as_li_ss_tl?s=kitchen&ie=UTF8&qid=1577536412&sr=1-2&linkCode=sl1&tag=refrigeratorg-21&linkId=9405e1cdabb683f0c0fff561f5295012&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3elvjjR',
+          flipKartUrl: 'http://fkrt.it/2fW!FPNNNN', 
         ),
         productListMobile(
           productRank:3,       
@@ -610,8 +610,8 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
           ratingfive: 90,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/Whirlpool-INV-CNV-278-ELT/dp/B07QV1LNYJ/ref=as_li_ss_tl?s=kitchen&ie=UTF8&qid=1577536412&sr=1-15&linkCode=sl1&tag=refrigeratorg-21&linkId=a252c72cdb144bca2749fb6838bb26ad&language=en_IN',
-          flipKartUrl: '', 
+          amazonUrl:'https://amzn.to/3hN2P4G',
+          flipKartUrl: 'http://fkrt.it/2f2dDPNNNN', 
         ),
 
 
@@ -719,8 +719,6 @@ class _SmallAppRefrigeratorState extends State<SmallAppRefrigerator> {
                           title: categoryList[2],
                           color: c2 ? Colors.black12 : Colors.white),
                     ),
-
-                    //  Image.network("assets/myapp/unnamed.png"),
                   ],
                 ),
               ),
