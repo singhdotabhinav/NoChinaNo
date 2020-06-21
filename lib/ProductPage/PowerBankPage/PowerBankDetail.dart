@@ -158,7 +158,6 @@ productListDesktop(
           amazonUrl:'https://www.amazon.in/iBall-10000mAh-Li-Polymer-Design-Powerbank/dp/B07X6HTYH2/ref=sr_1_3?dchild=1&keywords=best+power+bank+iball&qid=1592491644&sr=8-3',
           flipKartUrl:'' 
           ),
-
       ]
     ];
     return SizedBox(
