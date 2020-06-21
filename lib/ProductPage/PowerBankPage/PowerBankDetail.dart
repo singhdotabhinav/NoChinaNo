@@ -1,3 +1,4 @@
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -41,7 +42,7 @@ class _LargeAppPowerBankState extends State<LargeAppPowerBank> {
         productListDesktop(
           productRank:  1,       
           imageUrl:'assets/Ambrane 10000mAh Li-Polymer Powerbank with Compact Size & Fast Charging for Smartphones, Smart Watches, Neckbands & Other Devices.png',   
-          productName: 'Ambrane 10000mAh',
+          productName: 'Ambrane 10000mAh Li-polymer.',
           productPrice: ' 699',
           productBrand: 'Ambrane',  
           productCountry: 'India',
@@ -58,14 +59,14 @@ class _LargeAppPowerBankState extends State<LargeAppPowerBank> {
           ratingfive: 90,
           categorysix: 'Reviews',
           ratingsix: 100,   
-          amazonUrl:'https://www.amazon.in/Ambrane-10000mAh-Lithium-Polymer-Capsule-10K/dp/B07S88FHN6?source=ps-sl-shoppingads-lpcontext&psc=1',
-          flipKartUrl: 'https://www.flipkart.com/ambrane-10000-mah-power-bank-fast-charging-12-w/p/itm4da4ac40ec8d1?pid=PWBFGYHFCUTJGUQD&lid=LSTPWBFGYHFCUTJGUQDQ2UNFT&marketplace=FLIPKART&srno=s_1_13&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=SEARCH&iid=08f0fe08-9913-4404-bdb5-c0bf11f66644.PWBFGYHFCUTJGUQD.SEARCH&ppt=sp&ppn=sp&ssid=6ea3edqxpc0000001592482420876&qH=93838e3a65b51e46', 
+          amazonUrl:'https://amzn.to/3fKGB1j',
+          flipKartUrl: 'http://fkrt.it/2s9MFPNNNN', 
         ),
 
 productListDesktop(
           productRank: 2,  
           imageUrl:'assets/Syska 20000 mAh Li-Polymer Power Pro200 Power Bank.png',   
-          productName: 'Syska 20000mAh',
+          productName: 'Syska 20000 mAh Li-Polymer Power Pro200',
           productPrice: '1399',
           productBrand: 'Syska.',  
           productCountry: 'India',
@@ -82,14 +83,14 @@ productListDesktop(
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/Syska-Power-Pro-200-20000mAH/dp/B01N5JIJZT/ref=sr_1_41?crid=1649RQX3X3NWW&dchild=1&keywords=best+power+bank&qid=1592489236&sprefix=best+power%2Caps%2C622&sr=8-41',
-          flipKartUrl: 'https://www.flipkart.com/syska-20000-mah-power-bank-fast-charging-10-w/p/itmer9uzddxetgby?pid=PWBEPZ5RYKEJK6UU&lid=LSTPWBEPZ5RYKEJK6UUNTEBXT&marketplace=FLIPKART&spotlightTagId=BestsellerId_tyy%2F4mr%2Ffu6&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=cb8c3f4d-113e-4e74-b3f4-94c796a9083a.PWBEPZ5RYKEJK6UU.SEARCH&ppt=sp&ppn=sp&ssid=4z7f5rs4dc0000001592489895408&qH=8e67e01d174dd64b', 
+          amazonUrl:'https://amzn.to/2BoOVVC',
+          flipKartUrl: 'http://fkrt.it/L3QJ34uuuN', 
         ),
 
 productListDesktop(
           productRank:3,
           imageUrl:'assets/Samsung EB-P1100BSNGIN 10000mAH Lithium Ion Power Bank.png',   
-          productName: 'Samsung 10000mAH',
+          productName: 'Samsung EB_P1100BSNGIN 10000mAH',
           productPrice: ' 1,399',
           productBrand: 'Samsung.',  
           productCountry: 'South korean',
@@ -106,15 +107,15 @@ productListDesktop(
           ratingfive: 90,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/Samsung-EB-P1100BSNGIN-10000mAH-Lithium-Silver/dp/B07P9PCXX3/ref=sr_1_52?crid=1649RQX3X3NWW&dchild=1&keywords=best+power+bank&qid=1592489236&sprefix=best+power%2Caps%2C622&sr=8-52',
-          flipKartUrl:''
+          amazonUrl:'https://amzn.to/2zR5mtx',
+          flipKartUrl:'http://fkrt.it/2sEJEPNNNN'
           ),
 
 
 productListDesktop(
           productRank: 4,       
          imageUrl:'assets/Intex IT-PB11K 11000mAH Power Bank.png',   
-          productName: 'Intex IT-PB11K 11000mAH',
+          productName: 'Intex 11000mAH',
           productPrice: '1,307 ',
           productBrand: 'Intex.',  
           productCountry: 'India',
@@ -131,8 +132,8 @@ productListDesktop(
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/Intex-PB11K-11000mAH-Power-Black/dp/B01951R2S2/ref=sr_1_5?crid=1649RQX3X3NWW&dchild=1&keywords=best+power+bank&qid=1592489236&refinements=p_89%3AIntex&rnid=3837712031&sprefix=best+power%2Caps%2C622&sr=8-5',
-          flipKartUrl:'' 
+          amazonUrl:'https://amzn.to/3fKNzUc',
+          flipKartUrl:'http://fkrt.it/28rbEPNNNN' 
           ),
 
 productListDesktop(
@@ -155,9 +156,10 @@ productListDesktop(
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 70,   
-          amazonUrl:'https://www.amazon.in/iBall-10000mAh-Li-Polymer-Design-Powerbank/dp/B07X6HTYH2/ref=sr_1_3?dchild=1&keywords=best+power+bank+iball&qid=1592491644&sr=8-3',
-          flipKartUrl:'' 
+          amazonUrl:'https://amzn.to/37RSLmf',
+          flipKartUrl:'http://fkrt.it/LvIeH4uuuN' 
           ),
+
       ]
     ];
     return SizedBox(
@@ -261,11 +263,11 @@ class _SmallAppPowerBankState extends State<SmallAppPowerBank> {
   @override
   Widget build(BuildContext context) {
     List<List<Widget>> productList = [
-     [
+       [
         productListMobile(
           productRank:  1,       
           imageUrl:'assets/Ambrane 10000mAh Li-Polymer Powerbank with Compact Size & Fast Charging for Smartphones, Smart Watches, Neckbands & Other Devices.png',   
-          productName: 'Ambrane 10000mAh.',
+          productName: 'Ambrane 10000mAh',
           productPrice: ' 699',
           productBrand: 'Ambrane',  
           productCountry: 'India',
@@ -282,8 +284,8 @@ class _SmallAppPowerBankState extends State<SmallAppPowerBank> {
           ratingfive: 90,
           categorysix: 'Reviews',
           ratingsix: 100,   
-          amazonUrl:'https://www.amazon.in/Ambrane-10000mAh-Lithium-Polymer-Capsule-10K/dp/B07S88FHN6?source=ps-sl-shoppingads-lpcontext&psc=1',
-          flipKartUrl: 'https://www.flipkart.com/ambrane-10000-mah-power-bank-fast-charging-12-w/p/itm4da4ac40ec8d1?pid=PWBFGYHFCUTJGUQD&lid=LSTPWBFGYHFCUTJGUQDQ2UNFT&marketplace=FLIPKART&srno=s_1_13&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=SEARCH&iid=08f0fe08-9913-4404-bdb5-c0bf11f66644.PWBFGYHFCUTJGUQD.SEARCH&ppt=sp&ppn=sp&ssid=6ea3edqxpc0000001592482420876&qH=93838e3a65b51e46', 
+          amazonUrl:'https://amzn.to/3fKGB1j',
+          flipKartUrl: 'http://fkrt.it/2s9MFPNNNN', 
         ),
 
 productListMobile(
@@ -306,8 +308,8 @@ productListMobile(
           ratingfive: 80,
           categorysix: 'Reviews',
           ratingsix: 90,   
-          amazonUrl:'https://www.amazon.in/Syska-Power-Pro-200-20000mAH/dp/B01N5JIJZT/ref=sr_1_41?crid=1649RQX3X3NWW&dchild=1&keywords=best+power+bank&qid=1592489236&sprefix=best+power%2Caps%2C622&sr=8-41',
-          flipKartUrl: 'https://www.flipkart.com/syska-20000-mah-power-bank-fast-charging-10-w/p/itmer9uzddxetgby?pid=PWBEPZ5RYKEJK6UU&lid=LSTPWBEPZ5RYKEJK6UUNTEBXT&marketplace=FLIPKART&spotlightTagId=BestsellerId_tyy%2F4mr%2Ffu6&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=cb8c3f4d-113e-4e74-b3f4-94c796a9083a.PWBEPZ5RYKEJK6UU.SEARCH&ppt=sp&ppn=sp&ssid=4z7f5rs4dc0000001592489895408&qH=8e67e01d174dd64b', 
+          amazonUrl:'https://amzn.to/2BoOVVC',
+          flipKartUrl: 'http://fkrt.it/L3QJ34uuuN', 
         ),
 
 productListMobile(
@@ -330,8 +332,8 @@ productListMobile(
           ratingfive: 90,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/Samsung-EB-P1100BSNGIN-10000mAH-Lithium-Silver/dp/B07P9PCXX3/ref=sr_1_52?crid=1649RQX3X3NWW&dchild=1&keywords=best+power+bank&qid=1592489236&sprefix=best+power%2Caps%2C622&sr=8-52',
-          flipKartUrl:''
+          amazonUrl:'https://amzn.to/2zR5mtx',
+          flipKartUrl:'http://fkrt.it/2sEJEPNNNN'
           ),
 
 
@@ -355,8 +357,8 @@ productListMobile(
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 80,   
-          amazonUrl:'https://www.amazon.in/Intex-PB11K-11000mAH-Power-Black/dp/B01951R2S2/ref=sr_1_5?crid=1649RQX3X3NWW&dchild=1&keywords=best+power+bank&qid=1592489236&refinements=p_89%3AIntex&rnid=3837712031&sprefix=best+power%2Caps%2C622&sr=8-5',
-          flipKartUrl:'' 
+          amazonUrl:'https://amzn.to/3fKNzUc',
+          flipKartUrl:'http://fkrt.it/28rbEPNNNN' 
           ),
 
 productListMobile(
@@ -379,10 +381,13 @@ productListMobile(
           ratingfive: 70,
           categorysix: 'Reviews',
           ratingsix: 70,   
-          amazonUrl:'https://www.amazon.in/iBall-10000mAh-Li-Polymer-Design-Powerbank/dp/B07X6HTYH2/ref=sr_1_3?dchild=1&keywords=best+power+bank+iball&qid=1592491644&sr=8-3',
-          flipKartUrl:'' 
-          ),
+          amazonUrl:'https://amzn.to/37RSLmf',
+          flipKartUrl:'http://fkrt.it/LvIeH4uuuN' 
+        ),
+
       ]
+
+      
     ];
     return SingleChildScrollView(
       child: Column(
