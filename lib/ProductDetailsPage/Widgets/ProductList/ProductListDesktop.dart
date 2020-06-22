@@ -41,7 +41,7 @@ Widget productListDesktop(
         return SingleChildScrollView(
           scrollDirection: Axis.horizontal,
                   child: Card(
-            elevation: 20.0,
+            elevation: 0.0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[

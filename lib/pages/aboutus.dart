@@ -78,7 +78,7 @@ class LargeAboutUs extends StatelessWidget {
               Container(
                 width:MediaQuery.of(context).size.width/3.0,
                 child: Text(
-                  'NoChinaNo is a Platform Designed for the Wallet Army.\nUnbiased Listing and Rating of Non-Chinese Brands Electronic items.',
+                  "NoChinaNo is a Platform Designed for the Wallet Army.\nEnjoy Unbiased Listing and Rating of Non-Chinese Brand \nEtectronic items Which is to be updated Every Month.",
                   textAlign: TextAlign.justify,
                   style: ktextstylebottom,
                 ),

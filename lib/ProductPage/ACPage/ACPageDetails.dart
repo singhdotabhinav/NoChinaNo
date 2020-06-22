@@ -503,9 +503,12 @@ class _LargeAppACState extends State<LargeAppAC> {
                 child: CarouselSlider(
                   options: CarouselOptions(
                       height: 500.0,
+                      
                       reverse: false,
                       autoPlay: false,
-                      enlargeCenterPage: true,
+                      enlargeCenterPage: false,
+                      enableInfiniteScroll: true,
+
                       scrollDirection: Axis.vertical),
                   items: [
                     1,
