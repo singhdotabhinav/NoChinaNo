@@ -19,7 +19,7 @@ class _MainCircle extends State<MainCircle> with SingleTickerProviderStateMixin 
   void initState() {
     // TODO: implement initState
     super.initState();
-    progressController = AnimationController(vsync: this,duration: Duration(milliseconds: 4000));
+    progressController = AnimationController(vsync: this,duration: Duration(milliseconds: 1000));
     animation = Tween<double>(begin: 0,end: widget.rating.toDouble()).animate(progressController)..addListener((){setState(() {});});
     if(animation.value ==widget.rating.toDouble()){
       progressController.reverse();

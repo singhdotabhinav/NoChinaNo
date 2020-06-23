@@ -4,6 +4,18 @@ import 'package:flutterapp/ProductDetailsPage/Widgets/BuyerOfProduct/BuyerOfProd
 import 'package:flutterapp/ProductDetailsPage/Widgets/DetailsOdProduct/DetailsOfProduct.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/ImageOfProduct/ImageOfProduct.dart';
 
+class ScreenSize extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+    );
+  }
+}
+
+
+
+
 Widget productListDesktop(
     {
       int productRank,

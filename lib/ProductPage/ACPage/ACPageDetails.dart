@@ -504,11 +504,9 @@ class _LargeAppACState extends State<LargeAppAC> {
                   options: CarouselOptions(
                       height: 500.0,
                       
-                      reverse: false,
-                      autoPlay: false,
-                      enlargeCenterPage: false,
-                      enableInfiniteScroll: true,
-
+                      
+                      enlargeCenterPage: true,
+                     
                       scrollDirection: Axis.vertical),
                   items: [
                     1,
