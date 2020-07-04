@@ -3,6 +3,13 @@ import 'package:flutterapp/CircularPage/MainCircle.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/BuyerOfProduct/BuyerOfProductDesktop.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/DetailsOdProduct/DetailsOfProduct.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/ImageOfProduct/ImageOfProduct.dart';
+import 'dart:ui';
+
+
+
+
+
+
 
 Widget productListDesktop(
     {
@@ -41,7 +48,7 @@ Widget productListDesktop(
         return SingleChildScrollView(
           scrollDirection: Axis.horizontal,
                   child: Card(
-            elevation: 20.0,
+            elevation: 0.0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[

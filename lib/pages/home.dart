@@ -47,12 +47,12 @@ class LargeChild extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                         text: "#",
-                        style: TextStyle(fontSize: 60, color: Colors.red),
+                        style: TextStyle(fontSize: 50, color: Colors.red),
                         children: [
                           TextSpan(
-                              text: "BoycottMadeInChina",
+                              text: "BoycottChineseBrands",
                               style: TextStyle(
-                                  fontSize: 60,
+                                  fontSize: 50,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black87))
                         ]),
@@ -63,7 +63,7 @@ class LargeChild extends StatelessWidget {
                       TextSpan(
                         text:
                             "NoChinaNo is a Platform Designed for the Wallet Army.\n"
-                            "Unbiased Listing and Rating of Non-Chinese Brand Etectronic items.",
+                            "Enjoy Unbiased Listing and Rating of Non-Chinese Brand \nEtectronic items Which is to be updated Every Month.",
                         style: TextStyle(
                           color: Colors.black87,
                           fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ class LargeChild extends StatelessWidget {
                     ),
                   ),
                   SelectableText(
-                      "\n|| Shift To Non-Chinese Brand Hardware In a Year ||",
+                      "\n|| Shift To Non-Chinese Brand Hardware in a Year ||",
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -141,13 +141,13 @@ class SmallChild extends StatelessWidget {
             RichText(
               text: TextSpan(
                 text: '#',
-                style: TextStyle(fontSize: 40, color: Colors.red),
+                style: TextStyle(fontSize: 28, color: Colors.red,fontWeight: FontWeight.bold),
                 children: <TextSpan>[
                   TextSpan(
-                      text: "BoycottMadeInChina",
+                      text: "BoycottChineseBrands",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 40,
+                          fontSize: 28,
                           color: Colors.black87)),
                 ],
               ),
@@ -157,11 +157,11 @@ class SmallChild extends StatelessWidget {
               child: SelectableText.rich(
                 TextSpan(
                   text:
-                      "NoChinaNo is a Platform Desined for the Wallet Armny.\n"
-                      "Unbaised Listing and Rating of Non-chinese Brand Etectronc items.",
+                      "NoChinaNo is a Platform Desined for the Wallet Army. "
+                      "Enjoy Unbiased Listing and Rating of Non-Chinese Brand Etectronic items Which is to be updated Every Month.",
                   style: TextStyle(
                     color: Colors.black87,
-                    fontSize: 15,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold,
                     fontFamily: "Montserrat-Regular",
                   ),
@@ -169,9 +169,9 @@ class SmallChild extends StatelessWidget {
               ),
             ),
             SelectableText(
-                "\n|| Shift To Non-Chinese Brand Hardware In A Year ||",
+                "\n|| Shift To Non-Chinese Brand Hardware in a Year ||",
                 style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold,
                     color: Colors.black87)),
             SizedBox(

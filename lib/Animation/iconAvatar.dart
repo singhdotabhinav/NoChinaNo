@@ -1,12 +1,13 @@
-import 'package:avatar_glow/avatar_glow.dart';
-import 'package:flutter/material.dart';
 
-Widget skillAvatarNav(String imgUrl, Color glow) {
+import 'package:flutter/material.dart';
+import 'package:avatar_glow/avatar_glow.dart';
+
+Widget iconAvatar(String imgUrl, Color glow) {
   return SingleChildScrollView(
     scrollDirection: Axis.horizontal,
     child: AvatarGlow(
       startDelay: Duration(milliseconds: 1000),
-      //glowColor: Color(0xFF6C63FF),
+
       glowColor: glow,
       endRadius: 60.0,
       duration: Duration(milliseconds: 2000),
@@ -18,9 +19,8 @@ Widget skillAvatarNav(String imgUrl, Color glow) {
         shape: CircleBorder(),
         child: CircleAvatar(
           backgroundColor: Colors.grey[100],
-          child: Image.network(
+          child: Image.asset(
             imgUrl,
-            fit: BoxFit.contain,
           ),
           radius: 40.0,
           // shape: BoxShape.circle
@@ -32,3 +32,6 @@ Widget skillAvatarNav(String imgUrl, Color glow) {
     ),
   );
 }
+
+
+

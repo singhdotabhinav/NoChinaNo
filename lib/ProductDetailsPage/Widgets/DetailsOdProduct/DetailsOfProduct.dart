@@ -18,9 +18,12 @@ Widget DetailsOfProduct({double width,int rank,String name,String brand,String C
                     ' $rank.  ',
                     style: ktextstylerank
               ),
-              Text(
-                    '  $name',
-                    style: ktextstylenameprice
+              SingleChildScrollView (
+                scrollDirection: Axis.horizontal,
+                              child: Text(
+                      '  $name',
+                      style: ktextstylenameprice
+                ),
               ),
             ],
           ),

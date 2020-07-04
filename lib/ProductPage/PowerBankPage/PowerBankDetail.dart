@@ -1,3 +1,4 @@
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -114,7 +115,7 @@ productListDesktop(
 productListDesktop(
           productRank: 4,       
          imageUrl:'assets/Intex IT-PB11K 11000mAH Power Bank.png',   
-          productName: 'Intex IT-PB11K 11000mAH',
+          productName: 'Intex 11000mAH',
           productPrice: '1,307 ',
           productBrand: 'Intex.',  
           productCountry: 'India',
@@ -158,6 +159,7 @@ productListDesktop(
           amazonUrl:'https://amzn.to/37RSLmf',
           flipKartUrl:'http://fkrt.it/LvIeH4uuuN' 
           ),
+
       ]
     ];
     return SizedBox(
@@ -261,25 +263,131 @@ class _SmallAppPowerBankState extends State<SmallAppPowerBank> {
   @override
   Widget build(BuildContext context) {
     List<List<Widget>> productList = [
-      [
+       [
         productListMobile(
-          productRank: 1,
-          imageUrl:'https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70',
-          productName: 'iPHONE 11 PRO',
-          productPrice: ' 1,21,000.00',
-          productBrand: 'APPLE Inc.',  
-          productCountry: 'USA',
-          productDescription: 'The iPhone 11 Pro is one of the best mobile phones in India, From a Compay that respects privacy and security of their customers. It is powered with Apple\'s latest and greatest A13 Bionic Chip. On the top u get excelent display. on back it features a 12MP triple Camera Setup.',   
-          ratingone: 100,
-          ratingthree: 100,
-          ratingtwo: 100,
+          productRank:  1,       
+          imageUrl:'assets/Ambrane 10000mAh Li-Polymer Powerbank with Compact Size & Fast Charging for Smartphones, Smart Watches, Neckbands & Other Devices.png',   
+          productName: 'Ambrane 10000mAh',
+          productPrice: ' 699',
+          productBrand: 'Ambrane',  
+          productCountry: 'India',
+          productDescription: 'Ambrane capsula 10k is a 10000 mAh lithium polymer power bank. It is a Perfect backup source of power for your mobiles and other gadgets. It is with quality ABS plastic construction along with a premium matte finish it promises high durability and stylish looks.',   
+          categoryone: 'Durabilty',
+          ratingone: 90,
+          categorytwo:'Size' ,
+          ratingtwo: 80,
+          categorythree: 'Design',
+          ratingthree: 80, 
+          categoryfour: 'Weight',
           ratingfour: 90,
-          ratingsix: 100,
-          ratingfive: 80,
-          amazonUrl:'https://amzn.to/2ADJlPd',
-          flipKartUrl: 'http://fkrt.it/s49TtfuuuN', 
+          categoryfive: 'VLM',
+          ratingfive: 90,
+          categorysix: 'Reviews',
+          ratingsix: 100,   
+          amazonUrl:'https://amzn.to/3fKGB1j',
+          flipKartUrl: 'http://fkrt.it/2s9MFPNNNN', 
         ),
+
+productListMobile(
+          productRank: 2,  
+          imageUrl:'assets/Syska 20000 mAh Li-Polymer Power Pro200 Power Bank.png',   
+          productName: 'Syska 20000 mAh',
+          productPrice: '1399',
+          productBrand: 'Syska.',  
+          productCountry: 'India',
+          productDescription: 'Syska presents to you the massive capacity power bank called ‘Power Pro 200’, which is highly efficient compared to any other power bank. The intelligent power manage solution helps it to enhance the life of your device and keeps it away from getting damaged.',   
+          categoryone: 'Durabilty',
+          ratingone: 90,
+          categorytwo:'Size' ,
+          ratingtwo: 80,
+          categorythree: 'Design',
+          ratingthree: 80, 
+          categoryfour: 'Weight',
+          ratingfour: 80,
+          categoryfive: 'VLM',
+          ratingfive: 80,
+          categorysix: 'Reviews',
+          ratingsix: 90,   
+          amazonUrl:'https://amzn.to/2BoOVVC',
+          flipKartUrl: 'http://fkrt.it/L3QJ34uuuN', 
+        ),
+
+productListMobile(
+          productRank:3,
+          imageUrl:'assets/Samsung EB-P1100BSNGIN 10000mAH Lithium Ion Power Bank.png',   
+          productName: 'Samsung 10000mAH',
+          productPrice: ' 1,399',
+          productBrand: 'Samsung.',  
+          productCountry: 'South korean',
+          productDescription: 'It comes with dual USB support so that you can charge two devices simultaneously. The power bank has a sleek design and can be carried easily along with you for travel and outings. The body is metallic and comes with a power bank, cable and user manual.',   
+          categoryone: 'Durabilty',
+          ratingone: 90,
+          categorytwo:'size' ,
+          ratingtwo: 70,
+          categorythree: 'Design',
+          ratingthree: 70, 
+          categoryfour: 'Weight',
+          ratingfour: 90,
+          categoryfive: 'VLM',
+          ratingfive: 90,
+          categorysix: 'Reviews',
+          ratingsix: 80,   
+          amazonUrl:'https://amzn.to/2zR5mtx',
+          flipKartUrl:'http://fkrt.it/2sEJEPNNNN'
+          ),
+
+
+productListMobile(
+          productRank: 4,       
+         imageUrl:'assets/Intex IT-PB11K 11000mAH Power Bank.png',   
+          productName: 'Intex 11000mAH',
+          productPrice: '1,307 ',
+          productBrand: 'Intex.',  
+          productCountry: 'India',
+          productDescription: 'Never let your devices run out of battery. A power packed 11000 mAh power bank to back you up just right.',
+          categoryone: 'Durabilty',
+          ratingone: 80,
+          categorytwo:'Size' ,
+          ratingtwo: 70,
+          categorythree: 'Design',
+          ratingthree: 80, 
+          categoryfour: 'Weight',
+          ratingfour: 70,
+          categoryfive: 'VLM',
+          ratingfive: 70,
+          categorysix: 'Reviews',
+          ratingsix: 80,   
+          amazonUrl:'https://amzn.to/3fKNzUc',
+          flipKartUrl:'http://fkrt.it/28rbEPNNNN' 
+          ),
+
+productListMobile(
+          productRank:5,       
+         imageUrl:'assets/iBall 10000mAh Li-Polymer Slim Design Smart Charge Metal Powerbank– LPM10000.png',   
+          productName: 'iBall 10000mAh',
+          productPrice: '599 ',
+          productBrand: 'iball',  
+          productCountry: 'India',
+          productDescription: 'Power does make people look good. The slim and sleek metal body iBall      Portable Powerbank – iB-10000LPM is the result of infusing fashion with technology. Its Euro design metal finish comes in four colours - Black / Blue / Rose Gold / Champagne Gold.',
+          categoryone: 'Durabilty',
+          ratingone: 90,
+          categorytwo:'Size' ,
+          ratingtwo: 70,
+          categorythree: 'Design',
+          ratingthree:70, 
+          categoryfour: 'Weight',
+          ratingfour: 70,
+          categoryfive: 'VLM',
+          ratingfive: 70,
+          categorysix: 'Reviews',
+          ratingsix: 70,   
+          amazonUrl:'https://amzn.to/37RSLmf',
+          flipKartUrl:'http://fkrt.it/LvIeH4uuuN' 
+        ),
+
       ]
+
+      
     ];
     return SingleChildScrollView(
       child: Column(

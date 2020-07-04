@@ -50,7 +50,7 @@ class LargeBottom extends StatelessWidget {
               ),
              Container(
                 width:MediaQuery.of(context).size.width/4,
-                child: Text('NoChinaNo is a Platform Designed for the Wallet Army. Unbiased Listing and Rating of Non-Chinese Brands Electronic items.',style: ktextstylebottom,textAlign: TextAlign.justify,)
+                child: Text('NoChinaNo is a Platform Designed for the Wallet Army. Enjoy Unbiased Listing and Rating of Non-Chinese Brand Etectronic items Which is to be updated Every Month.',style: ktextstylebottom,textAlign: TextAlign.justify,)
               ),
               Container(
                width: 2,
@@ -168,7 +168,7 @@ class SmallBottom extends StatelessWidget {
              Container(
                alignment: Alignment(0.0,0.0),
                 width:MediaQuery.of(context).size.width,
-                child: Text('NoChinaNo is a Platform Designed for the Wallet Army\nUnbiased Listing and Rating of Non-Chinese Brands Electronic items.',style: ktextstylebottom,textAlign: TextAlign.center,)
+                child: Text('NoChinaNo is a Platform Designed for the Wallet Army.\n Enjoy Unbiased Listing and Rating of Non-Chinese Brand \nEtectronic items Which is to be updated Every Month.',style: ktextstylebottom,textAlign: TextAlign.center,)
               ),
               Container(
                width: MediaQuery.of(context).size.width/1.5,
@@ -177,54 +177,60 @@ class SmallBottom extends StatelessWidget {
               ),
               Container(
                 width:MediaQuery.of(context).size.width,
-                child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  InkWell(
-                    onTap: (){
-                       js.context.callMethod("open", ["https://mail.google.com/mail/u/0/?view=cm&fs=1&to=mail2nochinano@gmail.com&tf=1"]);
-                    },
-                    child: Image.network(
-                      'https://i.imgur.com/7lS4VPq.png',
-                      height: 50.0,
-                      width: 50.0,
+                child: Column(
+                  children: [
+                    Container(child: Text('We are open for feedback and suggestions',style: ktextstylebottom,)),
+                    Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      InkWell(
+                        onTap: (){
+                           js.context.callMethod("open", ["https://mail.google.com/mail/u/0/?view=cm&fs=1&to=mail2nochinano@gmail.com&tf=1"]);
+                        },
+                        child: Image.network(
+                          'https://i.imgur.com/7lS4VPq.png',
+                          height: 50.0,
+                          width: 50.0,
+                          ),
                       ),
-                  ),
-                  SizedBox(width: 5,),
-                  InkWell(
-                    onTap: (){
-                       js.context.callMethod("open", ["https://t.me/teltonochinano"]);
-                    },
-                    child: Image.network(
-                      'https://i.imgur.com/iNAoewH.png',
-                      height: 40.0,
-                      width: 40.0,
+                      SizedBox(width: 5,),
+                      InkWell(
+                        onTap: (){
+                           js.context.callMethod("open", ["https://t.me/teltonochinano"]);
+                        },
+                        child: Image.network(
+                          'https://i.imgur.com/iNAoewH.png',
+                          height: 40.0,
+                          width: 40.0,
+                          ),
                       ),
-                  ),
-                  SizedBox(width: 5,),
-                  InkWell(
-                    onTap: (){
-                       js.context.callMethod("open", ["https://twitter.com/intent/tweet?url=https%3A%2F%2Ftwitter.com%2Fnochinano1"]);
-                    },
-                    child: Image.network(
-                      'https://i.imgur.com/erWajt4.png',
-                      height: 37.0,
-                      width: 37.0,
+                      SizedBox(width: 5,),
+                      InkWell(
+                        onTap: (){
+                           js.context.callMethod("open", ["https://twitter.com/intent/tweet?url=https%3A%2F%2Ftwitter.com%2Fnochinano1"]);
+                        },
+                        child: Image.network(
+                          'https://i.imgur.com/erWajt4.png',
+                          height: 37.0,
+                          width: 37.0,
+                          ),
                       ),
-                  ),
-                  SizedBox(width: 5,),
-                  InkWell(
-                    onTap: (){
-                       js.context.callMethod("open", ["https://www.facebook.com/No-China-No-100168928418054"]);
-                    },
-                    child: Image.network(
-                      'https://i.imgur.com/RgTrk1W.png',
-                      height: 33.0,
-                      width: 37.0,
+                      SizedBox(width: 5,),
+                      InkWell(
+                        onTap: (){
+                           js.context.callMethod("open", ["https://www.facebook.com/No-China-No-100168928418054"]);
+                        },
+                        child: Image.network(
+                          'https://i.imgur.com/RgTrk1W.png',
+                          height: 33.0,
+                          width: 37.0,
+                          ),
                       ),
-                  ),
-                ],
+                    ],
+                    ),
+                  ],
                 ),
+              
               ) 
            ],
           ),         
