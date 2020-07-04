@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/pages/About.dart';
 import 'package:flutterapp/utils/responsiveLayout.dart';
 import 'package:flutterapp/utils/textstyle.dart';
 

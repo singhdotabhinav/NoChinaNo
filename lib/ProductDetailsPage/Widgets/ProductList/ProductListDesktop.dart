@@ -3,15 +3,10 @@ import 'package:flutterapp/CircularPage/MainCircle.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/BuyerOfProduct/BuyerOfProductDesktop.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/DetailsOdProduct/DetailsOfProduct.dart';
 import 'package:flutterapp/ProductDetailsPage/Widgets/ImageOfProduct/ImageOfProduct.dart';
+import 'dart:ui';
 
-class ScreenSize extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
-}
+
+
 
 
 

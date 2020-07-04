@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/Animation/skillAvatar.dart';
+import 'package:flutterapp/Animation/iconAvatar.dart';
 
 class RoudIconDesktop extends StatefulWidget { 
 final  String imglink;
@@ -19,7 +19,7 @@ class _RoudIconDesktopState extends State<RoudIconDesktop> {
           children: [
             Container(
               //child: skillAvatar(imglink, backglow),
-              child: skillAvatar(widget.imglink, widget.backglow),
+              child: iconAvatar(widget.imglink, widget.backglow),
             ),
             Column(
               mainAxisSize: MainAxisSize.min,

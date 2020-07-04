@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/Animation/skillAvatar.dart';
+import 'package:flutterapp/Animation/iconAvatar.dart';
 
 class RoundIcon extends StatefulWidget { 
 final  String imglink;
@@ -30,7 +30,7 @@ class _RoundIconState extends State<RoundIcon> {
             children: [
               Container(
                 //child: skillAvatar(imglink, backglow),
-                child: skillAvatar(widget.imglink, widget.backglow),
+                child: iconAvatar(widget.imglink, widget.backglow),
               ),
               Column(
                 mainAxisSize: MainAxisSize.min,

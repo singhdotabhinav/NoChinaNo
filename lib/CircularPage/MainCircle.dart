@@ -17,7 +17,6 @@ class _MainCircle extends State<MainCircle> with SingleTickerProviderStateMixin 
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     progressController = AnimationController(vsync: this,duration: Duration(milliseconds: 1000));
     animation = Tween<double>(begin: 0,end: widget.rating.toDouble()).animate(progressController)..addListener((){setState(() {});});
@@ -66,15 +65,5 @@ class _MainCircle extends State<MainCircle> with SingleTickerProviderStateMixin 
         ),
       ),
     );
-  }
-}
-class Singh extends StatefulWidget {
-  @override
-  _SinghState createState() => _SinghState();
-}
-class _SinghState extends State<Singh> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
